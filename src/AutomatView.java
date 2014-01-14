@@ -1,11 +1,8 @@
-import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -18,7 +15,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class CaView extends JPanel implements ActionListener, Observer {
+import data.Item;
+import data.Money;
+
+public class AutomatView extends JPanel implements ActionListener, Observer {
 
 	private static final long serialVersionUID = 1L;
 
@@ -27,17 +27,15 @@ public class CaView extends JPanel implements ActionListener, Observer {
 	private JTextArea itemList, automatInformation;
 	
 	
-	private JTextField statusDisplay, priceDisplay;
-	private JButton zero, one, two, three, four, five, six, seven, eight, nine;
-	private JButton money10, money20, money50, money100, money200, moneyCard;
+	private JTextField displayStatus, displayMoney;
+	private ArrayList<NumpadButton> numpadBtns = new ArrayList<NumpadButton>();
+	private ArrayList<MoneyButton> moneyBtns = new ArrayList<MoneyButton>();
+	private JButton del, enter, moneyCard;	
 	
-	//dynamisch buttons für geldeinwurf
-
-		
-	
-	public CaView(AutomatModel model) {
+	public AutomatView(final AutomatModel model) {
 		this.model = model;
 		JScrollPane scrollpane = null;
+		String currency = "€";
 			
 		
 		// Layout
@@ -62,11 +60,11 @@ public class CaView extends JPanel implements ActionListener, Observer {
 		// JTextAreas, JTextFields und Labels
 		// ��������������������������������������������������������������������������������������
 		
-		statusDisplay = new JTextField("");
-		statusDisplay.setEditable(true);
+		displayStatus = new JTextField("");
+		displayStatus.setEditable(true);
 		
-		priceDisplay = new JTextField("");
-		priceDisplay.setEditable(true);
+		displayMoney = new JTextField("");
+		displayMoney.setEditable(true);
 		
 		itemList = new JTextArea();
 		itemList.setPreferredSize(new Dimension(150,220));
@@ -86,57 +84,137 @@ public class CaView extends JPanel implements ActionListener, Observer {
 		scrollpane.setBorder(BorderFactory.createTitledBorder("ItemList")); //TODO @string from xml file
 		scrollpane.setPreferredSize(new Dimension(100,250)); //???	
 					
-			
-		// Buttons
-		// ��������������������������������������������������������������������������������������
-		zero = new JButton("0");
-		one = new JButton("1");
-		two = new JButton("2");
-		three = new JButton("3");
-		four = new JButton("4");
-		five = new JButton("5");
-		six = new JButton("6");
-		seven = new JButton("7");
-		eight = new JButton("8");
-		nine = new JButton("9");
+		for (int i = 0; i <= 9; i++) {
+			numpadBtns.add(new NumpadButton(i));
+		}
+
+		del = new JButton("c");
+		enter = new JButton("enter");
+				
 		
-		money10 = new JButton("0,50"); //TODO +Currency
-		money20 = new JButton("0,20");
-		money50 = new JButton("0,50");
-		money100 = new JButton("1");
-		money200 = new JButton("2");
+		for (Money m : model.getMoneyStorage()) {
+			final MoneyButton _btn = new MoneyButton(m.getValue());
+			_btn.setText(""+_btn.getValue()+currency);
+			_btn.setEnabled(false);
+			moneyBtns.add(_btn);//TODO +Currency
+			
+			_btn.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					double value = _btn.getValue();
+					model.reduceCurrentCosts(value);
+					displayMoney.setText(""+model.getCurrentCosts());
+					model.getCurrentMoney().add(value);
+					if (model.checkIfCurrentMoneyIsEnough()) { //TODO auslagern
+						model.returnExchangeMoney();
+						Item returnedItem = model.returnItem();
+						model.resetAutomat();
+						resetGUI();
+						displayStatus.setText(returnedItem.getName() + " wird ausgeworfen.");
+					
+
+					}
+				}
+
+			});
+		}
+		
+		
+		
 		moneyCard = new JButton("Karte");
+		moneyCard.setEnabled(false);
 		
-		// Adding Components
-		// ��������������������������������������������������������������������������������������
+		
+		for(final NumpadButton btn: numpadBtns) {
+			numpad.add(btn);
+			btn.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					String current = model.getCurrentNumCode();
+					current += btn.getValue();
+					model.setCurrentNumCode(current);
+					displayStatus.setText(current);
+				
+				}
+			});
+		}
+		
+		del.addActionListener(new ActionListener() {
 			
-		numpad.add(one);
-		numpad.add(two);
-		numpad.add(three);
-		numpad.add(four);
-		numpad.add(five);
-		numpad.add(six);
-		numpad.add(seven);
-		numpad.add(eight);
-		numpad.add(nine);
-		numpad.add(zero);
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				//model changes?
+				//werf eingeworfenes geld aus
+				System.out.println("Eingegebenes Geld wird ausgeworfen.");
+				model.resetAutomat();
+				resetGUI();
+			}
+		});
 		
-		moneypad.add(money10);
-		moneypad.add(money20);
-		moneypad.add(money50);
-		moneypad.add(money100);
-		moneypad.add(money200);
+		enter.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				System.out.println(model.getCurrentNumCode());
+				if(model.checkIfInputIsValid()) {
+					model.setCurrentItem(model.getItemByNumCode(model.getCurrentNumCode()));
+					if(model.checkIfItemIsAvailable()) {
+						
+						
+						for (NumpadButton m : numpadBtns) { 
+							m.setEnabled(false);
+						}
+						
+						displayMoney.setText(""+model.getCurrentItem().getPrice());
+						displayStatus.setText("Bitte Geld einwerfen für "+model.getCurrentItem().getName());
+						for (MoneyButton m : moneyBtns) {
+							m.setEnabled(true);
+						}
+					}
+				}
+				
+				
+				
+				//do magic
+				//statusDisplay.getText() auf fehler/länge überprüfen
+				//success: an automaten übergeben, refresh money display
+				//check money: quantity of item --  (refresh money)
+				//ausgabe des items im statusdisplay
+				//enable money buttons after press enter
+				//reset des moneydisplays nach erfolgreicher transaktion
+			}
+		});
+		
+		numpad.add(del);
+		numpad.add(enter);
+		
+
+		for(final MoneyButton btn: moneyBtns) {
+			moneypad.add(btn);
+			btn.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					
+				}
+			});
+		}
 		moneypad.add(moneyCard);
+		
+		
 		
 		box1.add(itemList);
 		
-		box2.add(statusDisplay);
+		box2.add(displayStatus);
 		box2.add(Box.createRigidArea(new Dimension(0,5)));
 		box2.add(numpad);
 		box2.add(Box.createRigidArea(new Dimension(0,5)));
 		box2.add(automatInformation);
 		
-		box3.add(priceDisplay);
+		box3.add(displayMoney);
 		box3.add(Box.createRigidArea(new Dimension(0,5)));
 		box3.add(moneypad);
 		box3.add(Box.createRigidArea(new Dimension(0,150)));
@@ -147,14 +225,6 @@ public class CaView extends JPanel implements ActionListener, Observer {
 		flowPanel.add(Box.createRigidArea(new Dimension(5,0)));
 		flowPanel.add(box3);
 		add(flowPanel);
-		
-		
-		// ActionListeners
-		// ���������������������������������������������������������������������������������������
-		
-		zero.addActionListener(this);
-
-		
 		
 	}
 /*	
@@ -333,5 +403,18 @@ public class CaView extends JPanel implements ActionListener, Observer {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public final void resetGUI() {
+		displayStatus.setText("");
+		displayMoney.setText("");
+		
+		for (MoneyButton m : moneyBtns) { 
+			m.setEnabled(false);
+		}
+		
+		for (NumpadButton m : numpadBtns) { 
+			m.setEnabled(true);
+		}
 	}
 }

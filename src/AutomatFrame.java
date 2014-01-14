@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+
 public class AutomatFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -30,7 +31,7 @@ public class AutomatFrame extends JFrame {
 		}
 		
 		AutomatModel model = new AutomatModel();
-		CaView view = new CaView(model);
+		AutomatView view = new AutomatView(model);
 		add(view);
 		setSize(500, 200);
 		pack();
