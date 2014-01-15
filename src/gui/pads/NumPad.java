@@ -120,6 +120,8 @@ public class NumPad extends JPanel {
 
 	public void setErrorText(String t) {
 		tfDisplayStatus.setText("Itemnummer: " + currentNumCode + " (" + t + ")");
+
+		currentNumCode = "";
 	}
 
 	public boolean getEnabled() {

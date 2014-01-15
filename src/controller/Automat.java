@@ -27,6 +27,8 @@ public class Automat extends Observable {
 	private List<Integer> currentChange;
 
 	public Automat() throws NotEnoughChangeException {
+		type = AutomatType.beverages;
+
 		setCurrency("€");
 		setFileItems("items.txt");
 		setFileMoney("money.txt");
@@ -139,7 +141,7 @@ public class Automat extends Observable {
 
 	public void returnExchangeMoney(int value) throws NotEnoughChangeException {
 		int exchange = Math.abs(value);
-		System.out.println(exchange);
+
 		List<Integer> l = new ArrayList<Integer>();
 		for (int i = moneyStorage.size() - 1; i >= 0; i--) {
 			Money m = moneyStorage.get(i);
