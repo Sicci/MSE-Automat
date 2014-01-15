@@ -11,7 +11,10 @@ tmp/
 *.swp
 *~.nib
 local.properties
+<<<<<<< HEAD
 .settings/
+=======
+>>>>>>> eeae44df426e9f792d6d5528eea61f3c5916bb1d
 .loadpath
 
 # External tool builders
