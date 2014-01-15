@@ -17,71 +17,43 @@ public class Automat extends Observable {
 	private AutomatType type;
 	private String language;
 	private String currency;
-	private List<Item> itemList;
-	private List<Money> moneyStorage;
+	private String fileItems;
+	private String fileMoney;
+
+	private ItemStorage itemStorage;
+	private MoneyStorage moneyStorage;
 
 	private Item currentItem;
 	private List<Integer> currentChange;
 
 	public Automat() throws NotEnoughChangeException {
 		setCurrency("€");
+		setFileItems("items.txt");
+		setFileMoney("money.txt");
 
-		itemList = new ArrayList<Item>();
-		itemList.add(new Item("1", "Cola", 120, 10));
-		itemList.add(new Item("2", "Fanta", 130, 15));
-		itemList.add(new Item("3", "Sprite", 140, 5));
+		itemStorage = new ItemStorage();
+		itemStorage.readFromFile(fileItems);
 
-		moneyStorage = new ArrayList<Money>();
-		moneyStorage.add(new Money(10, 100));
-		moneyStorage.add(new Money(20, 0));
-		moneyStorage.add(new Money(50, 0));
-		moneyStorage.add(new Money(100, 100));
-		moneyStorage.add(new Money(200, 100));
-		moneyStorage.add(new Money(500, 50)); // schein
-		moneyStorage.add(new Money(1000, 0)); // schein
-
-		if (!hasEnoughChangeMoney()) {
-			throw new NotEnoughChangeException("Not enough change!");
-		}
+		moneyStorage = new MoneyStorage();
+		moneyStorage.readFromFile(fileMoney);
 
 		reset();
 	}
 
-	public boolean checkIfItemIsAvailable(String numCode) {
-		boolean isAvailable = false;
-		Item item = getItemByNumCode(numCode);
-		if (item != null && item.getQuantity() > 0) {
-			isAvailable = true;
-		}
-		return isAvailable;
+	private boolean checkIfItemIsAvailable(String numCode) {
+		return itemStorage.checkIfItemIsAvailable(numCode);
 	}
 
-	public boolean checkIfInputIsValid(String numCode) {
-		boolean isValid = false;
-		for (Item item : itemList) {
-			if (numCode.equals(item.getNumCode())) {
-				isValid = true;
-			}
-		}
-		return isValid;
+	private boolean checkIfInputIsValid(String numCode) {
+		return itemStorage.hasItemWithNumCode(numCode);
 	}
 
-	public Item getItemByNumCode(String numCode) {
-		Item foundItem = null;
-		for (Item item : itemList) {
-			if (item.getNumCode().equals(numCode)) {
-				foundItem = item;
-			}
-		}
-		return foundItem;
+	private Item getItemByNumCode(String numCode) {
+		return itemStorage.getItemByNumCode(numCode);
 	}
 
 	public AutomatType getType() {
 		return type;
-	}
-
-	public void setType(AutomatType type) {
-		this.type = type;
 	}
 
 	public String getLanguage() {
@@ -100,12 +72,8 @@ public class Automat extends Observable {
 		this.currency = currency;
 	}
 
-	public List<Item> getItemList() {
-		return itemList;
-	}
-
-	public void setItemList(List<Item> itemList) {
-		this.itemList = itemList;
+	public ItemStorage getItems() {
+		return itemStorage;
 	}
 
 	public Item getCurrentItem() {
@@ -116,12 +84,24 @@ public class Automat extends Observable {
 		this.currentItem = currentItem;
 	}
 
-	public List<Money> getMoneyStorage() {
+	public MoneyStorage getMoneyStorage() {
 		return moneyStorage;
 	}
 
-	public void setMoneyStorage(List<Money> moneyStorage) {
-		this.moneyStorage = moneyStorage;
+	public String getFileItems() {
+		return fileItems;
+	}
+
+	public void setFileItems(String fileItems) {
+		this.fileItems = fileItems;
+	}
+
+	public String getFileMoney() {
+		return fileMoney;
+	}
+
+	public void setFileMoney(String fileMoney) {
+		this.fileMoney = fileMoney;
 	}
 
 	public boolean hasEnoughChangeMoney() {
@@ -131,7 +111,7 @@ public class Automat extends Observable {
 		boolean hasEnoughChangeMoney = true;
 
 		// smallest and biggest coin
-		for (Money i : moneyStorage) {
+		for (Money i : moneyStorage.getMoneyList()) {
 			if (minValue == null || i.getValue() < minValue.getValue()) {
 				minValue = i;
 			}
@@ -142,7 +122,7 @@ public class Automat extends Observable {
 		}
 
 		// max price
-		for (Item i : itemList) {
+		for (Item i : itemStorage.getItemList()) {
 			if (i.getPrice() % minValue.getValue() != 0) {
 				hasEnoughChangeMoney = false;
 			}
@@ -192,7 +172,7 @@ public class Automat extends Observable {
 		boolean hasChanged = false;
 
 		if (value > 0) {
-			for (Money m : moneyStorage) {
+			for (Money m : moneyStorage.getMoneyList()) {
 				if (m.getValue() == value) {
 					m.setQuantity(m.getQuantity() + 1);
 					hasChanged = true;
@@ -216,9 +196,16 @@ public class Automat extends Observable {
 		return i;
 	}
 
-	public void reset() {
+	public void reset() throws NotEnoughChangeException {
 		currentItem = null;
 		// currentChange = new ArrayList<Integer>();
+
+		if (!hasEnoughChangeMoney()) {
+			throw new NotEnoughChangeException("Not enough change!");
+		}
+
+		itemStorage.writeToFile(fileItems);
+		moneyStorage.writeToFile(fileMoney);
 	}
 
 	public void handleCommand(ICommand cmd) throws AutomatException {
@@ -245,4 +232,5 @@ public class Automat extends Observable {
 			throw new InvalidInputException("Invalid Input");
 		}
 	}
+
 }

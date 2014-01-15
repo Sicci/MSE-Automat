@@ -11,6 +11,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 import javax.swing.Box;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -70,7 +71,7 @@ public class AutomatView extends JPanel implements Observer {
 		taItemList.setLineWrap(true);
 		taItemList.setEditable(false);
 
-		for (Item i : model.getItemList()) {
+		for (Item i : model.getItems().getItemList()) {
 			sb.append("" + i.getNumCode() + ": " + (i.getPrice() / 100.) + model.getCurrency() + " - " + i.getName() + "\n");
 		}
 		taItemList.setText(sb.toString());
@@ -137,7 +138,9 @@ public class AutomatView extends JPanel implements Observer {
 			public void actionPerformed(ActionEvent e) {
 				List<Integer> l = moneyPad.retrieveInsertedMoney();
 
-				for (int i = 0; i < l.size(); i++) {
+				int len = l.size();
+
+				for (int i = 0; i < len; i++) {
 					model.addMoneyToStorage(l.remove(0));
 				}
 
@@ -159,7 +162,7 @@ public class AutomatView extends JPanel implements Observer {
 			}
 		};
 
-		moneyPad = new MoneyPad(onFullyPaid, model.getMoneyStorage(), model.getCurrency());
+		moneyPad = new MoneyPad(onFullyPaid, model.getMoneyStorage().getMoneyList(), model.getCurrency());
 
 		moneyPad.getBtReturnChange().addActionListener(new ActionListener() {
 			@Override
@@ -236,13 +239,13 @@ public class AutomatView extends JPanel implements Observer {
 		sb.append("Automat-Information:\n\n");
 
 		sb.append("Items:\n");
-		for (Item i : model.getItemList()) {
+		for (Item i : model.getItems().getItemList()) {
 			sb.append("" + i.getNumCode() + " - " + i.getName() + " - " + (i.getPrice() / 100.) + model.getCurrency() + " - " + i.getQuantity());
 			sb.append('\n');
 		}
 
 		sb.append("\nMoney:\n");
-		for (Money m : model.getMoneyStorage()) {
+		for (Money m : model.getMoneyStorage().getMoneyList()) {
 			sb.append("" + m.getValue() + " - " + m.getQuantity() + "x");
 			sb.append('\n');
 		}
@@ -280,7 +283,12 @@ public class AutomatView extends JPanel implements Observer {
 	public final void makeReadyForNewOrder() {
 		moneyPad.reset();
 		numPad.reset();
-		model.reset();
+		try {
+			model.reset();
+		} catch (NotEnoughChangeException e) {
+			JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+			System.exit(-1);
+		}
 
 		moneyPad.setEnabled(false);
 		numPad.setEnabled(true);
