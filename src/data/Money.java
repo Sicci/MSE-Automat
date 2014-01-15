@@ -1,26 +1,29 @@
 package data;
 
 public class Money {
-	private double value;
+	private int value;
 	private int quantity;
-	
-	public Money(double value, int quantity) {
+
+	public Money(int value, int quantity) {
 		super();
 		this.value = value;
 		this.quantity = quantity;
 	}
-	
-	public double getValue() {
+
+	public int getValue() {
 		return value;
 	}
-	public void setValue(double value) {
+
+	public void setValue(int value) {
 		this.value = value;
 	}
+
 	public int getQuantity() {
 		return quantity;
 	}
+
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	
+
 }

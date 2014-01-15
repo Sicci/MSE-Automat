@@ -2,22 +2,23 @@ package data;
 
 public class Item {
 	private String name;
-	private double price;
+	private int price;
 	private int quantity;
 	private String numCode;
-	
+
 	public Item() {
-		
+
 	}
-	
-	public Item(String numCode, String name, double price, int quantity) {
+
+	public Item(String numCode, String name, int price, int quantity) {
 		super();
 		this.name = name;
 		this.price = price;
-		this.quantity = quantity; //TODO hier speichern oder in ein objekt auslagern
+		this.quantity = quantity; // TODO hier speichern oder in ein objekt
+									// auslagern
 		this.setNumCode(numCode);
 	}
-	
+
 	public int getQuantity() {
 		return quantity;
 	}
@@ -29,23 +30,23 @@ public class Item {
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public double getPrice() {
+
+	public int getPrice() {
 		return price;
 	}
-	
-	public void setPrice(double price) {
+
+	public void setPrice(int price) {
 		this.price = price;
 	}
-	
+
 	@Override
 	public String toString() {
-		return name +"("+quantity+") "+ price;
-		
+		return name + "(" + quantity + ") " + price;
+
 	}
 
 	public String getNumCode() {
@@ -55,7 +56,7 @@ public class Item {
 	public void setNumCode(String numCode) {
 		this.numCode = numCode;
 	}
-	
+
 	public void reduceQuantity() {
 		this.quantity--;
 	}
