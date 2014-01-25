@@ -164,12 +164,16 @@ public class Automat extends Observable {
 		}
 	}
 
-	public void payWithCard(String card) throws NotEnoughChangeException, NoPartialCardPaymentException {
+	public void payWithCard(String card) throws NotEnoughChangeException, NoPartialCardPaymentException, NoItemSelectedException {
 		// if paying with cards, return all inserted money first
 		boolean isPayingWithCard = true;
 
 		if (inputMoney != null && inputMoney.size() > 0) {
 			throw new NoPartialCardPaymentException("No card after coins!");
+		}
+		
+		if (currentItem == null) {
+			throw new NoItemSelectedException("Select an item!");
 		}
 
 		outputChange = inputMoney;

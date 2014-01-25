@@ -1,6 +1,7 @@
 package controller.commands;
 
 import controller.Automat;
+import controller.exceptions.NoItemSelectedException;
 import controller.exceptions.NoPartialCardPaymentException;
 import controller.exceptions.NotEnoughChangeException;
 
@@ -15,7 +16,7 @@ public class InsertCardCommand implements ICommand {
 	}
 
 	@Override
-	public void execute(Automat automat) throws NotEnoughChangeException, NoPartialCardPaymentException {
+	public void execute(Automat automat) throws NotEnoughChangeException, NoPartialCardPaymentException, NoItemSelectedException {
 		automat.payWithCard(card);
 	}
 
