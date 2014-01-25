@@ -9,22 +9,65 @@ import java.awt.Cursor;
 
 import javax.swing.border.EmptyBorder;
 
-
 public class BottomAreaView extends StylePanel {
 	private static final long serialVersionUID = 1L;
-	private ImageAreaComp iacAutomatOutput;
+	private ImageAreaComp iacAutomatOutputEmpty;
+	private ImageAreaComp iacAutomatOutputFull;
+
+
+
+	private ImageAreaComp currentImage;
 	
+	private boolean isEmpty;
+
 	public BottomAreaView() {
 		super(AutomatView.COLOR, AutomatView.COLOR, new EmptyBorder(0, 0, 0, 0));
 		gridStyle.setPadding(50, 0, 5, 0);
-		
-		gridStyle.setGrid(1.0,1.0,0,0);
-		iacAutomatOutput = new ImageAreaComp("img/output_soda_empty.png", Color.BLACK);
-		iacAutomatOutput.setCursor(new Cursor(Cursor.HAND_CURSOR));
-		add(iacAutomatOutput, gridStyle);
+
+		gridStyle.setGrid(1.0, 1.0, 0, 0);
+		iacAutomatOutputEmpty = new ImageAreaComp("img/output_soda_empty.png", Color.BLACK);
+		iacAutomatOutputEmpty.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
+		iacAutomatOutputFull = new ImageAreaComp("img/output_soda_full.png", Color.BLACK);
+		iacAutomatOutputFull.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
+		currentImage = iacAutomatOutputEmpty;
+		isEmpty = true;
+
+		add(currentImage, gridStyle);
+	}
+
+	public ImageAreaComp getAutomatOutputEmpty() {
+		return iacAutomatOutputEmpty;
+	}
+
+	public ImageAreaComp getAutomatOutputFull() {
+		return iacAutomatOutputFull;
 	}
 	
-	public ImageAreaComp getAutomatOutput() {
-		return iacAutomatOutput;
+	public boolean isEmpty() {
+		return isEmpty;
+	}
+
+	public void changeToFull() {
+		remove(currentImage);
+		currentImage = iacAutomatOutputFull;
+		add(currentImage, gridStyle);
+		
+		isEmpty = false;
+		
+		revalidate();
+		repaint();
+	}
+
+	public void changeToEmpty() {
+		remove(currentImage);
+		currentImage = iacAutomatOutputEmpty;
+		add(currentImage, gridStyle);
+
+		isEmpty = true;
+		
+		revalidate();
+		repaint();
 	}
 }

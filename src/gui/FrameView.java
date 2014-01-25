@@ -26,14 +26,13 @@ import java.util.Observable;
 import java.util.Observer;
 
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
 import controller.Automat;
 import controller.commands.ChangeItemIdCommand;
 import controller.commands.ClearItemIdCommand;
-import controller.commands.SelectItemCommand;
-import controller.commands.InsertMoneyCommand;
 import controller.commands.InsertCardCommand;
+import controller.commands.InsertMoneyCommand;
+import controller.commands.SelectItemCommand;
 import controller.exceptions.AutomatException;
 import data.Item;
 import data.Money;
@@ -170,11 +169,22 @@ public class FrameView extends JFrame implements Observer {
 		}
 
 		// neat stuff
-		final ImageAreaComp iac = avAutomatView.getBottomArea().getAutomatOutput();
-		iac.addMouseListener(new MouseAdapter() {
+		final ImageAreaComp iacFull = avAutomatView.getBottomArea().getAutomatOutputFull();
+		iacFull.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent me) {
-				// lvLogView.addToLog("\n" +
-				// "Tried to take stuff out of the machine");
+				System.out.println("clicked!");
+				avAutomatView.getBottomArea().changeToEmpty();
+
+				lvLogView.addToLog("\nEmptied compartment!");
+			}
+		});
+
+		final ImageAreaComp iacEmpty = avAutomatView.getBottomArea().getAutomatOutputEmpty();
+		iacEmpty.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent me) {
+				// avAutomatView.getBottomArea().changeToFull();
+				System.out.println("clicked!");
+				lvLogView.addToLog("\nNothing to retrieve!");
 			}
 		});
 
@@ -241,6 +251,7 @@ public class FrameView extends JFrame implements Observer {
 		} else if (t.equals("handedOutItem")) {
 			if (automat.getOutputItem() != null) {
 				lvLogView.addToLog("\nHanded out item: " + automat.getOutputItem().getName());
+				avAutomatView.getBottomArea().changeToFull();
 			}
 
 		} else if (t.equals("paidWithCard")) {
