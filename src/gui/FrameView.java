@@ -168,12 +168,13 @@ public class FrameView extends JFrame implements Observer {
 		final ImageAreaComp iac = avAutomatView.getBottomArea().getAutomatOutput();
 		iac.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent me) {
-				lvLogView.addToLog("\n" + "Tried to take stuff out of the machine");
+				// lvLogView.addToLog("\n" +
+				// "Tried to take stuff out of the machine");
 			}
 		});
 
 		lvLogView.clearLog();
-		lvLogView.addToLog(avAutomatView.getAutomatName() + " wurde gestartet");
+		lvLogView.addToLog(avAutomatView.getAutomatName() + " has been started!\n\n");
 
 		updateStats();
 	}
@@ -220,20 +221,20 @@ public class FrameView extends JFrame implements Observer {
 
 		if (t.equals("itemSelected")) {
 			lvLogView.addToLog("\nItem selected: " + automat.getCurrentItem().getName());
-			getPaymentDisplay().setText(String.format("%.2f", automat.getUpdatedCurrentItemCost() / 100.) + automat.getCurrency() + " to pay");
+			getPaymentDisplay().setText(formatCurrency(automat.getUpdatedCurrentItemCost()) + " to pay");
 		} else if (t.equals("statsChanged")) {
-			lvLogView.addToLog("\nStats updated\n");
+			// lvLogView.addToLog("\nStats updated\n");
 			updateStats();
 		} else if (t.equals("handedOutChange")) {
 			logChangeMoney(automat.retrieveChange());
 		} else if (t.equals("itemIdChanged")) {
 			if (automat.getCurrentItemId().length() > 0) {
-				lvLogView.addToLog("\nCurrent Item Id = " + automat.getCurrentItemId() + "\n");
+				lvLogView.addToLog("\nChanged item selection (to " + automat.getCurrentItemId() + ")");
 			}
 			getNumpadDisplay().setText("Item: " + automat.getCurrentItemId());
 		} else if (t.equals("insertedMoney")) {
-			lvLogView.addToLog("\nCurrently in automat: " + automat.getSumInputMoney());
-			getPaymentDisplay().setText(String.format("%.2f", automat.getUpdatedCurrentItemCost() / 100.) + automat.getCurrency() + " to pay");
+			lvLogView.addToLog("\nThrown in money: " + formatCurrency(automat.getSumInputMoney()));
+			getPaymentDisplay().setText(formatCurrency(automat.getUpdatedCurrentItemCost()) + " to pay");
 		} else if (t.equals("handedOutItem")) {
 			if (automat.getOutputItem() != null) {
 				lvLogView.addToLog("\nHanded out item: " + automat.getOutputItem().getName());
@@ -241,10 +242,14 @@ public class FrameView extends JFrame implements Observer {
 
 		} else if (t.equals("paidWithCard")) {
 			if (automat.getOutputItem() != null) {
-				lvLogView.addToLog("\nPaid with Card: " + automat.getOutputItem().getName());
+				lvLogView.addToLog("\nPaid with Card (" + formatCurrency(automat.getOutputItem().getPrice()) + ")");
 			}
 			logChangeMoney(automat.retrieveChange());
 		}
+	}
+
+	private String formatCurrency(int v) {
+		return String.format("%.2f", v / 100.) + automat.getCurrency();
 	}
 
 	private void logChangeMoney(List<Integer> change) {
@@ -256,17 +261,19 @@ public class FrameView extends JFrame implements Observer {
 			for (int v : change) {
 				if (i++ > 0)
 					sb.append(", ");
-				sb.append("" + v);
+				sb.append("" + formatCurrency(v));
 				sum += v;
 			}
 		}
 
 		if (sb.length() > 0) {
 			lvLogView.addToLog("\nChange: " + sb.toString());
+		} else {
+			lvLogView.addToLog("\nNo change!");
 		}
 
 		if (sum > 0) {
-			getPaymentDisplay().setText("Retrieve change! " + sum);
+			getPaymentDisplay().setText("Retrieve change! (" + formatCurrency(sum) + ")");
 		} else {
 			getPaymentDisplay().setText("");
 		}
@@ -276,7 +283,7 @@ public class FrameView extends JFrame implements Observer {
 		StringBuilder sb = new StringBuilder();
 
 		for (Item i : automat.getItems().getItemList()) {
-			sb.append("" + i.getNumCode() + ": " + (i.getPrice() / 100.) + automat.getCurrency() + " - " + i.getName() + " (" + i.getQuantity() + "x)\n");
+			sb.append("" + i.getNumCode() + ": " + formatCurrency(i.getPrice()) + " - " + i.getName() + " (" + i.getQuantity() + "x)\n");
 		}
 
 		svStatusView.getItemStoragePanelTextArea().setText(sb.toString());
@@ -284,7 +291,7 @@ public class FrameView extends JFrame implements Observer {
 		sb.setLength(0);
 
 		for (Money m : automat.getMoneyStorage().getMoneyList()) {
-			sb.append("" + m.getValue() + ":\t" + m.getQuantity() + "x");
+			sb.append("" + formatCurrency(m.getValue()) + ":\t" + m.getQuantity() + "x");
 			sb.append('\n');
 		}
 

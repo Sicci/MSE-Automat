@@ -9,6 +9,8 @@ import controller.commands.ICommand;
 import controller.exceptions.AutomatException;
 import controller.exceptions.InvalidInputException;
 import controller.exceptions.ItemNotAvailableException;
+import controller.exceptions.NoItemSelectedException;
+import controller.exceptions.NoPartialCardPaymentException;
 import controller.exceptions.NotEnoughChangeException;
 import controller.exceptions.ValueNotAcceptedException;
 import data.Item;
@@ -135,7 +137,10 @@ public class Automat extends Observable {
 		return currentMoney;
 	}
 
-	public void insertMoney(int value) throws ValueNotAcceptedException, NotEnoughChangeException {
+	public void insertMoney(int value) throws ValueNotAcceptedException, NotEnoughChangeException, NoItemSelectedException {
+		if (currentItem == null) {
+			throw new NoItemSelectedException("Select an item!");
+		}
 
 		if (inputMoney == null) {
 			inputMoney = new ArrayList<Integer>();
@@ -159,9 +164,13 @@ public class Automat extends Observable {
 		}
 	}
 
-	public void payWithCard(String card) throws NotEnoughChangeException {
+	public void payWithCard(String card) throws NotEnoughChangeException, NoPartialCardPaymentException {
 		// if paying with cards, return all inserted money first
 		boolean isPayingWithCard = true;
+
+		if (inputMoney != null && inputMoney.size() > 0) {
+			throw new NoPartialCardPaymentException("No card after coins!");
+		}
 
 		outputChange = inputMoney;
 		inputMoney = null;
@@ -219,7 +228,17 @@ public class Automat extends Observable {
 	}
 
 	public void clearCurrentId() {
-		setCurrentItemId("");
+		if (currentItem == null) {
+			setCurrentItemId("");
+		} else {
+			currentItem = null;
+
+			outputChange = inputMoney;
+			inputMoney = null;
+
+			this.setChanged();
+			this.notifyObservers("handedOutChange");
+		}
 	}
 
 	public boolean hasEnoughChangeMoney() {
@@ -256,7 +275,6 @@ public class Automat extends Observable {
 	}
 
 	public void calcAndHandOutChange(int value) throws NotEnoughChangeException {
-		System.out.println(value);
 		int exchange = Math.abs(value);
 
 		List<Integer> l = new ArrayList<Integer>();

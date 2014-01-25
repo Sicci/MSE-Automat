@@ -1,6 +1,7 @@
 package controller.commands;
 
 import controller.Automat;
+import controller.exceptions.NoItemSelectedException;
 import controller.exceptions.NotEnoughChangeException;
 import controller.exceptions.ValueNotAcceptedException;
 
@@ -15,7 +16,7 @@ public class InsertMoneyCommand implements ICommand {
 	}
 
 	@Override
-	public void execute(Automat automat) throws ValueNotAcceptedException, NotEnoughChangeException {
+	public void execute(Automat automat) throws ValueNotAcceptedException, NotEnoughChangeException, NoItemSelectedException {
 		automat.insertMoney(value);
 	}
 
