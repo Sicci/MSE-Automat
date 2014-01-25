@@ -108,11 +108,12 @@ public class AutomatView extends JPanel implements Observer {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				try {
-					model.handleCommand(new SelectItemCommand(numPad.getCurrentNumCode()));
-				} catch (AutomatException ex) {
-					numPad.setErrorText("Fehler: " + ex.getMessage());
-				}
+				// try {
+				// model.handleCommand(new
+				// SelectItemCommand(numPad.getCurrentNumCode()));
+				// } catch (AutomatException ex) {
+				// numPad.setErrorText("Fehler: " + ex.getMessage());
+				// }
 			}
 		});
 
@@ -143,15 +144,15 @@ public class AutomatView extends JPanel implements Observer {
 				int len = l.size();
 
 				for (int i = 0; i < len; i++) {
-					model.addMoneyToStorage(l.remove(0));
+					// model.addMoneyToStorage(l.remove(0));
 				}
 
 				moneyPad.setEnabled(false);
 
 				try {
-					model.returnExchangeMoney(moneyPad.getCurrentMoney());
+					model.calcAndHandOutChange(moneyPad.getCurrentMoney());
 
-					Item i = model.returnItem();
+					Item i = null;//model.returnItem();
 
 					makeReadyForNewOrder();
 
@@ -177,7 +178,7 @@ public class AutomatView extends JPanel implements Observer {
 		moneyPad.getBtMoneyCard().addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Item i = model.returnItem();
+				Item i = null; //model.returnItem();
 				makeReadyForNewOrder();
 
 				taStatusMessages.setText("Ausgeworfenes Item:\n " + i.getName() + " (Zahlung mit Karte)\n" + taStatusMessages.getText());
@@ -223,7 +224,7 @@ public class AutomatView extends JPanel implements Observer {
 		} else if (t.equals("statsChanged")) {
 			handleStatsChanged();
 		} else if (t.equals("readyForRetrievingChange")) {
-			handleRetrieveChange(model.retrieveExchangeMoney());
+			handleRetrieveChange(model.retrieveChange());
 		}
 	}
 

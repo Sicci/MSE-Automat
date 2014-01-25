@@ -11,9 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import data.Money;
+import data.MoneyType;
 
 public class MoneyStorage {
 	List<Money> moneyList;
+	List<String> cards;
 
 	public MoneyStorage() {
 		super();
@@ -23,13 +25,18 @@ public class MoneyStorage {
 
 	private void loadDefaultItems() {
 		moneyList = new ArrayList<Money>();
-		moneyList.add(new Money(10, 110));
-		moneyList.add(new Money(20, 10));
-		moneyList.add(new Money(50, 10));
-		moneyList.add(new Money(100, 0));
-		moneyList.add(new Money(200, 0));
-		moneyList.add(new Money(500, 0));
-		moneyList.add(new Money(1000, 0));
+		moneyList.add(new Money(10, 110, MoneyType.COIN));
+		moneyList.add(new Money(20, 10, MoneyType.COIN));
+		moneyList.add(new Money(50, 10, MoneyType.COIN));
+		moneyList.add(new Money(100, 0, MoneyType.COIN));
+		moneyList.add(new Money(200, 0, MoneyType.COIN));
+
+		moneyList.add(new Money(500, 0, MoneyType.NOTE));
+		moneyList.add(new Money(1000, 0, MoneyType.NOTE));
+
+		cards = new ArrayList<String>();
+		cards.add("Visa");
+		cards.add("MasterCard");
 	}
 
 	public List<Money> getMoneyList() {
@@ -70,6 +77,21 @@ public class MoneyStorage {
 		return moneyList.get(i);
 	}
 
+	public boolean addToStorage(int value) {
+		boolean hasChanged = false;
+
+		if (value > 0) {
+			for (Money m : getMoneyList()) {
+				if (m.getValue() == value) {
+					m.setQuantity(m.getQuantity() + 1);
+					hasChanged = true;
+				}
+			}
+		}
+
+		return hasChanged;
+	}
+
 	public void readFromFile(String filename) {
 		BufferedReader reader = null;
 
@@ -105,5 +127,41 @@ public class MoneyStorage {
 			}
 		}
 
+	}
+
+	public boolean isAccpetedValue(int value) {
+		boolean isAccepted = false;
+
+		for (Money i : moneyList) {
+			if (i.getValue() == value) {
+				isAccepted = true;
+			}
+		}
+
+		return isAccepted;
+	}
+
+	private String[] getAcceptedByType(MoneyType t) {
+		List<String> l = new ArrayList<String>();
+
+		for (Money i : moneyList) {
+			if (i.getType() == t) {
+				l.add("" + i.getValue());
+			}
+		}
+
+		return l.toArray(new String[l.size()]);
+	}
+
+	public String[] getAcceptedCoins() {
+		return getAcceptedByType(MoneyType.COIN);
+	}
+
+	public String[] getAcceptedNotes() {
+		return getAcceptedByType(MoneyType.NOTE);
+	}
+
+	public String[] getAcceptedCards() {
+		return cards.toArray(new String[cards.size()]);
 	}
 }

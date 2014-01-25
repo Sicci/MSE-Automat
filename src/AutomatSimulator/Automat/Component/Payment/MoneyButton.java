@@ -12,16 +12,21 @@ import javax.swing.border.LineBorder;
 
 public class MoneyButton extends JButton {
 	private static final long serialVersionUID = 1L;
-	private String value;
+	private int value;
 	
-	public MoneyButton(String text) {
-		super(text);
+	public MoneyButton(String value) {
+		super(value);
 		initStyle();
-		setText(text);
-		value = text;
+		setText(value);
+		
+		try {
+			this.value = Integer.valueOf(value);
+		} catch (NumberFormatException e) {
+			this.value = -1;
+		}
 	}
 	
-	public String getValue() {
+	public int getValue() {
 		return value;
 	}
 	

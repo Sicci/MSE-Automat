@@ -66,17 +66,18 @@ public class PaymentComp extends StylePanel {
 		}
 		
 		
-		i4hmAcceptedMoney = hmAcceptedMoney.keySet().iterator();
-	    while(i4hmAcceptedMoney.hasNext()){
-	    	String key = i4hmAcceptedMoney.next();
-			for (final MoneyButton mb : hmMoneyButtonPanels.get(key).getMoneyButtons()) {
-				mb.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-						changeMoneyButtonPanel("default");
-					}
-				});
-			}
-	    }
+		// i4hmAcceptedMoney = hmAcceptedMoney.keySet().iterator();
+		// while(i4hmAcceptedMoney.hasNext()){
+		// String key = i4hmAcceptedMoney.next();
+		// for (final MoneyButton mb :
+		// hmMoneyButtonPanels.get(key).getMoneyButtons()) {
+		// mb.addActionListener(new ActionListener() {
+		// public void actionPerformed(ActionEvent e) {
+		// changeMoneyButtonPanel("default");
+		// }
+		// });
+		// }
+		// }
 	}
 	
 	

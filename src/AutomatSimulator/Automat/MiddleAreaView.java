@@ -37,7 +37,6 @@ public class MiddleAreaView extends StylePanel {
 	    gridStyle.setGrid(0.5,0.5,0,0);
 	    this.gridStyle.gridheight = 2;
 	    add(iacAutomatLogo, gridStyle);
-	    
 	}
 	
 	public NumpadComp getNumpadPanel() {

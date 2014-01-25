@@ -5,18 +5,17 @@ import java.util.List;
 import java.util.Observable;
 
 import localisation.Localiser;
-
 import controller.commands.ICommand;
 import controller.exceptions.AutomatException;
 import controller.exceptions.InvalidInputException;
 import controller.exceptions.ItemNotAvailableException;
 import controller.exceptions.NotEnoughChangeException;
-import data.AutomatType;
+import controller.exceptions.ValueNotAcceptedException;
 import data.Item;
 import data.Money;
 
 public class Automat extends Observable {
-	private AutomatType type;
+	private String name;
 	private String language;
 	private String currency;
 	private String fileItems;
@@ -25,11 +24,16 @@ public class Automat extends Observable {
 	private ItemStorage itemStorage;
 	private MoneyStorage moneyStorage;
 
+	private String currentItemId;
 	private Item currentItem;
-	private List<Integer> currentChange;
+
+	private List<Integer> outputChange;
+	private List<Integer> inputMoney;
+
+	private Item outputItem;
 
 	public Automat() throws NotEnoughChangeException {
-		type = AutomatType.beverages;
+		this.name = "SODA MASTER 3000";
 
 		setCurrency("€");
 		setFileItems("items.txt");
@@ -56,8 +60,8 @@ public class Automat extends Observable {
 		return itemStorage.getItemByNumCode(numCode);
 	}
 
-	public AutomatType getType() {
-		return type;
+	public String getName() {
+		return name;
 	}
 
 	public String getLanguage() {
@@ -108,6 +112,116 @@ public class Automat extends Observable {
 		this.fileMoney = fileMoney;
 	}
 
+	public String getCurrentItemId() {
+		return currentItemId;
+	}
+
+	private void setCurrentItemId(String currentItemId) {
+		this.currentItemId = currentItemId;
+
+		this.setChanged();
+		this.notifyObservers("itemIdChanged");
+	}
+
+	public int getSumInputMoney() {
+		int currentMoney = 0;
+
+		if (inputMoney != null) {
+			for (Integer i : inputMoney) {
+				currentMoney += i;
+			}
+		}
+
+		return currentMoney;
+	}
+
+	public void insertMoney(int value) throws ValueNotAcceptedException, NotEnoughChangeException {
+
+		if (inputMoney == null) {
+			inputMoney = new ArrayList<Integer>();
+		}
+
+		if (!moneyStorage.isAccpetedValue(value)) {
+			throw new ValueNotAcceptedException("This value is not being accepted by the automat!");
+		}
+
+		// ToDO: check if correct form
+
+		inputMoney.add(value);
+
+		this.setChanged();
+		this.notifyObservers("insertedMoney");
+
+		if (isItemPaid()) {
+			boolean isPayingWithCard = false;
+
+			outputItem(isPayingWithCard);
+		}
+	}
+
+	public void payWithCard(String card) throws NotEnoughChangeException {
+		// if paying with cards, return all inserted money first
+		boolean isPayingWithCard = true;
+
+		outputChange = inputMoney;
+		inputMoney = null;
+
+		outputItem(isPayingWithCard);
+
+		this.setChanged();
+		this.notifyObservers("paidWithCard");
+	}
+
+	private void outputItem(boolean isPayingWithCard) throws NotEnoughChangeException {
+
+		if (!isPayingWithCard) {
+			int len = inputMoney.size();
+
+			calcAndHandOutChange(getUpdatedCurrentItemCost());
+
+			for (int i = 0; i < len; i++) {
+				moneyStorage.addToStorage(inputMoney.remove(0));
+			}
+		}
+
+		setOutputItem(handOutItem());
+
+		this.setChanged();
+		this.notifyObservers("handedOutItem");
+
+		reset();
+	}
+
+	public int getUpdatedCurrentItemCost() {
+		int price = 0;
+
+		if (currentItem != null) {
+			price = currentItem.getPrice();
+		}
+
+		return price - getSumInputMoney();
+	}
+
+	private boolean isItemPaid() {
+		return currentItem != null && getSumInputMoney() >= currentItem.getPrice();
+	}
+
+	public void addToCurrentId(String s) {
+		// ToDO: check if correct form
+
+		String t = getCurrentItemId() + s;
+
+		if (getCurrentItemId().length() > 3) {
+			setCurrentItemId(t.substring(1));
+		} else {
+			setCurrentItemId(t);
+		}
+	}
+
+	public void clearCurrentId() {
+		setCurrentItemId("");
+	}
+
 	public boolean hasEnoughChangeMoney() {
 		Money minValue = null;
 		Money maxValue = null;
@@ -141,7 +255,8 @@ public class Automat extends Observable {
 		return hasEnoughChangeMoney;
 	}
 
-	public void returnExchangeMoney(int value) throws NotEnoughChangeException {
+	public void calcAndHandOutChange(int value) throws NotEnoughChangeException {
+		System.out.println(value);
 		int exchange = Math.abs(value);
 
 		List<Integer> l = new ArrayList<Integer>();
@@ -159,49 +274,37 @@ public class Automat extends Observable {
 			}
 		}
 
-		this.currentChange = l;
+		this.outputChange = l;
 
 		this.setChanged();
-		this.notifyObservers("readyForRetrievingChange");
+		this.notifyObservers("handedOutChange");
 		this.notifyObservers("statsChanged");
 	}
 
-	public List<Integer> retrieveExchangeMoney() {
-		List<Integer> l = this.currentChange;
-		this.currentChange = null;
+	public List<Integer> retrieveChange() {
+		List<Integer> l = this.outputChange;
+		this.outputChange = null;
 		return l;
 	}
 
-	public void addMoneyToStorage(int value) {
-		boolean hasChanged = false;
+	private Item handOutItem() {
+		Item i = getCurrentItem();
 
-		if (value > 0) {
-			for (Money m : moneyStorage.getMoneyList()) {
-				if (m.getValue() == value) {
-					m.setQuantity(m.getQuantity() + 1);
-					hasChanged = true;
-				}
-			}
-		}
+		if (i != null) {
+			i.reduceQuantity();
 
-		if (hasChanged) {
 			this.setChanged();
 			this.notifyObservers("statsChanged");
 		}
-	}
-
-	public Item returnItem() {
-		Item i = getCurrentItem();
-		i.reduceQuantity();
-
-		this.setChanged();
-		this.notifyObservers("statsChanged");
 
 		return i;
 	}
 
 	public void reset() throws NotEnoughChangeException {
 		currentItem = null;
+		setCurrentItemId("");
+		// setCurrentMoney(0);
+
 		// currentChange = new ArrayList<Integer>();
 
 		if (!hasEnoughChangeMoney()) {
@@ -217,16 +320,22 @@ public class Automat extends Observable {
 		cmd.execute(this);
 	}
 
-	public void selectItem(String numCode) throws ItemNotAvailableException, InvalidInputException {
+	public void selectItem() throws ItemNotAvailableException, InvalidInputException {
+		String numCode = getCurrentItemId();
+
+		currentItemId = "";
+
 		if (this.checkIfInputIsValid(numCode)) {
 			if (this.checkIfItemIsAvailable(numCode)) {
 				Item item = this.getItemByNumCode(numCode);
+
 				if (item != null) {
 					this.setCurrentItem(item);
 				} else {
 					// highly unlikely
-					throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable")); 
+					throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable"));
 				}
+
 				this.setChanged();
 				this.notifyObservers("itemSelected");
 			} else {
@@ -237,4 +346,23 @@ public class Automat extends Observable {
 		}
 	}
 
+	public Item getOutputItem() {
+		return outputItem;
+	}
+
+	private void setOutputItem(Item outputItem) {
+		this.outputItem = outputItem;
+	}
+
+	public String[] getAcceptedCoins() {
+		return moneyStorage.getAcceptedCoins();
+	}
+
+	public String[] getAcceptedNotes() {
+		return moneyStorage.getAcceptedNotes();
+	}
+
+	public String[] getAcceptedCards() {
+		return moneyStorage.getAcceptedCards();
+	}
 }
