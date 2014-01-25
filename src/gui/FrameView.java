@@ -122,12 +122,14 @@ public class FrameView extends JFrame implements Observer {
 								automat.handleCommand(new InsertMoneyCommand(mb.getValue()));
 							} catch (AutomatException exc) {
 								getPaymentDisplay().setText(exc.getMessage());
+								lvLogView.addToLog("\n" + exc.getMessage());
 							}
 						} else {
 							try {
 								automat.handleCommand(new InsertCardCommand(mb.getText()));
 							} catch (AutomatException exc) {
 								getPaymentDisplay().setText(exc.getMessage());
+								lvLogView.addToLog("\n" + exc.getMessage());
 							}
 						}
 					}
@@ -146,18 +148,21 @@ public class FrameView extends JFrame implements Observer {
 							automat.handleCommand(new SelectItemCommand());
 						} catch (AutomatException exc) {
 							getNumpadDisplay().setText(exc.getMessage());
+							lvLogView.addToLog("\n" + exc.getMessage());
 						}
 					} else if (nb.getValue() == avAutomatView.getBtnLabelCancel()) {
 						try {
 							automat.handleCommand(new ClearItemIdCommand());
 						} catch (AutomatException exc) {
 							getNumpadDisplay().setText(exc.getMessage());
+							lvLogView.addToLog("\n" + exc.getMessage());
 						}
 					} else {
 						try {
 							automat.handleCommand(new ChangeItemIdCommand(nb.getValue()));
 						} catch (AutomatException exc) {
 							getNumpadDisplay().setText(exc.getMessage());
+							lvLogView.addToLog("\n" + exc.getMessage());
 						}
 					}
 				}
@@ -201,13 +206,11 @@ public class FrameView extends JFrame implements Observer {
 	}
 
 	public static void main(String args[]) throws IOException {
-		try {
-			Automat automat = new Automat();
-			new FrameView(automat);
-		} catch (AutomatException e) {
-			JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-			System.exit(-1);
-		}
+		Automat automat = new Automat();
+		new FrameView(automat);
+		// JOptionPane.showMessageDialog(null, e.getMessage(), "Error",
+		// JOptionPane.ERROR_MESSAGE);
+		// System.exit(-1);
 	}
 
 	@Override

@@ -34,7 +34,7 @@ public class Automat extends Observable {
 
 	private Item outputItem;
 
-	public Automat() throws NotEnoughChangeException {
+	public Automat() {
 		this.name = "SODA MASTER 3000";
 
 		setCurrency("€");
@@ -142,6 +142,10 @@ public class Automat extends Observable {
 			throw new NoItemSelectedException("Select an item!");
 		}
 
+		if (!hasEnoughChangeMoney()) {
+			throw new NotEnoughChangeException(Localiser.getString("Automat.Error_NotEnoughChange"));
+		}
+
 		if (inputMoney == null) {
 			inputMoney = new ArrayList<Integer>();
 		}
@@ -171,7 +175,7 @@ public class Automat extends Observable {
 		if (inputMoney != null && inputMoney.size() > 0) {
 			throw new NoPartialCardPaymentException("No card after coins!");
 		}
-		
+
 		if (currentItem == null) {
 			throw new NoItemSelectedException("Select an item!");
 		}
@@ -322,16 +326,12 @@ public class Automat extends Observable {
 		return i;
 	}
 
-	public void reset() throws NotEnoughChangeException {
+	public void reset() {
 		currentItem = null;
 		setCurrentItemId("");
+
 		// setCurrentMoney(0);
-
 		// currentChange = new ArrayList<Integer>();
-
-		if (!hasEnoughChangeMoney()) {
-			throw new NotEnoughChangeException(Localiser.getString("Automat.Error_NotEnoughChange"));
-		}
 
 		itemStorage.writeToFile(fileItems);
 		moneyStorage.writeToFile(fileMoney);
