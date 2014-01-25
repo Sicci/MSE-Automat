@@ -16,6 +16,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+import localisation.Localiser;
+
 import controller.Automat;
 import controller.commands.SelectItemCommand;
 import controller.exceptions.AutomatException;
@@ -236,15 +238,15 @@ public class AutomatView extends JPanel implements Observer {
 	public void handleStatsChanged() {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("Automat-Information:\n\n");
+		sb.append(Localiser.getString("View.Automat_Information"));
 
-		sb.append("Items:\n");
+		sb.append(Localiser.getString("View.Automat_Items"));
 		for (Item i : model.getItems().getItemList()) {
 			sb.append("" + i.getNumCode() + " - " + i.getName() + " - " + (i.getPrice() / 100.) + model.getCurrency() + " - " + i.getQuantity());
 			sb.append('\n');
 		}
 
-		sb.append("\nMoney:\n");
+		sb.append(Localiser.getString("View.Automat_Money"));
 		for (Money m : model.getMoneyStorage().getMoneyList()) {
 			sb.append("" + m.getValue() + " - " + m.getQuantity() + "x");
 			sb.append('\n');
@@ -256,7 +258,7 @@ public class AutomatView extends JPanel implements Observer {
 	public void handleRetrieveChange(List<Integer> l) {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("\nRückgeld:\n ");
+		sb.append(Localiser.getString("View.Automat_Change"));
 
 		for (int i = 0; i < l.size(); i++) {
 			sb.append(l.get(i) / 100. + model.getCurrency());

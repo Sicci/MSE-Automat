@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
+import localisation.Localiser;
+
 import controller.commands.ICommand;
 import controller.exceptions.AutomatException;
 import controller.exceptions.InvalidInputException;
@@ -203,7 +205,7 @@ public class Automat extends Observable {
 		// currentChange = new ArrayList<Integer>();
 
 		if (!hasEnoughChangeMoney()) {
-			throw new NotEnoughChangeException("Not enough change!");
+			throw new NotEnoughChangeException(Localiser.getString("Automat.Error_NotEnoughChange"));
 		}
 
 		itemStorage.writeToFile(fileItems);
@@ -223,15 +225,15 @@ public class Automat extends Observable {
 					this.setCurrentItem(item);
 				} else {
 					// highly unlikely
-					throw new ItemNotAvailableException("Item's really not available");
+					throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable")); 
 				}
 				this.setChanged();
 				this.notifyObservers("itemSelected");
 			} else {
-				throw new ItemNotAvailableException("Item not available");
+				throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable"));
 			}
 		} else {
-			throw new InvalidInputException("Invalid Input");
+			throw new InvalidInputException(Localiser.getString("Automat.Error_InvalidInput"));
 		}
 	}
 
