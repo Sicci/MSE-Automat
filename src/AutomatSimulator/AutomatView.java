@@ -8,7 +8,7 @@ import javax.swing.border.EmptyBorder;
 import AutomatSimulator.Automat.BottomAreaView;
 import AutomatSimulator.Automat.MiddleAreaView;
 import AutomatSimulator.Automat.TopAreaView;
-import AutomatSimulator.Lib.ImageAreaPanel;
+import AutomatSimulator.Automat.Component.ImageAreaComp;
 import AutomatSimulator.Lib.StylePanel;
 
 public class AutomatView extends StylePanel {
@@ -22,10 +22,10 @@ public class AutomatView extends StylePanel {
 
 	public AutomatView() {
 		super(AutomatView.COLOR, Color.BLACK, new EmptyBorder(5, 15, 5, 15));
-		ImageAreaPanel iapAutomatLogo;
+		ImageAreaComp iacAutomatLogo;
 		
 		sAutomatName = "SODA MASTER 3000";
-		iapAutomatLogo = new ImageAreaPanel("img/logo_soda.png", AutomatView.COLOR);
+		iacAutomatLogo = new ImageAreaComp("img/logo_soda.png", AutomatView.COLOR);
 		
 		String [] aAccepedButtons = {
 				"7",     "8",    "9",     
@@ -52,7 +52,7 @@ public class AutomatView extends StylePanel {
 	    add(tavTopAreaView, gridStyle);
 	    
 		gridStyle.setGrid(0.5,0.5,0,2);
-		mavMiddleAreaView = new MiddleAreaView(iapAutomatLogo, aAccepedButtons, aAcceptedPaymentTypes, hmAcceptedMoney);
+		mavMiddleAreaView = new MiddleAreaView(iacAutomatLogo, aAccepedButtons, aAcceptedPaymentTypes, hmAcceptedMoney);
 	    add(mavMiddleAreaView, gridStyle);
 
 		gridStyle.setGrid(1.0,0.3,0,3);

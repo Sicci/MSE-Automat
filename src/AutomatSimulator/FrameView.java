@@ -1,9 +1,9 @@
 package AutomatSimulator;
 import javax.swing.*;
 
+import AutomatSimulator.Automat.Component.ImageAreaComp;
 import AutomatSimulator.Automat.Component.Numpad.*;
 import AutomatSimulator.Automat.Component.Payment.*;
-import AutomatSimulator.Lib.ImageAreaPanel;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -118,8 +118,8 @@ public class FrameView extends JFrame {
 		
 		
 		// neat stuff
-		final ImageAreaPanel iap = avAutomatView.getBottomArea().getAutomatOutput();
-		iap.addMouseListener(new MouseAdapter() {
+		final ImageAreaComp iac = avAutomatView.getBottomArea().getAutomatOutput();
+		iac.addMouseListener(new MouseAdapter() {
 	        public void mouseClicked(MouseEvent me) {
 	        	taLog.setText(taLog.getText() + "\n" + "Tried to take stuff out of the machine");
 	        }
