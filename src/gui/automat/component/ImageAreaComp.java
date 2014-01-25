@@ -1,4 +1,6 @@
-package AutomatSimulator.Automat.Component;
+package gui.automat.component;
+
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -7,7 +9,6 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 
-import AutomatSimulator.Lib.StylePanel;
 
 
 

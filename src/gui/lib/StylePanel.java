@@ -1,4 +1,6 @@
-package AutomatSimulator.Lib;
+package gui.lib;
+import gui.AutomatView;
+
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -10,7 +12,6 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
-import AutomatSimulator.AutomatView;
 
 
 

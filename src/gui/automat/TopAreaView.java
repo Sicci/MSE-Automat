@@ -1,10 +1,11 @@
-package AutomatSimulator.Automat;
+package gui.automat;
+
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
-import AutomatSimulator.Lib.StylePanel;
 
 public class TopAreaView extends StylePanel {
 	private static final long serialVersionUID = 1L;

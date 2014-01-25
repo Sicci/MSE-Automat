@@ -1,10 +1,11 @@
-package AutomatSimulator.Automat.Component.Numpad;
+package gui.automat.component.numpad;
+
+import gui.AutomatView;
+import gui.lib.StylePanel;
 
 import java.util.ArrayList;
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Lib.StylePanel;
 
 public class NumpadButtonPanel extends StylePanel {
 	private static final long serialVersionUID = 1L;

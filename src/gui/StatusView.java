@@ -1,4 +1,6 @@
-package AutomatSimulator;
+package gui;
+
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,7 +10,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.Lib.StylePanel;
 
 
 

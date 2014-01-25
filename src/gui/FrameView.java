@@ -1,4 +1,12 @@
-package AutomatSimulator;
+package gui;
+
+import gui.automat.component.ImageAreaComp;
+import gui.automat.component.numpad.NumpadButton;
+import gui.automat.component.numpad.NumpadDisplay;
+import gui.automat.component.payment.MoneyButton;
+import gui.automat.component.payment.MoneyButtonPanel;
+import gui.automat.component.payment.PaymentButton;
+import gui.automat.component.payment.PaymentDisplay;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -20,13 +28,6 @@ import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import AutomatSimulator.Automat.Component.ImageAreaComp;
-import AutomatSimulator.Automat.Component.Numpad.NumpadButton;
-import AutomatSimulator.Automat.Component.Numpad.NumpadDisplay;
-import AutomatSimulator.Automat.Component.Payment.MoneyButton;
-import AutomatSimulator.Automat.Component.Payment.MoneyButtonPanel;
-import AutomatSimulator.Automat.Component.Payment.PaymentButton;
-import AutomatSimulator.Automat.Component.Payment.PaymentDisplay;
 import controller.Automat;
 import controller.commands.ChangeItemIdCommand;
 import controller.commands.ClearItemIdCommand;
@@ -218,8 +219,8 @@ public class FrameView extends JFrame implements Observer {
 		String t = (String) arg;
 
 		if (t.equals("itemSelected")) {
-			lvLogView.addToLog("\nItem selected: " + automat.getCurrentItem().getName() + "\n");
-			getPaymentDisplay().setText("to pay: " + automat.getUpdatedCurrentItemCost());
+			lvLogView.addToLog("\nItem selected: " + automat.getCurrentItem().getName());
+			getPaymentDisplay().setText(String.format("%.2f", automat.getUpdatedCurrentItemCost() / 100.) + automat.getCurrency() + " to pay");
 		} else if (t.equals("statsChanged")) {
 			lvLogView.addToLog("\nStats updated\n");
 			updateStats();
@@ -232,7 +233,7 @@ public class FrameView extends JFrame implements Observer {
 			getNumpadDisplay().setText("Item: " + automat.getCurrentItemId());
 		} else if (t.equals("insertedMoney")) {
 			lvLogView.addToLog("\nCurrently in automat: " + automat.getSumInputMoney());
-			getPaymentDisplay().setText("to pay: " + automat.getUpdatedCurrentItemCost());
+			getPaymentDisplay().setText(String.format("%.2f", automat.getUpdatedCurrentItemCost() / 100.) + automat.getCurrency() + " to pay");
 		} else if (t.equals("handedOutItem")) {
 			if (automat.getOutputItem() != null) {
 				lvLogView.addToLog("\nHanded out item: " + automat.getOutputItem().getName());

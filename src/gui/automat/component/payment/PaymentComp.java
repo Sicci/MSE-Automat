@@ -1,9 +1,10 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.payment;
+
+import gui.AutomatView;
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
@@ -11,10 +12,8 @@ import java.util.Iterator;
 
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Lib.StylePanel;
 
-public class PaymentView extends StylePanel {
+public class PaymentComp extends StylePanel {
 	private static final long serialVersionUID = 1L;
 	private HashMap <String, MoneyButtonPanel> hmMoneyButtonPanels;
 	private PaymentDisplay pdPaymentDisplay;
@@ -23,7 +22,7 @@ public class PaymentView extends StylePanel {
 	private MoneyButtonPanel mbpCurrent;
 	private MoneyButtonPanel mbpDefault;
 
-	public PaymentView(String[] aAcceptedPaymentTypes, HashMap<String, String[]> hmAcceptedMoney) {
+	public PaymentComp(String[] aAcceptedPaymentTypes, HashMap<String, String[]> hmAcceptedMoney) {
 		super(AutomatView.COLOR, AutomatView.COLOR, new EmptyBorder(2, 1, 2, 1));
 		
 		Iterator<String> i4hmAcceptedMoney;
@@ -66,17 +65,18 @@ public class PaymentView extends StylePanel {
 		}
 		
 		
-		i4hmAcceptedMoney = hmAcceptedMoney.keySet().iterator();
-	    while(i4hmAcceptedMoney.hasNext()){
-	    	String key = i4hmAcceptedMoney.next();
-			for (final MoneyButton mb : hmMoneyButtonPanels.get(key).getMoneyButtons()) {
-				mb.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-						changeMoneyButtonPanel("default");
-					}
-				});
-			}
-	    }
+		// i4hmAcceptedMoney = hmAcceptedMoney.keySet().iterator();
+		// while(i4hmAcceptedMoney.hasNext()){
+		// String key = i4hmAcceptedMoney.next();
+		// for (final MoneyButton mb :
+		// hmMoneyButtonPanels.get(key).getMoneyButtons()) {
+		// mb.addActionListener(new ActionListener() {
+		// public void actionPerformed(ActionEvent e) {
+		// changeMoneyButtonPanel("default");
+		// }
+		// });
+		// }
+		// }
 	}
 	
 	

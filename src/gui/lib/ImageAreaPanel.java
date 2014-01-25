@@ -1,4 +1,4 @@
-package AutomatSimulator.Lib;
+package gui.lib;
 
 import java.awt.Color;
 import java.awt.Graphics;

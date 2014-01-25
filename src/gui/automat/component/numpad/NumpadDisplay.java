@@ -1,4 +1,4 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.numpad;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -9,19 +9,12 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
-public class PaymentDisplay extends JTextField{
+public class NumpadDisplay extends JTextField {
 	private static final long serialVersionUID = 1L;
 
-	public PaymentDisplay() {
-		super();
-		initStyle();
-	}
-
-	public void initStyle() {
+	public NumpadDisplay() {
 		setEditable(false);
 		setBackground(new Color(180,190,205));
-		setHorizontalAlignment(JTextField.RIGHT);
-		
 		Font font = new Font("Arial",Font.BOLD, 11);
 		setFont(font);
 		

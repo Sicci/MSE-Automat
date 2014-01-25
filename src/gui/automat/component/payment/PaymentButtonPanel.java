@@ -1,4 +1,7 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.payment;
+
+import gui.automat.component.payment.PaymentButton;
+import gui.lib.StylePanel;
 
 import java.awt.Cursor;
 import java.awt.image.BufferedImage;
@@ -7,8 +10,6 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
-import AutomatSimulator.Automat.Component.Payment.PaymentButton;
-import AutomatSimulator.Lib.StylePanel;
 
 public class PaymentButtonPanel extends StylePanel {
 	private static final long serialVersionUID = 1L;

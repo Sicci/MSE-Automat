@@ -1,15 +1,16 @@
-package AutomatSimulator.Automat;
+package gui.automat;
+
+import gui.AutomatView;
+import gui.automat.component.ImageAreaComp;
+import gui.automat.component.numpad.NumpadComp;
+import gui.automat.component.payment.PaymentComp;
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.util.HashMap;
 
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Automat.Component.ImageAreaComp;
-import AutomatSimulator.Automat.Component.Numpad.NumpadComp;
-import AutomatSimulator.Automat.Component.Payment.PaymentComp;
-import AutomatSimulator.Lib.StylePanel;
 
 public class MiddleAreaView extends StylePanel {
 	private static final long serialVersionUID = 1L;

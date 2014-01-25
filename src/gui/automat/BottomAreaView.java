@@ -1,13 +1,14 @@
-package AutomatSimulator.Automat;
+package gui.automat;
+
+import gui.AutomatView;
+import gui.automat.component.ImageAreaComp;
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Cursor;
 
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Automat.Component.ImageAreaComp;
-import AutomatSimulator.Lib.StylePanel;
 
 public class BottomAreaView extends StylePanel {
 	private static final long serialVersionUID = 1L;

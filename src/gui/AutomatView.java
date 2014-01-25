@@ -1,300 +1,94 @@
 package gui;
 
-import gui.pads.MoneyPad;
-import gui.pads.NumPad;
+import gui.automat.BottomAreaView;
+import gui.automat.MiddleAreaView;
+import gui.automat.TopAreaView;
+import gui.automat.component.ImageAreaComp;
+import gui.lib.StylePanel;
 
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
-import java.util.Observable;
-import java.util.Observer;
+import java.awt.Color;
+import java.util.HashMap;
 
-import javax.swing.Box;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-
-import localisation.Localiser;
+import javax.swing.border.EmptyBorder;
 
 import controller.Automat;
-import controller.commands.SelectItemCommand;
-import controller.exceptions.AutomatException;
-import controller.exceptions.NotEnoughChangeException;
-import data.Item;
-import data.Money;
 
-public class AutomatView extends JPanel implements Observer {
-
+public class AutomatView extends StylePanel {
+	public static final Color COLOR = new Color(1, 90, 158);
 	private static final long serialVersionUID = 1L;
 
-	private Automat model;
+	private String sAutomatName;
+	private TopAreaView tavTopAreaView;
+	private MiddleAreaView mavMiddleAreaView;
+	private BottomAreaView bavBottomAreaView;
+	private Automat automat;
+	
+	private String btnLabelEnter = "E";
+	private String btnLabelCancel = "C";
 
-	/*
-	 * GUI elements
-	 */
-	private JTextArea taItemList;
-	private JTextArea taStatusMessages;
-	private JTextArea taAutomatInformation;
+	public AutomatView(Automat automat) {
+		super(AutomatView.COLOR, Color.BLACK, new EmptyBorder(5, 15, 5, 15));
+		ImageAreaComp iacAutomatLogo;
 
-	private NumPad numPad;
-	private MoneyPad moneyPad;
+		this.automat = automat;
 
-	public AutomatView(final Automat model) {
-		this.model = model;
-		model.addObserver(this);
+		sAutomatName = automat.getName();
+		iacAutomatLogo = new ImageAreaComp("img/logo_soda.png", AutomatView.COLOR);
 
-		Box flowPanel = Box.createHorizontalBox();
+		String[] aAccepedButtons = { "7", "8", "9", "4", "5", "6", "1", "2", "3", btnLabelCancel, "0", btnLabelEnter };
 
-		flowPanel.add(buildBoxItemList());
-		flowPanel.add(Box.createRigidArea(new Dimension(5, 0)));
+		String[] aAcceptedPaymentTypes = { "coin", "banknote", "creditcard" };
 
-		flowPanel.add(buildBoxNumpad());
-		flowPanel.add(Box.createRigidArea(new Dimension(5, 0)));
+		HashMap<String, String[]> hmAcceptedMoney = new HashMap<String, String[]>();
 
-		flowPanel.add(buildBoxMoney());
+		String[] aAcceptedCoins = automat.getAcceptedCoins(); // { "5", "10", "20", "50", "100", "200" };
+		hmAcceptedMoney.put("coin", aAcceptedCoins);
 
-		add(flowPanel);
+		String[] aAcceptedBankNotes = automat.getAcceptedNotes(); // { "5", "10", "20" };
+		hmAcceptedMoney.put("banknote", aAcceptedBankNotes);
 
-		handleStatsChanged();
+		String[] aAcceptedCreditCards = automat.getAcceptedCards(); // { "Visa", "MasterCard" };
+		hmAcceptedMoney.put("creditcard", aAcceptedCreditCards);
+
+		gridStyle.setGrid(1.0, 0.1, 0, 0);
+		tavTopAreaView = new TopAreaView(sAutomatName);
+		add(tavTopAreaView, gridStyle);
+
+		gridStyle.setGrid(0.5, 0.5, 0, 2);
+		mavMiddleAreaView = new MiddleAreaView(iacAutomatLogo, aAccepedButtons, aAcceptedPaymentTypes, hmAcceptedMoney);
+		add(mavMiddleAreaView, gridStyle);
+
+		gridStyle.setGrid(1.0, 0.3, 0, 3);
+		bavBottomAreaView = new BottomAreaView();
+		add(bavBottomAreaView, gridStyle);
 	}
 
-	private Box buildBoxItemList() {
-		JScrollPane scrollpane = null;
-		StringBuilder sb = new StringBuilder();
-		Box box = Box.createVerticalBox();
-
-		box.setAlignmentY(0);
-
-		taItemList = new JTextArea(50, 10);
-		taItemList.setPreferredSize(new Dimension(150, 220));
-		taItemList.setWrapStyleWord(true);
-		taItemList.setLineWrap(true);
-		taItemList.setEditable(false);
-
-		for (Item i : model.getItems().getItemList()) {
-			sb.append("" + i.getNumCode() + ": " + (i.getPrice() / 100.) + model.getCurrency() + " - " + i.getName() + "\n");
-		}
-		taItemList.setText(sb.toString());
-
-		// for (int i = 0; i < 40; i++)
-		// taItemList.setText(taItemList.getText() + "item " + i + "\n");
-
-		scrollpane = new JScrollPane(taItemList, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		// scrollpane.setBorder(BorderFactory.createTitledBorder("ItemList"));
-		scrollpane.setPreferredSize(new Dimension(250, 250));
-
-		box.add(scrollpane);
-
-		return box;
+	public String getAutomatName() {
+		return sAutomatName;
 	}
 
-	private Box buildBoxNumpad() {
-		JScrollPane scrollpane = null;
-		Box box = Box.createVerticalBox();
-
-		numPad = new NumPad();
-
-		box.setAlignmentY(0);
-
-		taStatusMessages = new JTextArea(30, 5);
-		taStatusMessages.setPreferredSize(new Dimension(250, 300));
-		taStatusMessages.setWrapStyleWord(false);
-		taStatusMessages.setLineWrap(false);
-		taStatusMessages.setEditable(false);
-
-		numPad.getBtEnter().addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-
-				// try {
-				// model.handleCommand(new
-				// SelectItemCommand(numPad.getCurrentNumCode()));
-				// } catch (AutomatException ex) {
-				// numPad.setErrorText("Fehler: " + ex.getMessage());
-				// }
-			}
-		});
-
-		scrollpane = new JScrollPane(taStatusMessages, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollpane.setPreferredSize(new Dimension(250, 500));
-
-		box.add(numPad.getTfDisplayStatus());
-		box.add(Box.createRigidArea(new Dimension(0, 5)));
-
-		box.add(numPad.getPanel());
-		box.add(Box.createRigidArea(new Dimension(0, 5)));
-
-		box.add(scrollpane);
-		// box.add(taAutomatInformation);
-
-		return box;
+	public TopAreaView getTopArea() {
+		return this.tavTopAreaView;
 	}
 
-	private Box buildBoxMoney() {
-		JScrollPane scrollpane = null;
-		Box box = Box.createVerticalBox();
-
-		ActionListener onFullyPaid = new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				List<Integer> l = moneyPad.retrieveInsertedMoney();
-
-				int len = l.size();
-
-				for (int i = 0; i < len; i++) {
-					// model.addMoneyToStorage(l.remove(0));
-				}
-
-				moneyPad.setEnabled(false);
-
-				try {
-					model.calcAndHandOutChange(moneyPad.getCurrentMoney());
-
-					Item i = null;//model.returnItem();
-
-					makeReadyForNewOrder();
-
-					taStatusMessages.setText("Ausgeworfenes Item:\n " + i.getName() + "\n" + taStatusMessages.getText());
-
-					taStatusMessages.setText("------------------------\n" + taStatusMessages.getText());
-				} catch (NotEnoughChangeException ex) {
-					numPad.setErrorText(ex.getMessage());
-				}
-			}
-		};
-
-		moneyPad = new MoneyPad(onFullyPaid, model.getMoneyStorage().getMoneyList(), model.getCurrency());
-
-		moneyPad.getBtReturnChange().addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				handleRetrieveChange(moneyPad.retrieveInsertedMoney());
-				makeReadyForNewOrder();
-			}
-		});
-
-		moneyPad.getBtMoneyCard().addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Item i = null; //model.returnItem();
-				makeReadyForNewOrder();
-
-				taStatusMessages.setText("Ausgeworfenes Item:\n " + i.getName() + " (Zahlung mit Karte)\n" + taStatusMessages.getText());
-				taStatusMessages.setText("------------------------\n" + taStatusMessages.getText());
-			}
-		});
-
-		taAutomatInformation = new JTextArea(30, 5);
-		taAutomatInformation.setPreferredSize(new Dimension(250, 100));
-		taAutomatInformation.setWrapStyleWord(false);
-		taAutomatInformation.setLineWrap(false);
-		taAutomatInformation.setEditable(false);
-
-		scrollpane = new JScrollPane(taAutomatInformation, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		scrollpane.setPreferredSize(new Dimension(250, 300));
-
-		box.setAlignmentY(0);
-
-		box.add(moneyPad.getTfDisplayMoney());
-		box.add(Box.createRigidArea(new Dimension(0, 5)));
-		box.add(moneyPad.getPanel());
-		box.add(Box.createRigidArea(new Dimension(0, 5)));
-		box.add(taAutomatInformation);
-
-		// box.add(Box.createRigidArea(new Dimension(0, 350)));
-
-		moneyPad.setEnabled(false);
-
-		return box;
+	public MiddleAreaView getMiddleArea() {
+		return this.mavMiddleAreaView;
 	}
 
-	@Override
-	public void update(Observable o, Object arg) {
-		if (!(arg instanceof String)) {
-			System.err.println("no string in AutomatView.update(...)");
-			return;
-		}
-
-		String t = (String) arg;
-
-		if (t.equals("itemSelected")) {
-			handleItemSelected();
-		} else if (t.equals("statsChanged")) {
-			handleStatsChanged();
-		} else if (t.equals("readyForRetrievingChange")) {
-			handleRetrieveChange(model.retrieveChange());
-		}
+	public BottomAreaView getBottomArea() {
+		return this.bavBottomAreaView;
 	}
 
-	public void handleItemSelected() {
-		moneyPad.setText("" + model.getCurrentItem().getPrice());
-		numPad.setText("Bitte Geld einwerfen für " + model.getCurrentItem().getName());
-		numPad.setEnabled(false);
-		moneyPad.setEnabled(true);
-		moneyPad.setCurrentMoney(model.getCurrentItem().getPrice());
+	public Automat getAutomat() {
+		return automat;
+	}
+	
+	public String getBtnLabelEnter() {
+		return btnLabelEnter;
 	}
 
-	public void handleStatsChanged() {
-		StringBuilder sb = new StringBuilder();
-
-		sb.append(Localiser.getString("View.Automat_Information"));
-
-		sb.append(Localiser.getString("View.Automat_Items"));
-		for (Item i : model.getItems().getItemList()) {
-			sb.append("" + i.getNumCode() + " - " + i.getName() + " - " + (i.getPrice() / 100.) + model.getCurrency() + " - " + i.getQuantity());
-			sb.append('\n');
-		}
-
-		sb.append(Localiser.getString("View.Automat_Money"));
-		for (Money m : model.getMoneyStorage().getMoneyList()) {
-			sb.append("" + m.getValue() + " - " + m.getQuantity() + "x");
-			sb.append('\n');
-		}
-
-		taAutomatInformation.setText(sb.toString());
+	public String getBtnLabelCancel() {
+		return btnLabelCancel;
 	}
 
-	public void handleRetrieveChange(List<Integer> l) {
-		StringBuilder sb = new StringBuilder();
-
-		sb.append(Localiser.getString("View.Automat_Change"));
-
-		for (int i = 0; i < l.size(); i++) {
-			sb.append(l.get(i) / 100. + model.getCurrency());
-
-			if (i != l.size() - 1) {
-				sb.append(", ");
-			}
-
-			if ((i + 1) % 3 == 0 && i != 0) {
-				sb.append("\n ");
-			}
-		}
-
-		if (l.size() == 0) {
-			sb.append(" keins");
-		}
-
-		sb.append('\n');
-		sb.append('\n');
-
-		taStatusMessages.setText(sb.toString() + taStatusMessages.getText());
-	}
-
-	public final void makeReadyForNewOrder() {
-		moneyPad.reset();
-		numPad.reset();
-		try {
-			model.reset();
-		} catch (NotEnoughChangeException e) {
-			JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-			System.exit(-1);
-		}
-
-		moneyPad.setEnabled(false);
-		numPad.setEnabled(true);
-
-	}
 }

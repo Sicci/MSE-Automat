@@ -1,12 +1,13 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.payment;
+
+import gui.AutomatView;
+import gui.lib.StylePanel;
 
 import java.awt.Dimension;
 import java.util.ArrayList;
 
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Lib.StylePanel;
 
 public class MoneyButtonPanel extends StylePanel { // könnten auch mit Bildchen sein
 	private static final long serialVersionUID = 1L;

@@ -1,19 +1,20 @@
-package AutomatSimulator.Automat.Component.Numpad;
+package gui.automat.component.numpad;
+
+import gui.AutomatView;
+import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.border.EmptyBorder;
 
-import AutomatSimulator.AutomatView;
-import AutomatSimulator.Lib.StylePanel;
 
-public class NumpadComp extends StylePanel {
+public class NumpadView extends StylePanel {
 	private static final long serialVersionUID = 1L;
 	private NumpadDisplay ndNumpadDisplay;
 	private NumpadButtonPanel nNumpad;
 
-	public NumpadComp(String[] aAcceptedButtons) {
+	public NumpadView(String[] aAcceptedButtons) {
 		super(AutomatView.COLOR, AutomatView.COLOR, new EmptyBorder(2, 0, 2, 0));
 
 		gridStyle.setGrid(1.0,0.1,0,0);

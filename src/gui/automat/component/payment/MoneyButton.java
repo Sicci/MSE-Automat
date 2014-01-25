@@ -1,4 +1,4 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.payment;
 
 import java.awt.Color;
 import java.awt.Cursor;

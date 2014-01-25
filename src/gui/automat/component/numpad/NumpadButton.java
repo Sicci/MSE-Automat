@@ -1,4 +1,4 @@
-package AutomatSimulator.Automat.Component.Numpad;
+package gui.automat.component.numpad;
 
 import java.awt.Color;
 import java.awt.Cursor;

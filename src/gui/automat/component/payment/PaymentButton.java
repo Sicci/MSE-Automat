@@ -1,11 +1,12 @@
-package AutomatSimulator.Automat.Component.Payment;
+package gui.automat.component.payment;
+
+import gui.AutomatView;
 
 import java.awt.Graphics;
 import java.awt.Image;
 
 import javax.swing.JLabel;
 
-import AutomatSimulator.AutomatView;
 
 public class PaymentButton extends JLabel {
 	private static final long serialVersionUID = 1L;
