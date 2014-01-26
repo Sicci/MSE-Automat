@@ -23,6 +23,7 @@ public class ItemStorage {
 
 	private void loadDefaultItems() {
 		itemList = new ArrayList<Item>();
+		
 		itemList.add(new Item("1", "Cola", 120, 10));
 		itemList.add(new Item("2", "Fanta", 130, 15));
 		itemList.add(new Item("3", "Sprite", 140, 5));
@@ -112,12 +113,12 @@ public class ItemStorage {
 					i++;
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				loadDefaultItems();
+			} catch (IndexOutOfBoundsException e) {
+				loadDefaultItems();
 			}
-		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+		} catch (FileNotFoundException e) {
+			loadDefaultItems();
 		} finally {
 			try {
 				reader.close();

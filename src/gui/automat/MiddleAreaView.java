@@ -8,32 +8,33 @@ import gui.lib.StylePanel;
 
 import java.awt.Color;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.swing.border.EmptyBorder;
 
 
 public class MiddleAreaView extends StylePanel {
 	private static final long serialVersionUID = 1L;
-	private NumpadComp nvNumpadView; 
-	private PaymentComp pvPaymentView; 
+	private NumpadComp ncNumpadComp; 
+	private PaymentComp pcPaymentComp; 
 	
 	public MiddleAreaView(  ImageAreaComp iacAutomatLogo, 
 							String[] aAccepedButtons, 
-							String[] aAcceptedPaymentTypes, 
+							List<String> aAcceptedPaymentTypes, 
 							HashMap<String, String[]> hmAcceptedMoney) {
 		
 		super(AutomatView.COLOR, Color.BLACK, new EmptyBorder(5, 5, 5, 5));
 
 		
 		gridStyle.setGrid(0.5,0.5,1,0);
-		this.nvNumpadView = new NumpadComp(aAccepedButtons);
-		this.nvNumpadView.setBackground(AutomatView.COLOR);
-	    add(this.nvNumpadView, gridStyle);
+		this.ncNumpadComp = new NumpadComp(aAccepedButtons);
+		this.ncNumpadComp.setBackground(AutomatView.COLOR);
+	    add(this.ncNumpadComp, gridStyle);
 
 		gridStyle.setGrid(0.5,0.5,1,1);
-		this.pvPaymentView = new PaymentComp(aAcceptedPaymentTypes, hmAcceptedMoney);
-		this.pvPaymentView.setBackground(AutomatView.COLOR);
-	    add(this.pvPaymentView, gridStyle);
+		this.pcPaymentComp = new PaymentComp(aAcceptedPaymentTypes, hmAcceptedMoney);
+		this.pcPaymentComp.setBackground(AutomatView.COLOR);
+	    add(this.pcPaymentComp, gridStyle);
 
 	    gridStyle.setGrid(0.5,0.5,0,0);
 	    this.gridStyle.gridheight = 2;
@@ -41,10 +42,10 @@ public class MiddleAreaView extends StylePanel {
 	}
 	
 	public NumpadComp getNumpadPanel() {
-		return this.nvNumpadView;
+		return this.ncNumpadComp;
 	}
 	
 	public PaymentComp getPaymentPanel() {
-		return this.pvPaymentView;
+		return this.pcPaymentComp;
 	}
 }

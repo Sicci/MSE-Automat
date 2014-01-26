@@ -9,6 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 import javax.swing.border.EmptyBorder;
 
@@ -22,7 +23,7 @@ public class PaymentComp extends StylePanel {
 	private MoneyButtonPanel mbpCurrent;
 	private MoneyButtonPanel mbpDefault;
 
-	public PaymentComp(String[] aAcceptedPaymentTypes, HashMap<String, String[]> hmAcceptedMoney) {
+	public PaymentComp(List<String> aAcceptedPaymentTypes, HashMap<String, String[]> hmAcceptedMoney) {
 		super(AutomatView.COLOR, AutomatView.COLOR, new EmptyBorder(2, 1, 2, 1));
 		
 		Iterator<String> i4hmAcceptedMoney;

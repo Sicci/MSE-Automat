@@ -7,7 +7,9 @@ import gui.automat.component.ImageAreaComp;
 import gui.lib.StylePanel;
 
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.swing.border.EmptyBorder;
 
@@ -37,18 +39,28 @@ public class AutomatView extends StylePanel {
 
 		String[] aAccepedButtons = { "7", "8", "9", "4", "5", "6", "1", "2", "3", btnLabelCancel, "0", btnLabelEnter };
 
-		String[] aAcceptedPaymentTypes = { "coin", "banknote", "creditcard" };
+		List<String> aAcceptedPaymentTypes = new ArrayList<String>();
 
+		
 		HashMap<String, String[]> hmAcceptedMoney = new HashMap<String, String[]>();
 
 		String[] aAcceptedCoins = automat.getAcceptedCoins(); // { "5", "10", "20", "50", "100", "200" };
-		hmAcceptedMoney.put("coin", aAcceptedCoins);
+		if (aAcceptedCoins.length > 0) {
+			hmAcceptedMoney.put("coin", aAcceptedCoins);
+			aAcceptedPaymentTypes.add("coin");
+		}
 
 		String[] aAcceptedBankNotes = automat.getAcceptedNotes(); // { "5", "10", "20" };
-		hmAcceptedMoney.put("banknote", aAcceptedBankNotes);
+		if (aAcceptedBankNotes.length > 0) {
+			hmAcceptedMoney.put("banknote", aAcceptedBankNotes);
+			aAcceptedPaymentTypes.add("banknote");
+		}
 
 		String[] aAcceptedCreditCards = automat.getAcceptedCards(); // { "Visa", "MasterCard" };
-		hmAcceptedMoney.put("creditcard", aAcceptedCreditCards);
+		if (aAcceptedCreditCards.length > 0) {
+			hmAcceptedMoney.put("creditcard", aAcceptedCreditCards);
+			aAcceptedPaymentTypes.add("creditcard");
+		}
 
 		gridStyle.setGrid(1.0, 0.1, 0, 0);
 		tavTopAreaView = new TopAreaView(sAutomatName);

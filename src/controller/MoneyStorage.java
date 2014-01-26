@@ -20,10 +20,10 @@ public class MoneyStorage {
 	public MoneyStorage() {
 		super();
 
-		loadDefaultItems();
+		loadDefaultMoney();
 	}
 
-	private void loadDefaultItems() {
+	private void loadDefaultMoney() {
 		moneyList = new ArrayList<Money>();
 		moneyList.add(new Money(10, 110, MoneyType.COIN));
 		moneyList.add(new Money(20, 10, MoneyType.COIN));
@@ -113,12 +113,12 @@ public class MoneyStorage {
 					i++;
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				loadDefaultMoney();
+			} catch (IndexOutOfBoundsException e) {
+				loadDefaultMoney();
 			}
-		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+		} catch (FileNotFoundException e) {
+			loadDefaultMoney();
 		} finally {
 			try {
 				reader.close();

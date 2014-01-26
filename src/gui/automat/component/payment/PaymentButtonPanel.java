@@ -7,6 +7,7 @@ import java.awt.Cursor;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
@@ -15,7 +16,7 @@ public class PaymentButtonPanel extends StylePanel {
 	private static final long serialVersionUID = 1L;
 	private ArrayList<PaymentButton> aPaymentButtons;
 
-	public PaymentButtonPanel(String[] aAcceptedPaymentTypes) {	
+	public PaymentButtonPanel(List<String> aAcceptedPaymentTypes) {	
 		super();
 		BufferedImage img;
 		PaymentButton pb;
@@ -33,7 +34,7 @@ public class PaymentButtonPanel extends StylePanel {
 			gridStyle.setGrid(0.33,1.0,y,0);
 			try {
 				img = ImageIO.read(new File( alImgPaths.get(y)));
-				pb = new PaymentButton(img, aAcceptedPaymentTypes[y]);
+				pb = new PaymentButton(img, aAcceptedPaymentTypes.get(y));
 				pb.setCursor(new Cursor(Cursor.HAND_CURSOR));
 			      
 			} catch (Exception e) {
