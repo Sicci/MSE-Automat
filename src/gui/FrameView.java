@@ -27,6 +27,8 @@ import java.util.Observer;
 
 import javax.swing.JFrame;
 
+import localisation.Localiser;
+
 import controller.Automat;
 import controller.commands.ChangeItemIdCommand;
 import controller.commands.ClearItemIdCommand;
@@ -172,10 +174,9 @@ public class FrameView extends JFrame implements Observer {
 		final ImageAreaComp iacFull = avAutomatView.getBottomArea().getAutomatOutputFull();
 		iacFull.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent me) {
-				System.out.println("clicked!");
 				avAutomatView.getBottomArea().changeToEmpty();
 
-				lvLogView.addToLog("\nEmptied compartment!");
+				lvLogView.addToLog(Localiser.getString("EMPTIED_COMPARTMENT"));
 			}
 		});
 
@@ -183,13 +184,12 @@ public class FrameView extends JFrame implements Observer {
 		iacEmpty.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent me) {
 				// avAutomatView.getBottomArea().changeToFull();
-				System.out.println("clicked!");
-				lvLogView.addToLog("\nNothing to retrieve!");
+				lvLogView.addToLog(Localiser.getString("EMPTY_COMPARTMENT"));
 			}
 		});
 
 		lvLogView.clearLog();
-		lvLogView.addToLog(avAutomatView.getAutomatName() + " has been started!\n\n");
+		lvLogView.addToLog(Localiser.getString("AUTOMAT_START").replace("%s", avAutomatView.getAutomatName()));
 
 		updateStats();
 	}
@@ -233,8 +233,8 @@ public class FrameView extends JFrame implements Observer {
 		String t = (String) arg;
 
 		if (t.equals("itemSelected")) {
-			lvLogView.addToLog("\nItem selected: " + automat.getCurrentItem().getName());
-			getPaymentDisplay().setText(formatCurrency(automat.getUpdatedCurrentItemCost()) + " to pay");
+			lvLogView.addToLog(Localiser.getString("ITEM_SELECTED").replace("%s", automat.getCurrentItem().getName()));
+			getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT").replace("%s", formatCurrency(automat.getUpdatedCurrentItemCost())));
 		} else if (t.equals("statsChanged")) {
 			// lvLogView.addToLog("\nStats updated\n");
 			updateStats();
@@ -242,21 +242,22 @@ public class FrameView extends JFrame implements Observer {
 			logChangeMoney(automat.retrieveChange());
 		} else if (t.equals("itemIdChanged")) {
 			if (automat.getCurrentItemId().length() > 0) {
-				lvLogView.addToLog("\nChanged item selection (to " + automat.getCurrentItemId() + ")");
+				lvLogView.addToLog(Localiser.getString("ITEM_SELECTION_CHANGE").replace("%s", automat.getCurrentItemId()));
 			}
-			getNumpadDisplay().setText("Item: " + automat.getCurrentItemId());
+			getNumpadDisplay().setText(Localiser.getString("ITEM_PROMPT").replace("%s", automat.getCurrentItemId()));
 		} else if (t.equals("insertedMoney")) {
-			lvLogView.addToLog("\nThrown in money: " + formatCurrency(automat.getSumInputMoney()));
-			getPaymentDisplay().setText(formatCurrency(automat.getUpdatedCurrentItemCost()) + " to pay");
+			lvLogView.addToLog(Localiser.getString("MONEY_INSERTED").replace("%s", formatCurrency(automat.getSumInputMoney())));
+			getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT").replace("%s", formatCurrency(automat.getUpdatedCurrentItemCost())));
 		} else if (t.equals("handedOutItem")) {
 			if (automat.getOutputItem() != null) {
-				lvLogView.addToLog("\nHanded out item: " + automat.getOutputItem().getName());
+				lvLogView.addToLog(Localiser.getString("OUTPUT_ITEM").replace("%s", automat.getOutputItem().getName()));
+
 				avAutomatView.getBottomArea().changeToFull();
 			}
 
 		} else if (t.equals("paidWithCard")) {
 			if (automat.getOutputItem() != null) {
-				lvLogView.addToLog("\nPaid with Card (" + formatCurrency(automat.getOutputItem().getPrice()) + ")");
+				lvLogView.addToLog(Localiser.getString("PAID_WITH_CARD").replace("%s", formatCurrency(automat.getOutputItem().getPrice())));
 			}
 			logChangeMoney(automat.retrieveChange());
 		}
@@ -281,13 +282,13 @@ public class FrameView extends JFrame implements Observer {
 		}
 
 		if (sb.length() > 0) {
-			lvLogView.addToLog("\nChange: " + sb.toString());
+			lvLogView.addToLog(Localiser.getString("CHANGE_OUTPUT").replace("%s", sb.toString()));
 		} else {
-			lvLogView.addToLog("\nNo change!");
+			lvLogView.addToLog(Localiser.getString("NO_CHANGE"));
 		}
 
 		if (sum > 0) {
-			getPaymentDisplay().setText("Retrieve change! (" + formatCurrency(sum) + ")");
+			getPaymentDisplay().setText(Localiser.getString("RETRIEVE_CHANGE_PROMPT").replace("%s", formatCurrency(sum)));
 		} else {
 			getPaymentDisplay().setText("");
 		}

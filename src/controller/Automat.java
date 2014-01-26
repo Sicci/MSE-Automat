@@ -139,11 +139,11 @@ public class Automat extends Observable {
 
 	public void insertMoney(int value) throws ValueNotAcceptedException, NotEnoughChangeException, NoItemSelectedException {
 		if (currentItem == null) {
-			throw new NoItemSelectedException("Select an item!");
+			throw new NoItemSelectedException(Localiser.getString("EXCEPTION_NO_ITEM_SELECTED"));
 		}
 
 		if (!hasEnoughChangeMoney()) {
-			throw new NotEnoughChangeException(Localiser.getString("Automat.Error_NotEnoughChange"));
+			throw new NotEnoughChangeException(Localiser.getString("EXCEPTION_NOT_ENOUGH_CHANGE"));
 		}
 
 		if (inputMoney == null) {
@@ -151,7 +151,7 @@ public class Automat extends Observable {
 		}
 
 		if (!moneyStorage.isAccpetedValue(value)) {
-			throw new ValueNotAcceptedException("This value is not being accepted by the automat!");
+			throw new ValueNotAcceptedException(Localiser.getString("EXCEPTION_VALUE_NOT_ACCEPTED"));
 		}
 
 		// ToDO: check if correct form
@@ -173,11 +173,11 @@ public class Automat extends Observable {
 		boolean isPayingWithCard = true;
 
 		if (inputMoney != null && inputMoney.size() > 0) {
-			throw new NoPartialCardPaymentException("No card after coins!");
+			throw new NoPartialCardPaymentException(Localiser.getString("EXCEPTION_NO_PARTIAL_CARD_PAYMENT"));
 		}
 
 		if (currentItem == null) {
-			throw new NoItemSelectedException("Select an item!");
+			throw new NoItemSelectedException(Localiser.getString("EXCEPTION_NO_ITEM_SELECTED"));
 		}
 
 		outputChange = inputMoney;
@@ -355,16 +355,16 @@ public class Automat extends Observable {
 					this.setCurrentItem(item);
 				} else {
 					// highly unlikely
-					throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable"));
+					throw new ItemNotAvailableException(Localiser.getString("EXCEPTION_ITEM_NOT_AVAILABLE"));
 				}
 
 				this.setChanged();
 				this.notifyObservers("itemSelected");
 			} else {
-				throw new ItemNotAvailableException(Localiser.getString("Automat.Error_ItemNotAvailable"));
+				throw new ItemNotAvailableException(Localiser.getString("EXCEPTION_ITEM_NOT_AVAILABLE"));
 			}
 		} else {
-			throw new InvalidInputException(Localiser.getString("Automat.Error_InvalidInput"));
+			throw new InvalidInputException(Localiser.getString("EXCEPTION_INVALID_INPUT"));
 		}
 	}
 
