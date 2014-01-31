@@ -1,7 +1,5 @@
 package controller;
 
-import gui.AutomatView;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
@@ -395,23 +393,22 @@ public class Automat extends Observable {
 
 	private void dispenseCup() {
 		this.setChanged();
-		this.notifyObservers("log:"+Localiser.getString("PROC_DISPENSE_CUP"));
+		this.notifyObservers("log:" + Localiser.getString("PROC_DISPENSE_CUP"));
 	}
 
 	private void fillCup() {
 		this.setChanged();
-		this.notifyObservers("log:"+Localiser.getString("PROC_FILL_CUP"));
+		this.notifyObservers("log:" + Localiser.getString("PROC_FILL_CUP"));
 	}
 
 	private void addExtras() {
 		this.setChanged();
-		this.notifyObservers("log:"+Localiser.getString("PROC_ADD_EXTRAS"));
-	}
-	
-	private void rotateSpiral() {
-		this.setChanged();
-		this.notifyObservers("log:"+Localiser.getString("PROC_ROTATE_SPIRAL"));
+		this.notifyObservers("log:" + Localiser.getString("PROC_ADD_EXTRAS"));
 	}
 
+	private void rotateSpiral() {
+		this.setChanged();
+		this.notifyObservers("log:" + Localiser.getString("PROC_ROTATE_SPIRAL"));
+	}
 
 }
