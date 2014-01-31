@@ -23,8 +23,8 @@ public class Automat extends Observable {
   public Automat() {
     this.name = "Getr\u00e4nkeautomat";
     setCurrency("$");
-    setFileItems("items.txt");
-    setFileMoney("money.txt");
+    setFileItems(AutomatView.RESPATH + "items.txt");
+    setFileMoney(AutomatView.RESPATH + "money.txt");
     itemStorage = new ItemStorage();
     itemStorage.readFromFile(fileItems);
     moneyStorage = new MoneyStorage();
@@ -318,7 +318,18 @@ public class Automat extends Observable {
   }
 
   public String[] getAcceptedCards() {
+    test2();
     return moneyStorage.getAcceptedCards();
+  }
+
+
+
+
+  public void testFunction() {
+    test2();
+  }
+
+  public void test2() {
   }
 
 

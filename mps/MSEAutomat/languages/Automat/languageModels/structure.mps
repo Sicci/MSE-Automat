@@ -108,12 +108,12 @@
     <property name="hasNoDefaultMember" nameId="tpce.1212080844762" value="true" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8785849198914725704" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="beverages" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="beverages" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="coffee" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="coffee" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8785849198914725736" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="snacks" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="snacks" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="soda" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="soda" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8785849198914793268" nodeInfo="ig">

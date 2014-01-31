@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="Automat.sandbox.Automat" file="Automat.java">
     <classNode dependClassName="Automat.sandbox.AutomatException" />
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
     <classNode dependClassName="Automat.sandbox.ICommand" />
     <classNode dependClassName="Automat.sandbox.InvalidInputException" />
     <classNode dependClassName="Automat.sandbox.Item" />
@@ -166,6 +167,7 @@
     <classNode dependClassName="java.util.List" />
   </dependency>
   <dependency className="Automat.sandbox.Localiser" file="Localiser.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
     <classNode dependClassName="java.io.BufferedReader" />
     <classNode dependClassName="java.io.FileNotFoundException" />
     <classNode dependClassName="java.io.FileReader" />
@@ -298,6 +300,7 @@
     <classNode extendsClassName="javax.swing.JLabel" />
   </dependency>
   <dependency className="Automat.sandbox.PaymentButtonPanel" file="PaymentButtonPanel.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
     <classNode dependClassName="Automat.sandbox.PaymentButton" />
     <classNode dependClassName="java.awt.Cursor" />
     <classNode dependClassName="java.awt.image.BufferedImage" />

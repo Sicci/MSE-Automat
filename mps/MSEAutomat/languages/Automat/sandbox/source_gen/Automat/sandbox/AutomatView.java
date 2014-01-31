@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 public class AutomatView extends StylePanel {
   public static final Color COLOR = new Color(200, 100, 100);
+  public static final String RESPATH = "D:/mps_automat/";
   private static final long serialVersionUID = 1L;
   private String sAutomatName;
   private TopAreaView tavTopAreaView;
@@ -24,7 +25,7 @@ public class AutomatView extends StylePanel {
     ImageAreaComp iacAutomatLogo;
     this.automat = automat;
     sAutomatName = automat.getName();
-    iacAutomatLogo = new ImageAreaComp("D:/mps_automat/img/logo_soda.png", AutomatView.COLOR);
+    iacAutomatLogo = new ImageAreaComp(AutomatView.RESPATH + "img/" + "coffee" + "/logo.png", AutomatView.COLOR);
     String[] aAccepedButtons = {"7", "8", "9", "4", "5", "6", "1", "2", "3", btnLabelCancel, "0", btnLabelEnter};
     List<String> aAcceptedPaymentTypes = new ArrayList<String>();
     HashMap<String, String[]> hmAcceptedMoney = new HashMap<String, String[]>();

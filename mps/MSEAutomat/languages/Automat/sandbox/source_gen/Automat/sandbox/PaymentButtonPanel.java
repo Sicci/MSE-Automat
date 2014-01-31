@@ -21,7 +21,7 @@ public class PaymentButtonPanel extends StylePanel {
     aPaymentButtons = new ArrayList<PaymentButton>();
     alImgPaths = new ArrayList<String>();
     for (String pt : aAcceptedPaymentTypes) {
-      alImgPaths.add("D:/mps_automat/img/slot_" + pt + ".png");
+      alImgPaths.add(AutomatView.RESPATH + "img/slot_" + pt + ".png");
     }
     for (int i = 0; i < alImgPaths.size(); i++) {
       final int y = i;

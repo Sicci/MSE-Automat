@@ -15,9 +15,9 @@
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="outputItem" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="23" startPosition="20" endLine="24" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="24" startPosition="39" endLine="25" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="25" startPosition="21" endLine="26" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="26" startPosition="30" endLine="27" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="27" startPosition="30" endLine="28" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="25" startPosition="21" endLine="26" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="26" startPosition="52" endLine="27" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="27" startPosition="52" endLine="28" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="28" startPosition="36" endLine="29" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="29" startPosition="40" endLine="30" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="30" startPosition="38" endLine="31" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -137,10 +137,13 @@
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="308" startPosition="47" endLine="309" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="312" startPosition="38" endLine="313" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="316" startPosition="38" endLine="317" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="38" endLine="321" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="38" endLine="321" endPosition="12" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="321" startPosition="12" endLine="322" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="328" startPosition="30" endLine="329" endPosition="12" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="189" startPosition="10" endLine="191" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="296" startPosition="12" endLine="298" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="299" startPosition="10" endLine="301" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="332" startPosition="0" endLine="334" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="test2#()V" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="checkIfItemIsAvailable#(Ljava/lang/String;)Z" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="39" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="checkIfInputIsValid#(Ljava/lang/String;)Z" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="43" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getItemByNumCode#(Ljava/lang/String;)LAutomat/sandbox/Item;" />
@@ -177,9 +180,10 @@
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="308" startPosition="0" endLine="311" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setOutputItem#(LAutomat/sandbox/Item;)V" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="312" startPosition="0" endLine="315" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAcceptedCoins#()[Ljava/lang/String;" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="316" startPosition="0" endLine="319" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAcceptedNotes#()[Ljava/lang/String;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="0" endLine="323" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAcceptedCards#()[Ljava/lang/String;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="328" startPosition="0" endLine="331" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="testFunction#()V" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="135" startPosition="42" endLine="139" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="277" startPosition="0" endLine="281" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="handleCommand#(LAutomat/sandbox/ICommand;)V" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="0" endLine="324" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAcceptedCards#()[Ljava/lang/String;" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="103" startPosition="0" endLine="108" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCurrentItemId#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="110" startPosition="25" endLine="115" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="186" startPosition="38" endLine="191" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
@@ -215,59 +219,60 @@
     <nodeInfo nodeId="3092453947968759268" fileName="AutomatException.java" startLine="11" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="AutomatException#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="3092453947968759268" fileName="AutomatType.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="AutomatType#()V" />
     <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="COLOR" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="serialVersionUID" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="sAutomatName" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="tavTopAreaView" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mavMiddleAreaView" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="17" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="bavBottomAreaView" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="automat" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="19" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="btnLabelEnter" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="btnLabelCancel" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="22" startPosition="39" endLine="23" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="23" startPosition="73" endLine="24" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="24" startPosition="33" endLine="25" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="25" startPosition="27" endLine="26" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="26" startPosition="37" endLine="27" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="27" startPosition="94" endLine="28" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="28" startPosition="113" endLine="29" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="29" startPosition="65" endLine="30" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="30" startPosition="80" endLine="31" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="32" startPosition="36" endLine="33" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="33" startPosition="50" endLine="34" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="35" startPosition="5" endLine="36" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="37" startPosition="40" endLine="38" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="38" startPosition="58" endLine="39" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="40" startPosition="5" endLine="41" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="42" startPosition="42" endLine="43" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="43" startPosition="62" endLine="44" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="45" startPosition="5" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="46" startPosition="0" endLine="47" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="47" startPosition="38" endLine="48" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="48" startPosition="51" endLine="49" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="49" startPosition="35" endLine="50" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="50" startPosition="38" endLine="51" endPosition="116" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="51" startPosition="116" endLine="52" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="52" startPosition="38" endLine="53" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="53" startPosition="38" endLine="54" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="54" startPosition="45" endLine="55" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="58" startPosition="34" endLine="59" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="62" startPosition="35" endLine="63" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="66" startPosition="41" endLine="67" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="70" startPosition="41" endLine="71" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="74" startPosition="31" endLine="75" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="78" startPosition="36" endLine="79" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="82" startPosition="37" endLine="83" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="58" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAutomatName#()Ljava/lang/String;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="62" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTopArea#()LAutomat/sandbox/TopAreaView;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="66" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMiddleArea#()LAutomat/sandbox/MiddleAreaView;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="70" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBottomArea#()LAutomat/sandbox/BottomAreaView;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="74" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAutomat#()LAutomat/sandbox/Automat;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="78" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBtnLabelEnter#()Ljava/lang/String;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="82" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBtnLabelCancel#()Ljava/lang/String;" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="31" startPosition="57" endLine="35" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="36" startPosition="61" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="41" startPosition="63" endLine="45" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="22" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="AutomatView#(LAutomat/sandbox/Automat;)V" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="RESPATH" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="serialVersionUID" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="sAutomatName" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="tavTopAreaView" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="17" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mavMiddleAreaView" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="bavBottomAreaView" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="19" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="automat" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="btnLabelEnter" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="btnLabelCancel" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="23" startPosition="39" endLine="24" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="24" startPosition="73" endLine="25" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="25" startPosition="33" endLine="26" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="26" startPosition="27" endLine="27" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="27" startPosition="37" endLine="28" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="28" startPosition="113" endLine="29" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="29" startPosition="113" endLine="30" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="30" startPosition="65" endLine="31" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="31" startPosition="80" endLine="32" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="33" startPosition="36" endLine="34" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="34" startPosition="50" endLine="35" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="36" startPosition="5" endLine="37" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="38" startPosition="40" endLine="39" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="39" startPosition="58" endLine="40" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="41" startPosition="5" endLine="42" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="43" startPosition="42" endLine="44" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="44" startPosition="62" endLine="45" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="46" startPosition="5" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="47" startPosition="0" endLine="48" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="48" startPosition="38" endLine="49" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="49" startPosition="51" endLine="50" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="50" startPosition="35" endLine="51" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="51" startPosition="38" endLine="52" endPosition="116" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="52" startPosition="116" endLine="53" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="53" startPosition="38" endLine="54" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="54" startPosition="38" endLine="55" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="55" startPosition="45" endLine="56" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="59" startPosition="34" endLine="60" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="63" startPosition="35" endLine="64" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="67" startPosition="41" endLine="68" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="71" startPosition="41" endLine="72" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="75" startPosition="31" endLine="76" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="79" startPosition="36" endLine="80" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="83" startPosition="37" endLine="84" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="59" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAutomatName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="63" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTopArea#()LAutomat/sandbox/TopAreaView;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="67" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMiddleArea#()LAutomat/sandbox/MiddleAreaView;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="71" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBottomArea#()LAutomat/sandbox/BottomAreaView;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="75" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAutomat#()LAutomat/sandbox/Automat;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="79" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBtnLabelEnter#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="83" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBtnLabelCancel#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="32" startPosition="57" endLine="36" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="37" startPosition="61" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="42" startPosition="63" endLine="46" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="23" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="AutomatView#(LAutomat/sandbox/Automat;)V" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="serialVersionUID" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="11" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="iacAutomatOutputEmpty" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="iacAutomatOutputFull" />
@@ -276,10 +281,10 @@
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="16" startPosition="27" endLine="17" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="17" startPosition="77" endLine="18" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="18" startPosition="38" endLine="19" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="19" startPosition="38" endLine="20" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="20" startPosition="103" endLine="21" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="21" startPosition="68" endLine="22" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="22" startPosition="101" endLine="23" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="19" startPosition="38" endLine="20" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="20" startPosition="122" endLine="21" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="21" startPosition="68" endLine="22" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="22" startPosition="120" endLine="23" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="23" startPosition="67" endLine="24" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="24" startPosition="41" endLine="25" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="25" startPosition="19" endLine="26" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -924,7 +929,7 @@
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="19" startPosition="21" endLine="20" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="20" startPosition="33" endLine="21" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="21" startPosition="53" endLine="22" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="23" startPosition="45" endLine="24" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="23" startPosition="45" endLine="24" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="26" startPosition="49" endLine="27" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="27" startPosition="22" endLine="28" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="29" startPosition="11" endLine="30" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -1109,6 +1114,7 @@
     <nodeInfo nodeId="3092453947968759268" fileName="ValueNotAcceptedException.java" startLine="13" startPosition="48" endLine="14" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="3092453947968759268" fileName="ValueNotAcceptedException.java" startLine="9" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ValueNotAcceptedException#()V" />
     <nodeInfo nodeId="3092453947968759268" fileName="ValueNotAcceptedException.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ValueNotAcceptedException#(Ljava/lang/String;)V" />
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="332" startPosition="23" endLine="332" endPosition="23" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="35" startPosition="58" endLine="36" endPosition="55" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="39" startPosition="55" endLine="40" endPosition="51" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="43" startPosition="49" endLine="44" endPosition="49" />
@@ -1150,12 +1156,14 @@
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="308" startPosition="47" endLine="309" endPosition="33" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="312" startPosition="38" endLine="313" endPosition="43" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="316" startPosition="38" endLine="317" endPosition="43" />
-    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="38" endLine="321" endPosition="43" />
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="328" startPosition="30" endLine="329" endPosition="12" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="136" startPosition="23" endLine="138" endPosition="35">
       <varInfo nodeId="3092453947968759268" varName="isPayingWithCard" />
     </scopeInfo>
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="277" startPosition="67" endLine="279" endPosition="22" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="290" startPosition="16" endLine="292" endPosition="99" />
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="38" endLine="322" endPosition="43" />
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="332" startPosition="0" endLine="334" endPosition="0" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="35" startPosition="0" endLine="38" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="numCode" />
     </scopeInfo>
@@ -1210,10 +1218,11 @@
     </scopeInfo>
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="312" startPosition="0" endLine="315" endPosition="0" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="316" startPosition="0" endLine="319" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="0" endLine="323" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="328" startPosition="0" endLine="331" endPosition="0" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="277" startPosition="0" endLine="281" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="cmd" />
     </scopeInfo>
+    <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="320" startPosition="0" endLine="324" endPosition="0" />
     <scopeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="103" startPosition="0" endLine="108" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="currentItemId" />
     </scopeInfo>
@@ -1308,24 +1317,24 @@
     </scopeInfo>
     <scopeInfo nodeId="3092453947968759268" fileName="AutomatType.java" startLine="10" startPosition="17" endLine="10" endPosition="17" />
     <scopeInfo nodeId="3092453947968759268" fileName="AutomatType.java" startLine="10" startPosition="0" endLine="12" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="58" startPosition="34" endLine="59" endPosition="24" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="62" startPosition="35" endLine="63" endPosition="31" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="66" startPosition="41" endLine="67" endPosition="34" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="70" startPosition="41" endLine="71" endPosition="34" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="74" startPosition="31" endLine="75" endPosition="19" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="78" startPosition="36" endLine="79" endPosition="25" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="82" startPosition="37" endLine="83" endPosition="26" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="32" startPosition="36" endLine="34" endPosition="40" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="37" startPosition="40" endLine="39" endPosition="44" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="42" startPosition="42" endLine="44" endPosition="46" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="58" startPosition="0" endLine="61" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="62" startPosition="0" endLine="65" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="66" startPosition="0" endLine="69" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="70" startPosition="0" endLine="73" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="74" startPosition="0" endLine="77" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="78" startPosition="0" endLine="81" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="82" startPosition="0" endLine="85" endPosition="0" />
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="22" startPosition="39" endLine="55" endPosition="38">
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="59" startPosition="34" endLine="60" endPosition="24" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="63" startPosition="35" endLine="64" endPosition="31" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="67" startPosition="41" endLine="68" endPosition="34" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="71" startPosition="41" endLine="72" endPosition="34" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="75" startPosition="31" endLine="76" endPosition="19" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="79" startPosition="36" endLine="80" endPosition="25" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="83" startPosition="37" endLine="84" endPosition="26" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="33" startPosition="36" endLine="35" endPosition="40" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="38" startPosition="40" endLine="40" endPosition="44" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="43" startPosition="42" endLine="45" endPosition="46" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="59" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="63" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="67" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="71" startPosition="0" endLine="74" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="75" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="79" startPosition="0" endLine="82" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="83" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="23" startPosition="39" endLine="56" endPosition="38">
       <varInfo nodeId="3092453947968759268" varName="aAccepedButtons" />
       <varInfo nodeId="3092453947968759268" varName="aAcceptedBankNotes" />
       <varInfo nodeId="3092453947968759268" varName="aAcceptedCoins" />
@@ -1334,7 +1343,7 @@
       <varInfo nodeId="3092453947968759268" varName="hmAcceptedMoney" />
       <varInfo nodeId="3092453947968759268" varName="iacAutomatLogo" />
     </scopeInfo>
-    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="22" startPosition="0" endLine="57" endPosition="0">
+    <scopeInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="23" startPosition="0" endLine="58" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="automat" />
     </scopeInfo>
     <scopeInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="29" startPosition="48" endLine="30" endPosition="33" />
@@ -1998,7 +2007,7 @@
     <scopeInfo nodeId="3092453947968759268" fileName="PaymentButton.java" startLine="28" startPosition="0" endLine="37" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="g" />
     </scopeInfo>
-    <scopeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="23" startPosition="45" endLine="24" endPosition="63" />
+    <scopeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="23" startPosition="45" endLine="24" endPosition="70" />
     <scopeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="49" startPosition="55" endLine="50" endPosition="27" />
     <scopeInfo nodeId="3092453947968759268" fileName="PaymentButtonPanel.java" startLine="22" startPosition="41" endLine="25" endPosition="5">
       <varInfo nodeId="3092453947968759268" varName="pt" />
@@ -2142,10 +2151,10 @@
     <scopeInfo nodeId="3092453947968759268" fileName="ValueNotAcceptedException.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
       <varInfo nodeId="3092453947968759268" varName="msg" />
     </scopeInfo>
-    <unitInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="9" startPosition="0" endLine="326" endPosition="0" unitName="Automat.sandbox.Automat" />
+    <unitInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="9" startPosition="0" endLine="337" endPosition="0" unitName="Automat.sandbox.Automat" />
     <unitInfo nodeId="3092453947968759268" fileName="AutomatException.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Automat.sandbox.AutomatException" />
     <unitInfo nodeId="3092453947968759268" fileName="AutomatType.java" startLine="6" startPosition="0" endLine="13" endPosition="0" unitName="Automat.sandbox.AutomatType" />
-    <unitInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="11" startPosition="0" endLine="88" endPosition="0" unitName="Automat.sandbox.AutomatView" />
+    <unitInfo nodeId="3092453947968759268" fileName="AutomatView.java" startLine="11" startPosition="0" endLine="89" endPosition="0" unitName="Automat.sandbox.AutomatView" />
     <unitInfo nodeId="3092453947968759268" fileName="BottomAreaView.java" startLine="9" startPosition="0" endLine="61" endPosition="0" unitName="Automat.sandbox.BottomAreaView" />
     <unitInfo nodeId="3092453947968759268" fileName="ChangeItemIdCommand.java" startLine="6" startPosition="0" endLine="20" endPosition="0" unitName="Automat.sandbox.ChangeItemIdCommand" />
     <unitInfo nodeId="3092453947968759268" fileName="ClearItemIdCommand.java" startLine="6" startPosition="0" endLine="17" endPosition="0" unitName="Automat.sandbox.ClearItemIdCommand" />

@@ -7,8 +7,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum AutomatType {
-  beverages("beverages", "beverages"),
-  snacks("snacks", "snacks");
+  coffee("coffee", "coffee"),
+  soda("soda", "soda");
 
   private String myName;
 
@@ -22,8 +22,8 @@ public enum AutomatType {
 
   public static List<AutomatType> getConstants() {
     List<AutomatType> list = ListSequence.fromList(new LinkedList<AutomatType>());
-    ListSequence.fromList(list).addElement(AutomatType.beverages);
-    ListSequence.fromList(list).addElement(AutomatType.snacks);
+    ListSequence.fromList(list).addElement(AutomatType.coffee);
+    ListSequence.fromList(list).addElement(AutomatType.soda);
     return list;
   }
 
@@ -35,11 +35,11 @@ public enum AutomatType {
     if (value == null) {
       return AutomatType.getDefault();
     }
-    if (value.equals(AutomatType.beverages.getValueAsString())) {
-      return AutomatType.beverages;
+    if (value.equals(AutomatType.coffee.getValueAsString())) {
+      return AutomatType.coffee;
     }
-    if (value.equals(AutomatType.snacks.getValueAsString())) {
-      return AutomatType.snacks;
+    if (value.equals(AutomatType.soda.getValueAsString())) {
+      return AutomatType.soda;
     }
     return AutomatType.getDefault();
   }

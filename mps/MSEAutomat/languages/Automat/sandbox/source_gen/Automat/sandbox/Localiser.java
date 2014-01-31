@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class Localiser {
-  private static final String FILE_NAME = "D:/mps_automat/locales/" + "en" + ".txt";
+  private static final String FILE_NAME = AutomatView.RESPATH + "locales/" + "en" + ".txt";
   private static final Map<String, String> VALUES = new HashMap<String, String>();
 
   private Localiser() {

@@ -14,7 +14,7 @@
       <property name="currency" nameId="tyhk.8785849198913471332" value="$" />
       <property name="language" nameId="tyhk.8785849198913471347" value="en" />
       <property name="color_g" nameId="tyhk.5708215893054788891" value="100" />
-      <property name="type" nameId="tyhk.8785849198913471330" value="beverages" />
+      <property name="type" nameId="tyhk.8785849198913471330" value="coffee" />
     </node>
     <node role="_stores" roleId="tyhk.8785849198914852068" type="tyhk.stores" typeId="tyhk.8785849198914793268" id="6119712891003197363" nodeInfo="ng">
       <node role="money" roleId="tyhk.8785849198914852344" type="tyhk.stores_money" typeId="tyhk.8785849198914793385" id="6119712891003197365" nodeInfo="ng">
