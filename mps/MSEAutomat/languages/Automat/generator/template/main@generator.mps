@@ -16798,7 +16798,7 @@
     <property name="name" nameId="tpck.1169194664001" value="switch_useAutomatTypeFunction" />
     <node role="reductionMappingRule" roleId="tpf8.1167340453568" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="8675345724953734461" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="tyhk.8785849198913167871" resolveInfo="Automat" />
-      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="8675345724953783285" nodeInfo="nn">
+      <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="8675345724957172219" nodeInfo="nn">
         <link role="template" roleId="tpf8.1722980698497626483" targetNodeId="8675345724953723522" resolveInfo="templ_useSodaFunction" />
       </node>
       <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="8675345724953735430" nodeInfo="nn">

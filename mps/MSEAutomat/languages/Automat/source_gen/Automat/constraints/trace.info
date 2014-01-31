@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="25" endPosition="0" unitName="Automat.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="29" endPosition="0" unitName="Automat.constraints.ConstraintsAspectDescriptor" />
+  <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/4732747067078584658">
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="17" startPosition="43" endLine="18" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="27" startPosition="200" endLine="28" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="28" startPosition="96" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="32" startPosition="5" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="33" startPosition="0" endLine="34" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4732747067078608979" fileName="accepts_creditcard_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4732747067078608965" fileName="accepts_creditcard_Constraints.java" startLine="42" startPosition="21" endLine="43" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4732747067078608990" fileName="accepts_creditcard_Constraints.java" startLine="44" startPosition="5" endLine="45" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="48" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeChildBreakingPoint" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="accepts_creditcard_Constraints#()V" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="29" startPosition="0" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4732747067078608977" fileName="accepts_creditcard_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
+    <nodeInfo nodeId="4732747067078608963" fileName="accepts_creditcard_Constraints.java" startLine="37" startPosition="154" endLine="44" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="37" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="17" startPosition="43" endLine="18" endPosition="50" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" />
+    <scopeInfo nodeId="4732747067078608978" fileName="accepts_creditcard_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="117" />
+    <scopeInfo nodeId="4732747067078608964" fileName="accepts_creditcard_Constraints.java" startLine="42" startPosition="21" endLine="43" endPosition="19" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" />
+    <scopeInfo nodeId="4732747067078608977" fileName="accepts_creditcard_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="4732747067078608977" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="27" startPosition="200" endLine="34" endPosition="18">
+      <varInfo nodeId="4732747067078584658" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="4732747067078585206" fileName="accepts_creditcard_Constraints.java" startLine="37" startPosition="154" endLine="45" endPosition="16" />
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="4732747067078584658" varName="checkingNodeContext" />
+      <varInfo nodeId="4732747067078584658" varName="childConcept" />
+      <varInfo nodeId="4732747067078584658" varName="link" />
+      <varInfo nodeId="4732747067078584658" varName="node" />
+      <varInfo nodeId="4732747067078584658" varName="operationContext" />
+      <varInfo nodeId="4732747067078584658" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="37" startPosition="0" endLine="47" endPosition="0">
+      <varInfo nodeId="4732747067078584658" varName="childConcept" />
+      <varInfo nodeId="4732747067078584658" varName="link" />
+      <varInfo nodeId="4732747067078584658" varName="node" />
+      <varInfo nodeId="4732747067078584658" varName="operationContext" />
+      <varInfo nodeId="4732747067078584658" varName="parentNode" />
+    </scopeInfo>
+    <unitInfo nodeId="4732747067078608977" fileName="accepts_creditcard_Constraints.java" startLine="38" startPosition="147" endLine="42" endPosition="5" unitName="Automat.constraints.accepts_creditcard_Constraints$1" />
+    <unitInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="16" startPosition="0" endLine="50" endPosition="0" unitName="Automat.constraints.accepts_creditcard_Constraints" />
+  </root>
   <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/7827320562854273206">
     <nodeInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="15" startPosition="28" endLine="16" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="20" startPosition="82" endLine="21" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -80,6 +131,130 @@
     <unitInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="37" startPosition="34" endLine="51" endPosition="5" unitName="Automat.constraints.has_Constraints$2" />
     <unitInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="52" startPosition="34" endLine="66" endPosition="5" unitName="Automat.constraints.has_Constraints$3" />
     <unitInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="14" startPosition="0" endLine="70" endPosition="0" unitName="Automat.constraints.has_Constraints" />
+  </root>
+  <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/8675345724956698236">
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="22" startPosition="42" endLine="23" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="27" startPosition="43" endLine="28" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="32" startPosition="200" endLine="33" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="33" startPosition="96" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="35" startPosition="51" endLine="36" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="37" startPosition="5" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="38" startPosition="0" endLine="39" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="43" startPosition="82" endLine="44" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="47" startPosition="40" endLine="48" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="52" startPosition="84" endLine="53" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8675345724957573281" fileName="stores_items_item_Constraints.java" startLine="54" startPosition="67" endLine="55" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956921896" fileName="stores_items_item_Constraints.java" startLine="56" startPosition="9" endLine="57" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="62" startPosition="40" endLine="63" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="67" startPosition="84" endLine="68" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8675345724957997857" fileName="stores_items_item_Constraints.java" startLine="69" startPosition="66" endLine="70" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724958003889" fileName="stores_items_item_Constraints.java" startLine="71" startPosition="9" endLine="72" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="77" startPosition="40" endLine="78" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="82" startPosition="84" endLine="83" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8675345724958128788" fileName="stores_items_item_Constraints.java" startLine="84" startPosition="171" endLine="85" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724958149158" fileName="stores_items_item_Constraints.java" startLine="86" startPosition="9" endLine="87" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="89" startPosition="7" endLine="90" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956868361" fileName="stores_items_item_Constraints.java" startLine="95" startPosition="39" endLine="96" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956903918" fileName="stores_items_item_Constraints.java" startLine="98" startPosition="21" endLine="99" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956912666" fileName="stores_items_item_Constraints.java" startLine="100" startPosition="5" endLine="101" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="104" startPosition="0" endLine="105" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeChildBreakingPoint" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="22" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="stores_items_item_Constraints#()V" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="34" startPosition="0" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8675345724957566738" fileName="stores_items_item_Constraints.java" startLine="53" startPosition="41" endLine="56" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8675345724957991802" fileName="stores_items_item_Constraints.java" startLine="68" startPosition="38" endLine="71" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8675345724958012685" fileName="stores_items_item_Constraints.java" startLine="83" startPosition="40" endLine="86" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8675345724956866781" fileName="stores_items_item_Constraints.java" startLine="95" startPosition="0" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="53" startPosition="41" endLine="57" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="61" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="68" startPosition="38" endLine="72" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="76" startPosition="0" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnValidator#()Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="83" startPosition="40" endLine="87" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8675345724956820204" fileName="stores_items_item_Constraints.java" startLine="93" startPosition="154" endLine="100" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="51" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/smodel/IScope;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="66" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/smodel/IScope;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="81" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/smodel/IScope;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="31" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="93" startPosition="0" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="44" startPosition="74" endLine="59" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="59" startPosition="7" endLine="74" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="74" startPosition="7" endLine="89" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="42" startPosition="0" endLine="92" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNotDefaultProperties#()Ljava/util/Map;" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="22" startPosition="42" endLine="23" endPosition="49" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="27" startPosition="43" endLine="28" endPosition="16" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="35" startPosition="51" endLine="36" endPosition="67" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="47" startPosition="40" endLine="48" endPosition="20" />
+    <scopeInfo nodeId="8675345724957566741" fileName="stores_items_item_Constraints.java" startLine="54" startPosition="67" endLine="55" endPosition="22" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="62" startPosition="40" endLine="63" endPosition="20" />
+    <scopeInfo nodeId="8675345724957991803" fileName="stores_items_item_Constraints.java" startLine="69" startPosition="66" endLine="70" endPosition="22" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="77" startPosition="40" endLine="78" endPosition="20" />
+    <scopeInfo nodeId="8675345724958012686" fileName="stores_items_item_Constraints.java" startLine="84" startPosition="171" endLine="85" endPosition="23" />
+    <scopeInfo nodeId="8675345724956866782" fileName="stores_items_item_Constraints.java" startLine="95" startPosition="39" endLine="96" endPosition="112" />
+    <scopeInfo nodeId="8675345724956820205" fileName="stores_items_item_Constraints.java" startLine="98" startPosition="21" endLine="99" endPosition="19" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="22" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="8675345724956866781" fileName="stores_items_item_Constraints.java" startLine="95" startPosition="0" endLine="98" endPosition="0">
+      <varInfo nodeId="8675345724956866781" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="8675345724956921231" fileName="stores_items_item_Constraints.java" startLine="53" startPosition="41" endLine="57" endPosition="21" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="8675345724957991041" fileName="stores_items_item_Constraints.java" startLine="68" startPosition="38" endLine="72" endPosition="21" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="8675345724958012020" fileName="stores_items_item_Constraints.java" startLine="83" startPosition="40" endLine="87" endPosition="20" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="52" startPosition="84" endLine="57" endPosition="21">
+      <varInfo nodeId="8675345724956698236" varName="propertyName" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="67" startPosition="84" endLine="72" endPosition="21">
+      <varInfo nodeId="8675345724956698236" varName="propertyName" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="82" startPosition="84" endLine="87" endPosition="20">
+      <varInfo nodeId="8675345724956698236" varName="propertyName" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="32" startPosition="200" endLine="39" endPosition="18">
+      <varInfo nodeId="8675345724956698236" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="51" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="8675345724956698236" varName="node" />
+      <varInfo nodeId="8675345724956698236" varName="propertyValue" />
+      <varInfo nodeId="8675345724956698236" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="66" startPosition="0" endLine="74" endPosition="0">
+      <varInfo nodeId="8675345724956698236" varName="node" />
+      <varInfo nodeId="8675345724956698236" varName="propertyValue" />
+      <varInfo nodeId="8675345724956698236" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="81" startPosition="0" endLine="89" endPosition="0">
+      <varInfo nodeId="8675345724956698236" varName="node" />
+      <varInfo nodeId="8675345724956698236" varName="propertyValue" />
+      <varInfo nodeId="8675345724956698236" varName="scope" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698349" fileName="stores_items_item_Constraints.java" startLine="93" startPosition="154" endLine="101" endPosition="16" />
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="31" startPosition="0" endLine="41" endPosition="0">
+      <varInfo nodeId="8675345724956698236" varName="checkingNodeContext" />
+      <varInfo nodeId="8675345724956698236" varName="childConcept" />
+      <varInfo nodeId="8675345724956698236" varName="link" />
+      <varInfo nodeId="8675345724956698236" varName="node" />
+      <varInfo nodeId="8675345724956698236" varName="operationContext" />
+      <varInfo nodeId="8675345724956698236" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="93" startPosition="0" endLine="103" endPosition="0">
+      <varInfo nodeId="8675345724956698236" varName="childConcept" />
+      <varInfo nodeId="8675345724956698236" varName="link" />
+      <varInfo nodeId="8675345724956698236" varName="node" />
+      <varInfo nodeId="8675345724956698236" varName="operationContext" />
+      <varInfo nodeId="8675345724956698236" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="43" startPosition="82" endLine="90" endPosition="22">
+      <varInfo nodeId="8675345724956698236" varName="properties" />
+    </scopeInfo>
+    <scopeInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="42" startPosition="0" endLine="92" endPosition="0" />
+    <unitInfo nodeId="8675345724956866781" fileName="stores_items_item_Constraints.java" startLine="94" startPosition="146" endLine="98" endPosition="5" unitName="Automat.constraints.stores_items_item_Constraints$4" />
+    <unitInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="45" startPosition="35" endLine="59" endPosition="5" unitName="Automat.constraints.stores_items_item_Constraints$1" />
+    <unitInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="60" startPosition="32" endLine="74" endPosition="5" unitName="Automat.constraints.stores_items_item_Constraints$2" />
+    <unitInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="75" startPosition="34" endLine="89" endPosition="5" unitName="Automat.constraints.stores_items_item_Constraints$3" />
+    <unitInfo nodeId="8675345724956698236" fileName="stores_items_item_Constraints.java" startLine="21" startPosition="0" endLine="106" endPosition="0" unitName="Automat.constraints.stores_items_item_Constraints" />
   </root>
 </debugInfo>
 

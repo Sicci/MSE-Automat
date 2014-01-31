@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="3r2mueg4lssfxbxqeuu2pbzch58iy5f">
+<dependencies version="2" modelHash="-9ht4tyvw8egcbe4o2jlagt2vmci91zc">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -78,7 +78,7 @@
   <source id="8675345724943871321" name="switch_addAutomatTypeFunction" hash="4z3ec1dyw7qib82ocawacqfvyzdifrb" />
   <source id="8675345724952423053" name="templ_addSodaFunction" hash="5mezcmwa0u9oynu5v5ez5d3kw85dq25" />
   <source id="8675345724953301013" name="templ_useCoffeeFunction" hash="-9rtp3xlw3dmtocujewns05k7wthv7jg" />
-  <source id="8675345724953378211" name="switch_useAutomatTypeFunction" hash="2ikjvi0hmgb89qi8rwpzwwhpi88evi4" />
+  <source id="8675345724953378211" name="switch_useAutomatTypeFunction" hash="-3lbpsfmly68nracy3e4jkk5try4eq4c" />
   <source id="8675345724953723522" name="templ_useSodaFunction" hash="-1caal79z2fwbgukz7zfr1zb6pc58d1z" />
 </dependencies>
 

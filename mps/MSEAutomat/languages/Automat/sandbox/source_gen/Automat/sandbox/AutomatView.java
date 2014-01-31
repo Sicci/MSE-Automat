@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class AutomatView extends StylePanel {
-  public static final Color COLOR = new Color(200, 100, 100);
+  public static final Color COLOR = new Color(1, 90, 158);
   public static final String RESPATH = "D:/mps_automat/";
   private static final long serialVersionUID = 1L;
   private String sAutomatName;

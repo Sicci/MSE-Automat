@@ -21,8 +21,8 @@ public class ItemStorage {
 
   private void loadDefaultItems() {
     itemList = new ArrayList<Item>();
-    itemList.add(new Item("" + 1, "SuperCola", 120, 100));
-    itemList.add(new Item("" + 202, "SuperFanta", 200, 2));
+    itemList.add(new Item("" + 1, "SuperLatte", 120, 100));
+    itemList.add(new Item("" + 201, "SuperChino", 200, 50));
   }
 
   public List<Item> getItemList() {
