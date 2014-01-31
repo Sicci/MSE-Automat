@@ -13,8 +13,8 @@
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="19" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="outputChange" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="inputMoney" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="outputItem" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="23" startPosition="20" endLine="24" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="24" startPosition="28" endLine="25" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="23" startPosition="20" endLine="24" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="24" startPosition="39" endLine="25" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="25" startPosition="21" endLine="26" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="26" startPosition="52" endLine="27" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3092453947968759268" fileName="Automat.java" startLine="27" startPosition="52" endLine="28" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

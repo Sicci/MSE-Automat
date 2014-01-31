@@ -21,7 +21,7 @@ public class Automat extends Observable {
   private Item outputItem;
 
   public Automat() {
-    this.name = "Mr.Coffee";
+    this.name = "Getr\u00e4nkeautomat";
     setCurrency("$");
     setFileItems(AutomatView.RESPATH + "items.txt");
     setFileMoney(AutomatView.RESPATH + "money.txt");

@@ -7,7 +7,7 @@
   <import index="tyhk" modelUID="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" version="2" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tyhk.Automat" typeId="tyhk.8785849198913167871" id="3092453947968759268" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Mr.Coffee" />
+    <property name="name" nameId="tpck.1169194664001" value="Getränkeautomat" />
     <node role="_has" roleId="tyhk.8785849198913471863" type="tyhk.has" typeId="tyhk.8785849198913471264" id="7827320562854880030" nodeInfo="ng">
       <property name="color_r" nameId="tyhk.5708215893054770772" value="1" />
       <property name="color_b" nameId="tyhk.5708215893054788897" value="158" />
