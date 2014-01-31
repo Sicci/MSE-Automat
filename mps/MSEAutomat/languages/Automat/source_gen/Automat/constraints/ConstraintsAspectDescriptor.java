@@ -14,11 +14,13 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 0:
         return new has_Constraints();
+      case 1:
+        return new stores_items_item_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"Automat.structure.has"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"Automat.structure.has", "Automat.structure.stores_items_item"};
 }
