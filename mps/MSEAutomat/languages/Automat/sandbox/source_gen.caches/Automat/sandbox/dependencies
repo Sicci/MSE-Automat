@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Automat.sandbox.Automat" file="Automat.java">
+    <classNode dependClassName="Automat.sandbox.AutomatException" />
+    <classNode dependClassName="Automat.sandbox.ICommand" />
+    <classNode dependClassName="Automat.sandbox.InvalidInputException" />
+    <classNode dependClassName="Automat.sandbox.Item" />
+    <classNode dependClassName="Automat.sandbox.ItemNotAvailableException" />
+    <classNode dependClassName="Automat.sandbox.ItemStorage" />
+    <classNode dependClassName="Automat.sandbox.Localiser" />
+    <classNode dependClassName="Automat.sandbox.Money" />
+    <classNode dependClassName="Automat.sandbox.MoneyStorage" />
+    <classNode dependClassName="Automat.sandbox.NoItemSelectedException" />
+    <classNode dependClassName="Automat.sandbox.NoPartialCardPaymentException" />
+    <classNode dependClassName="Automat.sandbox.NotEnoughChangeException" />
+    <classNode dependClassName="Automat.sandbox.ValueNotAcceptedException" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Math" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode extendsClassName="java.util.Observable" />
+  </dependency>
+  <dependency className="Automat.sandbox.AutomatException" file="AutomatException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Exception" />
+  </dependency>
+  <dependency className="Automat.sandbox.AutomatType" file="AutomatType.java" />
+  <dependency className="Automat.sandbox.AutomatView" file="AutomatView.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.BottomAreaView" />
+    <classNode dependClassName="Automat.sandbox.ImageAreaComp" />
+    <classNode dependClassName="Automat.sandbox.MiddleAreaView" />
+    <classNode dependClassName="Automat.sandbox.TopAreaView" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.BottomAreaView" file="BottomAreaView.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.ImageAreaComp" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Cursor" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.ChangeItemIdCommand" file="ChangeItemIdCommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.ICommand" />
+  </dependency>
+  <dependency className="Automat.sandbox.ClearItemIdCommand" file="ClearItemIdCommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="Automat.sandbox.ICommand" />
+  </dependency>
+  <dependency className="Automat.sandbox.FrameView" file="FrameView.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.AutomatException" />
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.ChangeItemIdCommand" />
+    <classNode dependClassName="Automat.sandbox.ClearItemIdCommand" />
+    <classNode dependClassName="Automat.sandbox.ImageAreaComp" />
+    <classNode dependClassName="Automat.sandbox.InsertCardCommand" />
+    <classNode dependClassName="Automat.sandbox.InsertMoneyCommand" />
+    <classNode dependClassName="Automat.sandbox.Item" />
+    <classNode dependClassName="Automat.sandbox.Localiser" />
+    <classNode dependClassName="Automat.sandbox.LogView" />
+    <classNode dependClassName="Automat.sandbox.Money" />
+    <classNode dependClassName="Automat.sandbox.MoneyButton" />
+    <classNode dependClassName="Automat.sandbox.MoneyButtonPanel" />
+    <classNode dependClassName="Automat.sandbox.NumpadButton" />
+    <classNode dependClassName="Automat.sandbox.NumpadDisplay" />
+    <classNode dependClassName="Automat.sandbox.PaymentButton" />
+    <classNode dependClassName="Automat.sandbox.PaymentDisplay" />
+    <classNode dependClassName="Automat.sandbox.SelectItemCommand" />
+    <classNode dependClassName="Automat.sandbox.StatusView" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.GridBagConstraints" />
+    <classNode dependClassName="java.awt.GridBagLayout" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.awt.event.ActionListener" />
+    <classNode dependClassName="java.awt.event.MouseAdapter" />
+    <classNode dependClassName="java.awt.event.MouseEvent" />
+    <classNode dependClassName="java.awt.event.WindowAdapter" />
+    <classNode dependClassName="java.awt.event.WindowEvent" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Observable" />
+    <classNode extendsClassName="java.util.Observer" />
+    <classNode extendsClassName="javax.swing.JFrame" />
+  </dependency>
+  <dependency className="Automat.sandbox.ICommand" file="ICommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.ImageAreaComp" file="ImageAreaComp.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.Image" />
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.imageio.ImageIO" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.InsertCardCommand" file="InsertCardCommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.NoItemSelectedException" />
+    <classNode dependClassName="Automat.sandbox.NoPartialCardPaymentException" />
+    <classNode dependClassName="Automat.sandbox.NotEnoughChangeException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.ICommand" />
+  </dependency>
+  <dependency className="Automat.sandbox.InsertMoneyCommand" file="InsertMoneyCommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.NoItemSelectedException" />
+    <classNode dependClassName="Automat.sandbox.NotEnoughChangeException" />
+    <classNode dependClassName="Automat.sandbox.ValueNotAcceptedException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="Automat.sandbox.ICommand" />
+  </dependency>
+  <dependency className="Automat.sandbox.InvalidInputException" file="InvalidInputException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.Item" file="Item.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="Automat.sandbox.ItemNotAvailableException" file="ItemNotAvailableException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.ItemStorage" file="ItemStorage.java">
+    <classNode dependClassName="Automat.sandbox.Item" />
+    <classNode dependClassName="java.io.BufferedReader" />
+    <classNode dependClassName="java.io.BufferedWriter" />
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.io.FileNotFoundException" />
+    <classNode dependClassName="java.io.FileReader" />
+    <classNode dependClassName="java.io.FileWriter" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.IndexOutOfBoundsException" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="Automat.sandbox.Localiser" file="Localiser.java">
+    <classNode dependClassName="java.io.BufferedReader" />
+    <classNode dependClassName="java.io.FileNotFoundException" />
+    <classNode dependClassName="java.io.FileReader" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+  </dependency>
+  <dependency className="Automat.sandbox.LogView" file="LogView.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.JScrollPane" />
+    <classNode dependClassName="javax.swing.JTextArea" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.MiddleAreaView" file="MiddleAreaView.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.ImageAreaComp" />
+    <classNode dependClassName="Automat.sandbox.NumpadComp" />
+    <classNode dependClassName="Automat.sandbox.PaymentComp" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.Money" file="Money.java">
+    <classNode dependClassName="Automat.sandbox.MoneyType" />
+  </dependency>
+  <dependency className="Automat.sandbox.MoneyButton" file="MoneyButton.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Cursor" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.NumberFormatException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.CompoundBorder" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="javax.swing.JButton" />
+  </dependency>
+  <dependency className="Automat.sandbox.MoneyButtonPanel" file="MoneyButtonPanel.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.MoneyButton" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.MoneyStorage" file="MoneyStorage.java">
+    <classNode dependClassName="Automat.sandbox.Money" />
+    <classNode dependClassName="Automat.sandbox.MoneyType" />
+    <classNode dependClassName="java.io.BufferedReader" />
+    <classNode dependClassName="java.io.BufferedWriter" />
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.io.FileNotFoundException" />
+    <classNode dependClassName="java.io.FileReader" />
+    <classNode dependClassName="java.io.FileWriter" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.IndexOutOfBoundsException" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="Automat.sandbox.MoneyType" file="MoneyType.java" />
+  <dependency className="Automat.sandbox.NoItemSelectedException" file="NoItemSelectedException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.NoPartialCardPaymentException" file="NoPartialCardPaymentException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.NotEnoughChangeException" file="NotEnoughChangeException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+  <dependency className="Automat.sandbox.NumpadButton" file="NumpadButton.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Cursor" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.CompoundBorder" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="javax.swing.JButton" />
+  </dependency>
+  <dependency className="Automat.sandbox.NumpadButtonPanel" file="NumpadButtonPanel.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.NumpadButton" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.NumpadComp" file="NumpadComp.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.NumpadButtonPanel" />
+    <classNode dependClassName="Automat.sandbox.NumpadDisplay" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.NumpadDisplay" file="NumpadDisplay.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.CompoundBorder" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="javax.swing.JTextField" />
+  </dependency>
+  <dependency className="Automat.sandbox.PaymentButton" file="PaymentButton.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.Image" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="javax.swing.JLabel" />
+  </dependency>
+  <dependency className="Automat.sandbox.PaymentButtonPanel" file="PaymentButtonPanel.java">
+    <classNode dependClassName="Automat.sandbox.PaymentButton" />
+    <classNode dependClassName="java.awt.Cursor" />
+    <classNode dependClassName="java.awt.image.BufferedImage" />
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="javax.imageio.ImageIO" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.PaymentComp" file="PaymentComp.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="Automat.sandbox.MoneyButtonPanel" />
+    <classNode dependClassName="Automat.sandbox.PaymentButton" />
+    <classNode dependClassName="Automat.sandbox.PaymentButtonPanel" />
+    <classNode dependClassName="Automat.sandbox.PaymentDisplay" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.event.MouseAdapter" />
+    <classNode dependClassName="java.awt.event.MouseEvent" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.PaymentDisplay" file="PaymentDisplay.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="javax.swing.SwingConstants" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.CompoundBorder" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="javax.swing.JTextField" />
+  </dependency>
+  <dependency className="Automat.sandbox.SelectItemCommand" file="SelectItemCommand.java">
+    <classNode dependClassName="Automat.sandbox.Automat" />
+    <classNode dependClassName="Automat.sandbox.AutomatException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="Automat.sandbox.ICommand" />
+  </dependency>
+  <dependency className="Automat.sandbox.StatusView" file="StatusView.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.JScrollPane" />
+    <classNode dependClassName="javax.swing.JTextArea" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.StylePanel" file="StylePanel.java">
+    <classNode dependClassName="Automat.sandbox.AutomatView" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.GridBagLayout" />
+    <classNode dependClassName="java.awt.Insets" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.CompoundBorder" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="java.awt.GridBagConstraints" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.TopAreaView" file="TopAreaView.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.StylePanel" />
+  </dependency>
+  <dependency className="Automat.sandbox.ValueNotAcceptedException" file="ValueNotAcceptedException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="Automat.sandbox.AutomatException" />
+  </dependency>
+</dependenciesRoot>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tyhk" modelUID="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" version="-1" />
+    </dependencies>
+    <rename id="tyhk.8785849198914793952" type="PROPERTY" from="value" to="cointype" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tyhk" modelUID="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" version="0" />
+    </dependencies>
+    <rename id="tyhk.8785849198914793952" type="PROPERTY" from="cointype" to="coinType" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tyhk" modelUID="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" version="1" />
+    </dependencies>
+    <rename id="tyhk.166346444445062816" type="PROPERTY" from="type" to="cardtype" />
+  </StructureModification>
+</history>
+
