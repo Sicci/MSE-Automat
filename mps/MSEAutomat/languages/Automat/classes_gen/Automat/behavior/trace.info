@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="Automat_BehaviorDescriptor.java" startLine="12" startPosition="0" endLine="33" endPosition="0" unitName="Automat.behavior.Automat_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="Automat.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="accepts_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.accepts_BehaviorDescriptor" />
+  <unitInfo fileName="accepts_banknotes_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.accepts_banknotes_BehaviorDescriptor" />
+  <unitInfo fileName="accepts_coins_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.accepts_coins_BehaviorDescriptor" />
+  <unitInfo fileName="accepts_creditcard_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.accepts_creditcard_BehaviorDescriptor" />
+  <unitInfo fileName="has_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.has_BehaviorDescriptor" />
+  <unitInfo fileName="stores_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_BehaviorDescriptor" />
+  <unitInfo fileName="stores_items_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_items_BehaviorDescriptor" />
+  <unitInfo fileName="stores_items_item_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_items_item_BehaviorDescriptor" />
+  <unitInfo fileName="stores_money_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_money_BehaviorDescriptor" />
+  <unitInfo fileName="stores_money_banknotes_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_money_banknotes_BehaviorDescriptor" />
+  <unitInfo fileName="stores_money_coins_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Automat.behavior.stores_money_coins_BehaviorDescriptor" />
+</debugInfo>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Automat/Automat.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Automat/sandbox/Automat.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/yxc/sandbox/yxc.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/yxc/yxc.mpl" folder="" />
+    </projectModules>
+  </component>
+</project>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-8k6nduszm74wxceuaujs3mkq6yoflew">
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cc(jetbrains.mps.baseLanguage.generator.java.conceptFunctionDefaults@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+  <dep model="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" hash="10snekboz53nbl62omdkz3wgfd6ked1" />
+  <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+  <common hash="-cszawsah0bb8tfosupv5v19vx7xhane">
+    <dep root="4285740819015686551" />
+    <dep root="4285740819017508532" />
+    <dep root="4737897301537558520" />
+    <dep root="4737897301537598379" />
+    <dep root="5879006238386565409" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cc(jetbrains.mps.baseLanguage.generator.java.conceptFunctionDefaults@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
+    <dep model="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <file name="QueriesGenerated.java" />
+  </common>
+  <source id="8785849198913118198" name="main" hash="-3ykiqc78acx2d2r0ueesoiswzsl9rxk" />
+  <source id="5879006238386565409" name="AutomatView" hash="-8qxcn1lzgr5dvc86h7f0kjydgip69hz" />
+  <source id="5879006238387016136" name="AutomatException" hash="-d898vcezfsff6py19rutk26jq0zunk4" />
+  <source id="5879006238387159777" name="InvalidInputException" hash="-62oatcen2tfm6knoh0gat56ca66hi07" />
+  <source id="5879006238387160686" name="ItemNotAvailableException" hash="-b11irl7gqbgcn3crx33id861weerh0j" />
+  <source id="5879006238387160960" name="NotEnoughChangeException" hash="80jdj5cxx0qcd67giq7xwko0q0hm1kl" />
+  <source id="4737897301537558520" name="ItemStorage" hash="-cs5fpj0nh8q8m7ax8wmplz5g6lvecoy" />
+  <source id="4737897301537598379" name="MoneyStorage" hash="-63ts6irqk41tisgp9twdqjf1eyw3vwo" />
+  <source id="4737897301537598976" name="SelectItemCommand" hash="1ti02ejnzgqmjyqdq66p7a4ewjvdzzk" />
+  <source id="4737897301537599406" name="Item" hash="-d8kpra93319zxnsw7niwgtwc3mndml2" />
+  <source id="4737897301537599417" name="Money" hash="-4mz15dguht3uol45lvuv0pw2t8tpnj9" />
+  <source id="4737897301537599633" name="MoneyButton" hash="-b417f6o7cnqfk7boq14zt5lm10bmycs" />
+  <source id="4737897301537599853" name="NumpadButton" hash="-67kz1za3t0tz8824y237tjddwu7oqc8" />
+  <source id="4737897301538058845" name="ICommand" hash="e2qsebz61rapc1acflxv49tqzeqwnzw" />
+  <source id="4737897301540662277" name="AutomatType" hash="-63y7p8v43z959dajsqyddy8p3qm1snu" />
+  <source id="4285740819015686551" name="Automat" hash="-36l3n7wfcnxtqy0ct2kh2fniit6eri1" />
+  <source id="4285740819017508532" name="Localiser" hash="-73gm3pqr2e8we4acshxg5e1sqwbny6v" />
+  <source id="4285740819017888901" name="ValueNotAcceptedException" hash="ddgj0s5ahirhetscqp5tcaefksg6h98" />
+  <source id="4285740819017945814" name="InsertMoneyCommand" hash="-dxxzqp5tiete1j7w2cka1btt2gmyu7b" />
+  <source id="4285740819017961232" name="InsertCardCommand" hash="ega1kevpekks0evj38lieahi60v2nmr" />
+  <source id="4285740819017971084" name="ClearItemIdCommand" hash="-1k1bi41ugnxodeimkxovr3wnpnl2ad5" />
+  <source id="4285740819017979738" name="ChangeItemIdCommand" hash="2w7f6z6fidq5sm2xl3ombcg7gwafb8y" />
+  <source id="4285740819018033046" name="MoneyType" hash="-8d9qqp0ioe8acxzdmta52rdrhzz2yqc" />
+  <source id="4285740819018058434" name="StylePanel" hash="-cn8n73syrjquja927r902mnruy8xwlg" />
+  <source id="4285740819018236239" name="LogView" hash="-7sjdi63f8uno9ac5y57mnlrvivc7wp8" />
+  <source id="4285740819018415332" name="FrameView" hash="9f2fh8phsjb9jspqq2xaizo75ffkx7g" />
+  <source id="4285740819018673308" name="StatusView" hash="-1uva1rky4nifnl5wbq2yqnn00udh8b1" />
+  <source id="4285740819019000055" name="NoPartialCardPaymentException" hash="3ods2mog4kzyht7rlc72w8p2nv8vh3o" />
+  <source id="4285740819019033989" name="NoItemSelectedException" hash="2i1x7a26gy6f2bz11g4kaptmqxmsg81" />
+  <source id="4285740819019458066" name="BottomAreaView" hash="-bqnani01xjjz58temoi1dbla3g3xy8y" />
+  <source id="4285740819019497432" name="MiddleAreaView" hash="5aplivwvuj2e5dxkz45qakt48qsaunc" />
+  <source id="4285740819019538193" name="TopAreaView" hash="e1brnmmbrj5j1gvufcttylci5fbn639" />
+  <source id="4285740819019584803" name="ImageAreaComp" hash="-extza2liol591k6x7imwjnqdsydt7f1" />
+  <source id="4285740819019633796" name="NumpadButtonPanel" hash="-3nce8uuy9qojkwzz01z0e2byos72jen" />
+  <source id="4285740819019669673" name="NumpadComp" hash="-b622lt5x55wa03zbxw6w18zhk079b1v" />
+  <source id="4285740819019696579" name="NumpadDisplay" hash="-39h7epr6u6p10z42w5tmoz0rnqmheov" />
+  <source id="4285740819019761228" name="MoneyButtonPanel" hash="cr5nbj5mgqc2s4xbfs32jhczekao6d9" />
+  <source id="4285740819019805058" name="PaymentButton" hash="3whxp4a1tz116rpdvtpms1d8q5us5kw" />
+  <source id="4285740819019830302" name="PaymentButtonPanel" hash="-e6is6mysb9hf9yo8el77fgxkyseswke" />
+  <source id="4285740819019931701" name="PaymentComp" hash="5eehq771jbsv9u5bs1u84c7o1i0121t" />
+  <source id="4285740819020013065" name="PaymentDisplay" hash="7y86zsu8oflvhhu6b2nfa22uujfmtr4" />
+</dependencies>
+

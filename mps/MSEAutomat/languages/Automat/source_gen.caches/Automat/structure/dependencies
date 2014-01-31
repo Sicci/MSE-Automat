@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Automat.structure.AutomatType" file="AutomatType.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.backports.LinkedList" />
+  </dependency>
+  <dependency className="Automat.structure.AutomatType_PropertySupport" file="AutomatType_PropertySupport.java">
+    <classNode dependClassName="Automat.structure.AutomatType" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
+  <dependency className="Automat.structure.BanknoteType" file="BanknoteType.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.backports.LinkedList" />
+  </dependency>
+  <dependency className="Automat.structure.BanknoteType_PropertySupport" file="BanknoteType_PropertySupport.java">
+    <classNode dependClassName="Automat.structure.BanknoteType" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
+  <dependency className="Automat.structure.CoinType" file="CoinType.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.backports.LinkedList" />
+  </dependency>
+  <dependency className="Automat.structure.CoinType_PropertySupport" file="CoinType_PropertySupport.java">
+    <classNode dependClassName="Automat.structure.CoinType" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
+  <dependency className="Automat.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.StructureAspectInterpreted" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+  </dependency>
+</dependenciesRoot>
+
