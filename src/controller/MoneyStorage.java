@@ -49,7 +49,7 @@ public class MoneyStorage {
 		try {
 			File logFile = new File(filename);
 
-			System.out.println("writing to " + logFile.getCanonicalPath());
+			// System.out.println("writing to " + logFile.getCanonicalPath());
 
 			writer = new BufferedWriter(new FileWriter(logFile));
 
@@ -107,7 +107,7 @@ public class MoneyStorage {
 				int i = 0;
 
 				while ((line = reader.readLine()) != null) {
-					System.out.println(line);
+					// System.out.println(line);
 
 					moneyList.get(i).setQuantity(Integer.valueOf(line));
 					i++;

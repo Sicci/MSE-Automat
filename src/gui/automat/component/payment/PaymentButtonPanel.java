@@ -47,7 +47,7 @@ public class PaymentButtonPanel extends StylePanel {
 		}
 
 		// hackerton
-		for(int j = 0; j < 3 - aPaymentButtons.size(); j++) {
+		for(int j = 0; j < 4 - aPaymentButtons.size(); j++) {
 			pb = new PaymentButton();
 			gridStyle.setGrid(0.33,1.0,j+1,0);
 		    add(pb, gridStyle);

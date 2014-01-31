@@ -260,6 +260,8 @@ public class FrameView extends JFrame implements Observer {
 				lvLogView.addToLog(Localiser.getString("PAID_WITH_CARD").replace("%s", formatCurrency(automat.getOutputItem().getPrice())));
 			}
 			logChangeMoney(automat.retrieveChange());
+		} else if (t.startsWith("log:")) {
+			lvLogView.addToLog(Localiser.getString("LOG") + t.substring(4));
 		}
 	}
 

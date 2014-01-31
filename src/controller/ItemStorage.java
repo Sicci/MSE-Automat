@@ -23,7 +23,7 @@ public class ItemStorage {
 
 	private void loadDefaultItems() {
 		itemList = new ArrayList<Item>();
-		
+
 		itemList.add(new Item("1", "Cola", 120, 10));
 		itemList.add(new Item("2", "Fanta", 130, 15));
 		itemList.add(new Item("3", "Sprite", 140, 5));
@@ -73,7 +73,7 @@ public class ItemStorage {
 		try {
 			File logFile = new File(filename);
 
-			System.out.println("writing to " + logFile.getCanonicalPath());
+			// System.out.println("writing to " + logFile.getCanonicalPath());
 
 			writer = new BufferedWriter(new FileWriter(logFile));
 
@@ -107,7 +107,7 @@ public class ItemStorage {
 				String line = null;
 				int i = 0;
 				while ((line = reader.readLine()) != null) {
-					System.out.println(line);
+					// System.out.println(line);
 
 					itemList.get(i).setQuantity(Integer.valueOf(line));
 					i++;

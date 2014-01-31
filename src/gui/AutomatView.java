@@ -17,6 +17,7 @@ import controller.Automat;
 
 public class AutomatView extends StylePanel {
 	public static final Color COLOR = new Color(1, 90, 158);
+	public static final String RESPATH = "";
 	private static final long serialVersionUID = 1L;
 
 	private String sAutomatName;
@@ -35,7 +36,7 @@ public class AutomatView extends StylePanel {
 		this.automat = automat;
 
 		sAutomatName = automat.getName();
-		iacAutomatLogo = new ImageAreaComp("img/logo_soda.png", AutomatView.COLOR);
+		iacAutomatLogo = new ImageAreaComp(AutomatView.RESPATH + "img/logo_soda.png", AutomatView.COLOR);
 
 		String[] aAccepedButtons = { "7", "8", "9", "4", "5", "6", "1", "2", "3", btnLabelCancel, "0", btnLabelEnter };
 

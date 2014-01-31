@@ -1,5 +1,7 @@
 package controller;
 
+import gui.AutomatView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
@@ -154,8 +156,6 @@ public class Automat extends Observable {
 			throw new ValueNotAcceptedException(Localiser.getString("EXCEPTION_VALUE_NOT_ACCEPTED"));
 		}
 
-		// ToDO: check if correct form
-
 		inputMoney.add(value);
 
 		this.setChanged();
@@ -249,7 +249,7 @@ public class Automat extends Observable {
 		}
 	}
 
-	public boolean hasEnoughChangeMoney() {
+	private boolean hasEnoughChangeMoney() {
 		Money minValue = null;
 		Money maxValue = null;
 
@@ -282,7 +282,7 @@ public class Automat extends Observable {
 		return hasEnoughChangeMoney;
 	}
 
-	public void calcAndHandOutChange(int value) throws NotEnoughChangeException {
+	private void calcAndHandOutChange(int value) throws NotEnoughChangeException {
 		int exchange = Math.abs(value);
 
 		List<Integer> l = new ArrayList<Integer>();
@@ -316,6 +316,11 @@ public class Automat extends Observable {
 	private Item handOutItem() {
 		Item i = getCurrentItem();
 
+		this.dispenseCup();
+		this.fillCup();
+		this.addExtras();
+		this.rotateSpiral();
+
 		if (i != null) {
 			i.reduceQuantity();
 
@@ -326,7 +331,7 @@ public class Automat extends Observable {
 		return i;
 	}
 
-	public void reset() {
+	private void reset() {
 		currentItem = null;
 		setCurrentItemId("");
 
@@ -387,4 +392,26 @@ public class Automat extends Observable {
 	public String[] getAcceptedCards() {
 		return moneyStorage.getAcceptedCards();
 	}
+
+	private void dispenseCup() {
+		this.setChanged();
+		this.notifyObservers("log:"+Localiser.getString("PROC_DISPENSE_CUP"));
+	}
+
+	private void fillCup() {
+		this.setChanged();
+		this.notifyObservers("log:"+Localiser.getString("PROC_FILL_CUP"));
+	}
+
+	private void addExtras() {
+		this.setChanged();
+		this.notifyObservers("log:"+Localiser.getString("PROC_ADD_EXTRAS"));
+	}
+	
+	private void rotateSpiral() {
+		this.setChanged();
+		this.notifyObservers("log:"+Localiser.getString("PROC_ROTATE_SPIRAL"));
+	}
+
+
 }
