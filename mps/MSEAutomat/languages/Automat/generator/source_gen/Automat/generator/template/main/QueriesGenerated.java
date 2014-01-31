@@ -6,20 +6,23 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
-  public static boolean baseMappingRule_Condition_8675345724943758056(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+  public static boolean baseMappingRule_Condition_8675345724943871324(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+    return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null).equals("soda");
+  }
+
+  public static boolean baseMappingRule_Condition_8675345724951974160(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
     return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null).equals("coffee");
   }
 
-  public static boolean baseMappingRule_Condition_8675345724947531861(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
-    return (int) ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "_stores", true), "money", true), "money_banknotes", true)).count() == 0;
+  public static boolean baseMappingRule_Condition_8675345724953735430(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+    return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null).equals("soda");
   }
 
-  public static boolean baseMappingRule_Condition_8675345724943871324(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+  public static boolean baseMappingRule_Condition_8675345724953378227(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
     return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null).equals("coffee");
   }
 

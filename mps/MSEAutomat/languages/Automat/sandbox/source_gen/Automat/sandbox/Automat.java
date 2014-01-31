@@ -255,8 +255,30 @@ public class Automat extends Observable {
     return l;
   }
 
+
+
+  private void dispenseCup() {
+    this.setChanged();
+    this.notifyObservers("log:" + Localiser.getString("PROC_DISPENSE_CUP"));
+  }
+
+  private void fillCup() {
+    this.setChanged();
+    this.notifyObservers("log:" + Localiser.getString("PROC_FILL_CUP"));
+  }
+
+  private void addExtras() {
+    this.setChanged();
+    this.notifyObservers("log:" + Localiser.getString("PROC_ADD_EXTRAS"));
+  }
+
+
+
   private Item handOutItem() {
     Item i = getCurrentItem();
+    this.dispenseCup();
+    this.fillCup();
+    this.addExtras();
     if (i != null) {
       i.reduceQuantity();
       this.setChanged();
@@ -264,6 +286,9 @@ public class Automat extends Observable {
     }
     return i;
   }
+
+
+
 
   public void reset() {
     currentItem = null;
@@ -318,19 +343,6 @@ public class Automat extends Observable {
   }
 
   public String[] getAcceptedCards() {
-    test2();
     return moneyStorage.getAcceptedCards();
   }
-
-
-
-
-  public void testFunction() {
-    test2();
-  }
-
-  public void test2() {
-  }
-
-
 }
