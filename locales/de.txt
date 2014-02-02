@@ -1,9 +1,12 @@
-﻿AUTOMAT_START=%s wurde gestartet!\n\n
+﻿﻿
+AUTOMAT_START=%s wurde gestartet!\n\n
 EMPTIED_COMPARTMENT=\nFach wurde geleert!
 EMPTY_COMPARTMENT=\nFach ist leer!
 ITEM_SELECTION_CHANGE=\nItemauswahl verändert (auf %s)
 ITEM_SELECTED=\nItem ausgewählt: %s
+PAYMENT_PROMPT_START=-
 PAYMENT_PROMPT=\n%s zu zahlen
+ITEM_PROMPT_START=Item auswählen
 ITEM_PROMPT=Item: %s
 MONEY_INSERTED=\nEingeworfenes Geld: %s
 OUTPUT_ITEM=\nAusgegebenes Item: %s

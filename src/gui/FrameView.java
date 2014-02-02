@@ -190,7 +190,9 @@ public class FrameView extends JFrame implements Observer {
 
 		lvLogView.clearLog();
 		lvLogView.addToLog(Localiser.getString("AUTOMAT_START").replace("%s", avAutomatView.getAutomatName()));
-
+		getNumpadDisplay().setText(Localiser.getString("ITEM_PROMPT_START"));
+		getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT_START"));
+		
 		updateStats();
 	}
 
@@ -218,9 +220,6 @@ public class FrameView extends JFrame implements Observer {
 	public static void main(String args[]) throws IOException {
 		Automat automat = new Automat();
 		new FrameView(automat);
-		// JOptionPane.showMessageDialog(null, e.getMessage(), "Error",
-		// JOptionPane.ERROR_MESSAGE);
-		// System.exit(-1);
 	}
 
 	@Override
@@ -236,7 +235,6 @@ public class FrameView extends JFrame implements Observer {
 			lvLogView.addToLog(Localiser.getString("ITEM_SELECTED").replace("%s", automat.getCurrentItem().getName()));
 			getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT").replace("%s", formatCurrency(automat.getUpdatedCurrentItemCost())));
 		} else if (t.equals("statsChanged")) {
-			// lvLogView.addToLog("\nStats updated\n");
 			updateStats();
 		} else if (t.equals("handedOutChange")) {
 			logChangeMoney(automat.retrieveChange());
@@ -261,7 +259,7 @@ public class FrameView extends JFrame implements Observer {
 			}
 			logChangeMoney(automat.retrieveChange());
 		} else if (t.startsWith("log:")) {
-			lvLogView.addToLog(Localiser.getString("LOG") + t.substring(4));
+			lvLogView.addToLog(Localiser.getString("LOG") + Localiser.getString(t.substring(4)));
 		}
 	}
 

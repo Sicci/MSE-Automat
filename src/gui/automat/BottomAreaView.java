@@ -25,10 +25,10 @@ public class BottomAreaView extends StylePanel {
 		gridStyle.setPadding(50, 0, 5, 0);
 
 		gridStyle.setGrid(1.0, 1.0, 0, 0);
-		iacAutomatOutputEmpty = new ImageAreaComp(AutomatView.RESPATH + "img/output_soda_empty.png", Color.BLACK);
+		iacAutomatOutputEmpty = new ImageAreaComp(AutomatView.RESPATH + "soda/output_empty.png", Color.BLACK);
 		iacAutomatOutputEmpty.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
-		iacAutomatOutputFull = new ImageAreaComp(AutomatView.RESPATH + "img/output_soda_full.png", Color.BLACK);
+		iacAutomatOutputFull = new ImageAreaComp(AutomatView.RESPATH + "soda/output_full.png", Color.BLACK);
 		iacAutomatOutputFull.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 		currentImage = iacAutomatOutputEmpty;

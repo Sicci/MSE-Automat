@@ -142,7 +142,7 @@ public class Automat extends Observable {
 			throw new NoItemSelectedException(Localiser.getString("EXCEPTION_NO_ITEM_SELECTED"));
 		}
 
-		if (!hasEnoughChangeMoney()) {
+		if (!hasEnoughChangeMoney(this.getSumInputMoney() + value, currentItem.getPrice())) {
 			throw new NotEnoughChangeException(Localiser.getString("EXCEPTION_NOT_ENOUGH_CHANGE"));
 		}
 
@@ -247,13 +247,14 @@ public class Automat extends Observable {
 		}
 	}
 
-	private boolean hasEnoughChangeMoney() {
+	private boolean hasEnoughChangeMoney(int inputValue, int price) {
 		Money minValue = null;
 		Money maxValue = null;
 
 		boolean hasEnoughChangeMoney = true;
 
 		// smallest and biggest coin
+
 		for (Money i : moneyStorage.getMoneyList()) {
 			if (minValue == null || i.getValue() < minValue.getValue()) {
 				minValue = i;
@@ -271,7 +272,8 @@ public class Automat extends Observable {
 			}
 		}
 
-		int neededQuantity = maxValue.getValue() / minValue.getValue();
+		// int neededQuantity = maxValue.getValue() / minValue.getValue();
+		int neededQuantity = (inputValue - price) / minValue.getValue();
 
 		if (minValue.getQuantity() < neededQuantity) {
 			hasEnoughChangeMoney = false;
@@ -393,22 +395,22 @@ public class Automat extends Observable {
 
 	private void dispenseCup() {
 		this.setChanged();
-		this.notifyObservers("log:" + Localiser.getString("PROC_DISPENSE_CUP"));
+		this.notifyObservers("log:PROC_DISPENSE_CUP");
 	}
 
 	private void fillCup() {
 		this.setChanged();
-		this.notifyObservers("log:" + Localiser.getString("PROC_FILL_CUP"));
+		this.notifyObservers("log:PROC_FILL_CUP");
 	}
 
 	private void addExtras() {
 		this.setChanged();
-		this.notifyObservers("log:" + Localiser.getString("PROC_ADD_EXTRAS"));
+		this.notifyObservers("log:PROC_ADD_EXTRAS");
 	}
 
 	private void rotateSpiral() {
 		this.setChanged();
-		this.notifyObservers("log:" + Localiser.getString("PROC_ROTATE_SPIRAL"));
+		this.notifyObservers("log:PROC_ROTATE_SPIRAL");
 	}
 
 }

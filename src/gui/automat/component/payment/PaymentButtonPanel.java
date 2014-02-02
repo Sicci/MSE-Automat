@@ -1,5 +1,6 @@
 package gui.automat.component.payment;
 
+import gui.AutomatView;
 import gui.automat.component.payment.PaymentButton;
 import gui.lib.StylePanel;
 
@@ -25,7 +26,7 @@ public class PaymentButtonPanel extends StylePanel {
 		aPaymentButtons = new ArrayList<PaymentButton>();
 		alImgPaths = new ArrayList<String>();
 		for(String pt : aAcceptedPaymentTypes) {
-			alImgPaths.add("img/slot_" + pt + ".png");
+			alImgPaths.add(AutomatView.RESPATH + "slot_" + pt + ".png");
 		}
 
 		for (int i = 0; i < alImgPaths.size(); i++) {

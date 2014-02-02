@@ -14,8 +14,8 @@ import data.Money;
 import data.MoneyType;
 
 public class MoneyStorage {
-	List<Money> moneyList;
-	List<String> cards;
+	private List<Money> moneyList;
+	private List<String> cards;
 
 	public MoneyStorage() {
 		super();
