@@ -65,7 +65,7 @@ public class PaymentComp extends StylePanel {
 		    });
 		}
 		
-		
+		// after each click hide buttons again
 		// i4hmAcceptedMoney = hmAcceptedMoney.keySet().iterator();
 		// while(i4hmAcceptedMoney.hasNext()){
 		// String key = i4hmAcceptedMoney.next();

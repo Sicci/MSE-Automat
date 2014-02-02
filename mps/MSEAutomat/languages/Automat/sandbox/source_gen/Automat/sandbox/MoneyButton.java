@@ -15,6 +15,7 @@ public class MoneyButton extends JButton {
   private static final long serialVersionUID = 1L;
   private int value;
 
+
   public MoneyButton(String value) {
     super(value);
     initStyle();
@@ -26,19 +27,26 @@ public class MoneyButton extends JButton {
     }
   }
 
+
+
   public int getValue() {
     return value;
   }
 
+
+
   private void initStyle() {
     setForeground(Color.BLACK);
     setBackground(new Color(170, 190, 205));
+
     Font font = new Font("Arial", Font.BOLD, 10);
     setFont(font);
+
     Border line = new LineBorder(Color.DARK_GRAY);
     Border margin = new EmptyBorder(0, 0, 0, 0);
     Border compound = new CompoundBorder(line, margin);
     setBorder(compound);
+
     setCursor(new Cursor(Cursor.HAND_CURSOR));
   }
 

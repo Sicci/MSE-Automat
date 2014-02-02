@@ -13,6 +13,7 @@ public class ImageAreaComp extends StylePanel {
   private Image imgAutomatLogo;
   private Color cBorderColor;
 
+
   public ImageAreaComp(String sImagePath, Color cBorderColor) {
     try {
       this.imgAutomatLogo = ImageIO.read(new File(sImagePath));
@@ -23,11 +24,12 @@ public class ImageAreaComp extends StylePanel {
     }
   }
 
+
+
   public void paint(Graphics g) {
     g.setColor(this.cBorderColor);
     g.fillRect(0, 0, g.getClipBounds().width, g.getClipBounds().height);
+
     g.drawImage(this.imgAutomatLogo, 1, 1, getWidth() - 2, getHeight() - 2, null);
   }
-
-
 }

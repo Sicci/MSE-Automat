@@ -13,18 +13,23 @@ public class LogView extends StylePanel {
   private static final long serialVersionUID = 1L;
   private JTextArea taLogPanelTextArea;
 
+
   public LogView() {
     super(new Color(238, 238, 238), Color.BLACK, new EmptyBorder(10, 10, 10, 10));
     setPreferredSize(new Dimension(100, 100));
+
     JLabel namePanel;
     JScrollPane spPanel;
+
     gridStyle.setGrid(1.0, 0.0, 0, 0);
     namePanel = new JLabel("LogPanel:");
     namePanel.setBackground(Color.BLUE);
     add(namePanel, gridStyle);
+
     gridStyle.setPadding(0, 0, 10, 10);
     gridStyle.setMargin(10, 10, 0, 0);
     gridStyle.setGrid(1.0, 1.0, 0, 1);
+
     taLogPanelTextArea = new JTextArea();
     spPanel = new JScrollPane(taLogPanelTextArea);
     spPanel.setBackground(Color.WHITE);
@@ -32,13 +37,19 @@ public class LogView extends StylePanel {
     add(spPanel, gridStyle);
   }
 
+
+
   public JTextArea getLogPanelTextArea() {
     return taLogPanelTextArea;
   }
 
+
+
   public void addToLog(String s) {
     taLogPanelTextArea.setText(taLogPanelTextArea.getText() + s);
   }
+
+
 
   public void clearLog() {
     taLogPanelTextArea.setText("");

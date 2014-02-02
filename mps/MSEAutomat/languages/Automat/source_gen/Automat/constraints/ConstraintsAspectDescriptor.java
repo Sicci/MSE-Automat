@@ -18,11 +18,15 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new stores_items_item_Constraints();
       case 0:
         return new accepts_creditcard_Constraints();
+      case 4:
+        return new stores_money_coins_Constraints();
+      case 3:
+        return new stores_money_banknotes_Constraints();
       default:
         // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"Automat.structure.accepts_creditcard", "Automat.structure.has", "Automat.structure.stores_items_item"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"Automat.structure.accepts_creditcard", "Automat.structure.has", "Automat.structure.stores_items_item", "Automat.structure.stores_money_banknotes", "Automat.structure.stores_money_coins"};
 }

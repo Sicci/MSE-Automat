@@ -29,7 +29,7 @@ public class PaymentButton extends JLabel {
 	}
 	
 	public void paint(Graphics g) {
-		if(value!="") {
+		if(!value.equals("")) {
 			g.setColor(AutomatView.COLOR);
 		    g.fillRect (0, 0, g.getClipBounds().width, g.getClipBounds().height);
 			g.setColor(AutomatView.COLOR);

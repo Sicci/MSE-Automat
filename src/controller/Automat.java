@@ -222,8 +222,6 @@ public class Automat extends Observable {
 	}
 
 	public void addToCurrentId(String s) {
-		// ToDO: check if correct form
-
 		String t = getCurrentItemId() + s;
 
 		if (getCurrentItemId().length() > 3) {

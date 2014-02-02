@@ -24,10 +24,10 @@ public class MoneyStorage {
   private void loadDefaultMoney() {
     moneyList = new ArrayList<Money>();
     moneyList.add(new Money(10, 100, MoneyType.COIN));
-    moneyList.add(new Money(20, 200, MoneyType.COIN));
-    moneyList.add(new Money(50, 300, MoneyType.COIN));
-    moneyList.add(new Money(100, 400, MoneyType.COIN));
-    moneyList.add(new Money(100, 200, MoneyType.NOTE));
+    moneyList.add(new Money(20, 50, MoneyType.COIN));
+    moneyList.add(new Money(50, 10, MoneyType.COIN));
+    moneyList.add(new Money(100, 10, MoneyType.COIN));
+    moneyList.add(new Money(500, 0, MoneyType.NOTE));
     cards = new ArrayList<String>();
     cards.add("VISA");
     cards.add("MasterCard");
@@ -41,7 +41,6 @@ public class MoneyStorage {
     BufferedWriter writer = null;
     try {
       File logFile = new File(filename);
-      System.out.println("writing to " + logFile.getCanonicalPath());
       writer = new BufferedWriter(new FileWriter(logFile));
       for (int i = 0; i < getMoneyList().size(); i++) {
         Money m = getMoneyList().get(i);
@@ -90,7 +89,6 @@ public class MoneyStorage {
         String line = null;
         int i = 0;
         while ((line = reader.readLine()) != null) {
-          System.out.println(line);
           moneyList.get(i).setQuantity(Integer.valueOf(line));
           i++;
         }

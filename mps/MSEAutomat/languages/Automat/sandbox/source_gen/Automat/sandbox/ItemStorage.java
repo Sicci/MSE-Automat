@@ -62,7 +62,6 @@ public class ItemStorage {
     BufferedWriter writer = null;
     try {
       File logFile = new File(filename);
-      System.out.println("writing to " + logFile.getCanonicalPath());
       writer = new BufferedWriter(new FileWriter(logFile));
       for (int i = 0; i < getItemList().size(); i++) {
         Item item = getItemList().get(i);
@@ -90,7 +89,6 @@ public class ItemStorage {
         String line = null;
         int i = 0;
         while ((line = reader.readLine()) != null) {
-          System.out.println(line);
           itemList.get(i).setQuantity(Integer.valueOf(line));
           i++;
         }

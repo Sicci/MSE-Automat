@@ -14,16 +14,21 @@ import javax.swing.border.CompoundBorder;
 public class PaymentDisplay extends JTextField {
   private static final long serialVersionUID = 1L;
 
+
   public PaymentDisplay() {
     initStyle();
   }
+
+
 
   public void initStyle() {
     setEditable(false);
     setBackground(new Color(180, 190, 205));
     setHorizontalAlignment(SwingConstants.RIGHT);
+
     Font font = new Font("Arial", Font.BOLD, 11);
     setFont(font);
+
     Border line = new LineBorder(Color.DARK_GRAY);
     Border margin = new EmptyBorder(0, 0, 0, 0);
     Border compound = new CompoundBorder(line, margin);

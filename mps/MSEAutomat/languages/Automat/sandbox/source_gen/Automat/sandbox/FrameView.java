@@ -22,42 +22,54 @@ import java.util.List;
 
 public class FrameView extends JFrame implements Observer {
   private static final long serialVersionUID = 1L;
+
   private StatusView svStatusView;
   private AutomatView avAutomatView;
   private LogView lvLogView;
+
   private Automat automat;
+
 
   public FrameView(Automat automat) {
     this.automat = automat;
+
     automat.addObserver(this);
+
     avAutomatView = new AutomatView(automat);
     svStatusView = new StatusView();
     lvLogView = new LogView();
+
     addWindowListener(new WindowAdapter() {
       public void windowClosing(WindowEvent we) {
         System.exit(0);
       }
     });
-    setBounds(0, 0, 800, 600);
-    setMinimumSize(new Dimension(800, 600));
+
+    setBounds(0, 0, 1024, 768);
+    setMinimumSize(new Dimension(1024, 768));
     // setResizable(false); 
+
     GridBagConstraints gbc = new GridBagConstraints();
     setLayout(new GridBagLayout());
+
     gbc.weightx = 1.0;
     gbc.fill = GridBagConstraints.BOTH;
     gbc.weightx = 0.2;
     gbc.gridx = 0;
     gbc.gridy = 0;
     add(svStatusView, gbc);
+
     gbc.weightx = 0.5;
     gbc.weighty = 0.3;
     gbc.gridx = 1;
     gbc.gridy = 0;
     add(avAutomatView, gbc);
+
     gbc.weightx = 0.3;
     gbc.gridx = 2;
     gbc.gridy = 0;
     add(lvLogView, gbc);
+
     setVisible(true);
     initView();
   }
@@ -73,6 +85,7 @@ public class FrameView extends JFrame implements Observer {
         }
       });
     }
+
     // Additional MoneyButtonEvents 
     HashMap<String, MoneyButtonPanel> hmmbp = getMoneyButtonPanels();
     Iterator<String> i4hmmbp = hmmbp.keySet().iterator();
@@ -100,6 +113,7 @@ public class FrameView extends JFrame implements Observer {
         });
       }
     }
+
     // Additional NumpadButtonEvents 
     ArrayList<NumpadButton> alnb = getNumpadButtons();
     for (final NumpadButton nb : alnb) {
@@ -131,6 +145,7 @@ public class FrameView extends JFrame implements Observer {
         }
       });
     }
+
     // neat stuff 
     final ImageAreaComp iacFull = avAutomatView.getBottomArea().getAutomatOutputFull();
     iacFull.addMouseListener(new MouseAdapter() {
@@ -139,6 +154,7 @@ public class FrameView extends JFrame implements Observer {
         lvLogView.addToLog(Localiser.getString("EMPTIED_COMPARTMENT"));
       }
     });
+
     final ImageAreaComp iacEmpty = avAutomatView.getBottomArea().getAutomatOutputEmpty();
     iacEmpty.addMouseListener(new MouseAdapter() {
       public void mouseClicked(MouseEvent me) {
@@ -146,38 +162,54 @@ public class FrameView extends JFrame implements Observer {
         lvLogView.addToLog(Localiser.getString("EMPTY_COMPARTMENT"));
       }
     });
+
     lvLogView.clearLog();
     lvLogView.addToLog(Localiser.getString("AUTOMAT_START").replace("%s", avAutomatView.getAutomatName()));
+
+    getNumpadDisplay().setText(Localiser.getString("ITEM_PROMPT_START"));
+    getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT_START"));
+
     updateStats();
   }
+
+
 
   private HashMap<String, MoneyButtonPanel> getMoneyButtonPanels() {
     return avAutomatView.getMiddleArea().getPaymentPanel().getMoneyButtonPanels();
   }
 
+
+
   private ArrayList<PaymentButton> getPaymentButtons() {
     return avAutomatView.getMiddleArea().getPaymentPanel().getPaymentButtonPanel().getPaymentButtons();
   }
+
+
 
   private ArrayList<NumpadButton> getNumpadButtons() {
     return avAutomatView.getMiddleArea().getNumpadPanel().getNumpad().getNumpadButtons();
   }
 
+
+
   private PaymentDisplay getPaymentDisplay() {
     return avAutomatView.getMiddleArea().getPaymentPanel().getPaymentDisplay();
   }
+
+
 
   private NumpadDisplay getNumpadDisplay() {
     return avAutomatView.getMiddleArea().getNumpadPanel().getNumpadDisplay();
   }
 
+
+
   public static void main(String[] args) throws IOException {
     Automat automat = new Automat();
     new FrameView(automat);
-    // JOptionPane.showMessageDialog(null, e.getMessage(), "Error", 
-    // JOptionPane.ERROR_MESSAGE); 
-    // System.exit(-1); 
   }
+
+
 
   @Override
   public void update(Observable o, Object arg) {
@@ -185,7 +217,9 @@ public class FrameView extends JFrame implements Observer {
       System.err.println("no string in AutomatView.update(...)");
       return;
     }
+
     String t = (String) arg;
+
     if (t.equals("itemSelected")) {
       lvLogView.addToLog(Localiser.getString("ITEM_SELECTED").replace("%s", automat.getCurrentItem().getName()));
       getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT").replace("%s", formatCurrency(automat.getUpdatedCurrentItemCost())));
@@ -219,13 +253,17 @@ public class FrameView extends JFrame implements Observer {
       }
       logChangeMoney(automat.retrieveChange());
     } else if (t.startsWith("log:")) {
-      lvLogView.addToLog(Localiser.getString("LOG") + t.substring(4));
+      lvLogView.addToLog(Localiser.getString("LOG") + Localiser.getString(t.substring(4)));
     }
   }
+
+
 
   private String formatCurrency(int v) {
     return String.format("%.2f", v / 100.0) + automat.getCurrency();
   }
+
+
 
   private void logChangeMoney(List<Integer> change) {
     StringBuilder sb = new StringBuilder();
@@ -252,6 +290,8 @@ public class FrameView extends JFrame implements Observer {
     }
   }
 
+
+
   private void updateStats() {
     StringBuilder sb = new StringBuilder();
     for (Item i : automat.getItems().getItemList()) {
@@ -265,6 +305,4 @@ public class FrameView extends JFrame implements Observer {
     }
     svStatusView.getMoneyStoragePanelTextArea().setText(sb.toString());
   }
-
-
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="29" endPosition="0" unitName="Automat.constraints.ConstraintsAspectDescriptor" />
+  <unitInfo fileName="ConstraintsAspectDescriptor.java" startLine="9" startPosition="0" endLine="33" endPosition="0" unitName="Automat.constraints.ConstraintsAspectDescriptor" />
   <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/4732747067078584658">
     <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="17" startPosition="43" endLine="18" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
     <nodeInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -51,6 +51,102 @@
     </scopeInfo>
     <unitInfo nodeId="4732747067078608977" fileName="accepts_creditcard_Constraints.java" startLine="38" startPosition="147" endLine="42" endPosition="5" unitName="Automat.constraints.accepts_creditcard_Constraints$1" />
     <unitInfo nodeId="4732747067078584658" fileName="accepts_creditcard_Constraints.java" startLine="16" startPosition="0" endLine="50" endPosition="0" unitName="Automat.constraints.accepts_creditcard_Constraints" />
+  </root>
+  <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/6616384595875173500">
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="17" startPosition="43" endLine="18" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="27" startPosition="200" endLine="28" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="28" startPosition="96" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="32" startPosition="5" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="33" startPosition="0" endLine="34" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595875762731" fileName="stores_money_coins_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="114" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="45" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeChildBreakingPoint" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="stores_money_coins_Constraints#()V" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="29" startPosition="0" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6616384595875762729" fileName="stores_money_coins_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
+    <nodeInfo nodeId="6616384595875190912" fileName="stores_money_coins_Constraints.java" startLine="37" startPosition="154" endLine="42" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="37" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="17" startPosition="43" endLine="18" endPosition="50" />
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" />
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" />
+    <scopeInfo nodeId="6616384595875762730" fileName="stores_money_coins_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="114" />
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" />
+    <scopeInfo nodeId="6616384595875762729" fileName="stores_money_coins_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="6616384595875762729" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="6616384595875180985" fileName="stores_money_coins_Constraints.java" startLine="37" startPosition="154" endLine="42" endPosition="20" />
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="27" startPosition="200" endLine="34" endPosition="18">
+      <varInfo nodeId="6616384595875173500" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="37" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6616384595875173500" varName="childConcept" />
+      <varInfo nodeId="6616384595875173500" varName="link" />
+      <varInfo nodeId="6616384595875173500" varName="node" />
+      <varInfo nodeId="6616384595875173500" varName="operationContext" />
+      <varInfo nodeId="6616384595875173500" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="6616384595875173500" varName="checkingNodeContext" />
+      <varInfo nodeId="6616384595875173500" varName="childConcept" />
+      <varInfo nodeId="6616384595875173500" varName="link" />
+      <varInfo nodeId="6616384595875173500" varName="node" />
+      <varInfo nodeId="6616384595875173500" varName="operationContext" />
+      <varInfo nodeId="6616384595875173500" varName="parentNode" />
+    </scopeInfo>
+    <unitInfo nodeId="6616384595875762729" fileName="stores_money_coins_Constraints.java" startLine="38" startPosition="150" endLine="42" endPosition="5" unitName="Automat.constraints.stores_money_coins_Constraints$1" />
+    <unitInfo nodeId="6616384595875173500" fileName="stores_money_coins_Constraints.java" startLine="16" startPosition="0" endLine="47" endPosition="0" unitName="Automat.constraints.stores_money_coins_Constraints" />
+  </root>
+  <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/6616384595876139101">
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="17" startPosition="47" endLine="18" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="27" startPosition="200" endLine="28" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="28" startPosition="96" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="32" startPosition="5" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="33" startPosition="0" endLine="34" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595876186837" fileName="stores_money_banknotes_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="122" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="45" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="canBeChildBreakingPoint" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="stores_money_banknotes_Constraints#()V" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="29" startPosition="0" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6616384595876184843" fileName="stores_money_banknotes_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasOwnCanBeChildMethod#()Z" />
+    <nodeInfo nodeId="6616384595876139806" fileName="stores_money_banknotes_Constraints.java" startLine="37" startPosition="154" endLine="42" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="37" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+    <nodeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="17" startPosition="47" endLine="18" endPosition="54" />
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="22" startPosition="43" endLine="23" endPosition="16" />
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="30" startPosition="51" endLine="31" endPosition="67" />
+    <scopeInfo nodeId="6616384595876184844" fileName="stores_money_banknotes_Constraints.java" startLine="39" startPosition="39" endLine="40" endPosition="122" />
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="17" startPosition="0" endLine="20" endPosition="0" />
+    <scopeInfo nodeId="6616384595876184843" fileName="stores_money_banknotes_Constraints.java" startLine="39" startPosition="0" endLine="42" endPosition="0">
+      <varInfo nodeId="6616384595876184843" varName="it" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
+    <scopeInfo nodeId="6616384595876139140" fileName="stores_money_banknotes_Constraints.java" startLine="37" startPosition="154" endLine="42" endPosition="20" />
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="27" startPosition="200" endLine="34" endPosition="18">
+      <varInfo nodeId="6616384595876139101" varName="result" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="37" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6616384595876139101" varName="childConcept" />
+      <varInfo nodeId="6616384595876139101" varName="link" />
+      <varInfo nodeId="6616384595876139101" varName="node" />
+      <varInfo nodeId="6616384595876139101" varName="operationContext" />
+      <varInfo nodeId="6616384595876139101" varName="parentNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="26" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="6616384595876139101" varName="checkingNodeContext" />
+      <varInfo nodeId="6616384595876139101" varName="childConcept" />
+      <varInfo nodeId="6616384595876139101" varName="link" />
+      <varInfo nodeId="6616384595876139101" varName="node" />
+      <varInfo nodeId="6616384595876139101" varName="operationContext" />
+      <varInfo nodeId="6616384595876139101" varName="parentNode" />
+    </scopeInfo>
+    <unitInfo nodeId="6616384595876184843" fileName="stores_money_banknotes_Constraints.java" startLine="38" startPosition="154" endLine="42" endPosition="5" unitName="Automat.constraints.stores_money_banknotes_Constraints$1" />
+    <unitInfo nodeId="6616384595876139101" fileName="stores_money_banknotes_Constraints.java" startLine="16" startPosition="0" endLine="47" endPosition="0" unitName="Automat.constraints.stores_money_banknotes_Constraints" />
   </root>
   <root nodeRef="r:d6654046-e3fe-4d62-9060-4210d958514f(Automat.constraints)/7827320562854273206">
     <nodeInfo nodeId="7827320562854273206" fileName="has_Constraints.java" startLine="15" startPosition="28" endLine="16" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />

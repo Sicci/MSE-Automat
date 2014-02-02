@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-9ht4tyvw8egcbe4o2jlagt2vmci91zc">
+<dependencies version="2" modelHash="6vbvh1jhsep2bm75wdz79xkl37hb876">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -34,49 +34,49 @@
     <file name="QueriesGenerated.java" />
   </common>
   <source id="8785849198913118198" name="main" hash="-beuixifo7lyeicmnahgwbx4aq370hhp" />
-  <source id="5879006238386565409" name="AutomatView" hash="6htdjhcaqjujr1ov9np16w79xoltuay" />
+  <source id="5879006238386565409" name="AutomatView" hash="-b8fvedpmilm5z2sw0tgxy8tbrbmo7n" />
   <source id="5879006238387016136" name="AutomatException" hash="-d898vcezfsff6py19rutk26jq0zunk4" />
   <source id="5879006238387159777" name="InvalidInputException" hash="-62oatcen2tfm6knoh0gat56ca66hi07" />
   <source id="5879006238387160686" name="ItemNotAvailableException" hash="-b11irl7gqbgcn3crx33id861weerh0j" />
   <source id="5879006238387160960" name="NotEnoughChangeException" hash="80jdj5cxx0qcd67giq7xwko0q0hm1kl" />
-  <source id="4737897301537558520" name="ItemStorage" hash="-cs5fpj0nh8q8m7ax8wmplz5g6lvecoy" />
-  <source id="4737897301537598379" name="MoneyStorage" hash="-63ts6irqk41tisgp9twdqjf1eyw3vwo" />
+  <source id="4737897301537558520" name="ItemStorage" hash="dwr76up8e4t4wp5j29rq4pz48iy1mvh" />
+  <source id="4737897301537598379" name="MoneyStorage" hash="-5l81sgux0mak6o0cvc1r6e91nj1o2w0" />
   <source id="4737897301537598976" name="SelectItemCommand" hash="1ti02ejnzgqmjyqdq66p7a4ewjvdzzk" />
-  <source id="4737897301537599406" name="Item" hash="-d8kpra93319zxnsw7niwgtwc3mndml2" />
-  <source id="4737897301537599417" name="Money" hash="-4mz15dguht3uol45lvuv0pw2t8tpnj9" />
-  <source id="4737897301537599633" name="MoneyButton" hash="-b417f6o7cnqfk7boq14zt5lm10bmycs" />
-  <source id="4737897301537599853" name="NumpadButton" hash="-67kz1za3t0tz8824y237tjddwu7oqc8" />
+  <source id="4737897301537599406" name="Item" hash="-apn0f60ubhg8rjksa9zqzsvc4jgeyci" />
+  <source id="4737897301537599417" name="Money" hash="8gr546htv3s8m5by6ro4kjm6hrajqx1" />
+  <source id="4737897301537599633" name="MoneyButton" hash="atkeq3lkb3a22zj0c0671bkqx98t6su" />
+  <source id="4737897301537599853" name="NumpadButton" hash="-5kq7jrrkbwptnaeaqwo5435abbb3ohi" />
   <source id="4737897301538058845" name="ICommand" hash="e2qsebz61rapc1acflxv49tqzeqwnzw" />
   <source id="4737897301540662277" name="AutomatType" hash="-63y7p8v43z959dajsqyddy8p3qm1snu" />
-  <source id="4285740819015686551" name="Automat" hash="-d6k5wycqli9z7htkwt0t2e0neycrulh" />
-  <source id="4285740819017508532" name="Localiser" hash="-b8jwev74k5j319zpjwtk43dbkxvuy8s" />
+  <source id="4285740819015686551" name="Automat" hash="9cn1tuvpmkif46yh7r6dtqee1xqfztp" />
+  <source id="4285740819017508532" name="Localiser" hash="-boq35bc7wfqf30fbymyr4cae3db4huq" />
   <source id="4285740819017888901" name="ValueNotAcceptedException" hash="ddgj0s5ahirhetscqp5tcaefksg6h98" />
   <source id="4285740819017945814" name="InsertMoneyCommand" hash="-dxxzqp5tiete1j7w2cka1btt2gmyu7b" />
   <source id="4285740819017961232" name="InsertCardCommand" hash="ega1kevpekks0evj38lieahi60v2nmr" />
   <source id="4285740819017971084" name="ClearItemIdCommand" hash="-1k1bi41ugnxodeimkxovr3wnpnl2ad5" />
   <source id="4285740819017979738" name="ChangeItemIdCommand" hash="2w7f6z6fidq5sm2xl3ombcg7gwafb8y" />
   <source id="4285740819018033046" name="MoneyType" hash="-8d9qqp0ioe8acxzdmta52rdrhzz2yqc" />
-  <source id="4285740819018058434" name="StylePanel" hash="-cn8n73syrjquja927r902mnruy8xwlg" />
-  <source id="4285740819018236239" name="LogView" hash="-7sjdi63f8uno9ac5y57mnlrvivc7wp8" />
-  <source id="4285740819018415332" name="FrameView" hash="dddq7e64u94hm245mt1u0up8fh6kfo1" />
-  <source id="4285740819018673308" name="StatusView" hash="-1uva1rky4nifnl5wbq2yqnn00udh8b1" />
+  <source id="4285740819018058434" name="StylePanel" hash="bnjbwjw47zu8chrokq1yqjt5tmsf9n9" />
+  <source id="4285740819018236239" name="LogView" hash="cy3w2a08ab2e3zpx4xdbzjsvnusl42m" />
+  <source id="4285740819018415332" name="FrameView" hash="-4oi0k33w0hm6lrih9sh0sna8djivr8g" />
+  <source id="4285740819018673308" name="StatusView" hash="1sm6p4vgg6t1qe2lx7lvjiscqk5aqxc" />
   <source id="4285740819019000055" name="NoPartialCardPaymentException" hash="3ods2mog4kzyht7rlc72w8p2nv8vh3o" />
   <source id="4285740819019033989" name="NoItemSelectedException" hash="2i1x7a26gy6f2bz11g4kaptmqxmsg81" />
-  <source id="4285740819019458066" name="BottomAreaView" hash="b42wgi18neuqxlyar1t2ei9ysl3no02" />
-  <source id="4285740819019497432" name="MiddleAreaView" hash="5aplivwvuj2e5dxkz45qakt48qsaunc" />
-  <source id="4285740819019538193" name="TopAreaView" hash="e1brnmmbrj5j1gvufcttylci5fbn639" />
-  <source id="4285740819019584803" name="ImageAreaComp" hash="-extza2liol591k6x7imwjnqdsydt7f1" />
-  <source id="4285740819019633796" name="NumpadButtonPanel" hash="-3nce8uuy9qojkwzz01z0e2byos72jen" />
-  <source id="4285740819019669673" name="NumpadComp" hash="-b622lt5x55wa03zbxw6w18zhk079b1v" />
-  <source id="4285740819019696579" name="NumpadDisplay" hash="-39h7epr6u6p10z42w5tmoz0rnqmheov" />
-  <source id="4285740819019761228" name="MoneyButtonPanel" hash="cr5nbj5mgqc2s4xbfs32jhczekao6d9" />
-  <source id="4285740819019805058" name="PaymentButton" hash="3whxp4a1tz116rpdvtpms1d8q5us5kw" />
-  <source id="4285740819019830302" name="PaymentButtonPanel" hash="c0nonot3wqo0ka7m9end0i73vacia4q" />
-  <source id="4285740819019931701" name="PaymentComp" hash="5eehq771jbsv9u5bs1u84c7o1i0121t" />
-  <source id="4285740819020013065" name="PaymentDisplay" hash="7y86zsu8oflvhhu6b2nfa22uujfmtr4" />
-  <source id="8675345724943756455" name="templ_addCoffeeFunction" hash="-4aba26ern6i393opc3fcg90hh0atupf" />
+  <source id="4285740819019458066" name="BottomAreaView" hash="2gwsvw0hd1pbjt83dsfoelpx3264muu" />
+  <source id="4285740819019497432" name="MiddleAreaView" hash="-ehl023gihq9podxw31x0lmxuc258m9t" />
+  <source id="4285740819019538193" name="TopAreaView" hash="g6nu72oe67i9eey2g3os6esqiuhuav" />
+  <source id="4285740819019584803" name="ImageAreaComp" hash="5jtlmiw6i2oi3tjl6h1tcr5dq0w4ohs" />
+  <source id="4285740819019633796" name="NumpadButtonPanel" hash="b7o3ne8g2egqdybhev97qjbp0b9kf6g" />
+  <source id="4285740819019669673" name="NumpadComp" hash="96p8tp7gx4l9g2hnr7djt71gxa70i67" />
+  <source id="4285740819019696579" name="NumpadDisplay" hash="cig0mnuejtogrr0gid8yrq9rn90jbae" />
+  <source id="4285740819019761228" name="MoneyButtonPanel" hash="bgosgizo4pfm549dhpijdbcnx0ol8a8" />
+  <source id="4285740819019805058" name="PaymentButton" hash="500eci4p6bc04v5qet8mhaqpf9idzjc" />
+  <source id="4285740819019830302" name="PaymentButtonPanel" hash="-ce0rv834k2reypr9bswdtdxlo0s3jwn" />
+  <source id="4285740819019931701" name="PaymentComp" hash="-7io1l3gp2dnnofo54tok6ut1febe9df" />
+  <source id="4285740819020013065" name="PaymentDisplay" hash="-8oy4pkzhhx9u9x27938d1jj3r8pjy6j" />
+  <source id="8675345724943756455" name="templ_addCoffeeFunction" hash="-a784irso24kbs6fdysn3i3kzd4b5sh" />
   <source id="8675345724943871321" name="switch_addAutomatTypeFunction" hash="4z3ec1dyw7qib82ocawacqfvyzdifrb" />
-  <source id="8675345724952423053" name="templ_addSodaFunction" hash="5mezcmwa0u9oynu5v5ez5d3kw85dq25" />
+  <source id="8675345724952423053" name="templ_addSodaFunction" hash="-7yonyx3cugxoxtmgruz4lkq59wgd26t" />
   <source id="8675345724953301013" name="templ_useCoffeeFunction" hash="-9rtp3xlw3dmtocujewns05k7wthv7jg" />
   <source id="8675345724953378211" name="switch_useAutomatTypeFunction" hash="-3lbpsfmly68nracy3e4jkk5try4eq4c" />
   <source id="8675345724953723522" name="templ_useSodaFunction" hash="-1caal79z2fwbgukz7zfr1zb6pc58d1z" />

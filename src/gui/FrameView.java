@@ -63,8 +63,8 @@ public class FrameView extends JFrame implements Observer {
 			}
 		});
 
-		setBounds(0, 0, 800, 600);
-		setMinimumSize(new Dimension(800, 600));
+		setBounds(0, 0, 1024, 768);
+		setMinimumSize(new Dimension(1024, 768));
 		// setResizable(false);
 
 		GridBagConstraints gbc = new GridBagConstraints();
@@ -190,6 +190,7 @@ public class FrameView extends JFrame implements Observer {
 
 		lvLogView.clearLog();
 		lvLogView.addToLog(Localiser.getString("AUTOMAT_START").replace("%s", avAutomatView.getAutomatName()));
+		
 		getNumpadDisplay().setText(Localiser.getString("ITEM_PROMPT_START"));
 		getPaymentDisplay().setText(Localiser.getString("PAYMENT_PROMPT_START"));
 		

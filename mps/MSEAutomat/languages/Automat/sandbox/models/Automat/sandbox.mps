@@ -12,15 +12,15 @@
       <property name="color_r" nameId="tyhk.5708215893054770772" value="1" />
       <property name="color_b" nameId="tyhk.5708215893054788897" value="158" />
       <property name="currency" nameId="tyhk.8785849198913471332" value="$" />
-      <property name="language" nameId="tyhk.8785849198913471347" value="en" />
+      <property name="language" nameId="tyhk.8785849198913471347" value="de" />
       <property name="color_g" nameId="tyhk.5708215893054788891" value="90" />
       <property name="type" nameId="tyhk.8785849198913471330" value="coffee" />
     </node>
     <node role="_stores" roleId="tyhk.8785849198914852068" type="tyhk.stores" typeId="tyhk.8785849198914793268" id="6119712891003197363" nodeInfo="ng">
       <node role="money" roleId="tyhk.8785849198914852344" type="tyhk.stores_money" typeId="tyhk.8785849198914793385" id="6119712891003197365" nodeInfo="ng">
         <node role="money_banknotes" roleId="tyhk.8785849198915125174" type="tyhk.stores_money_banknotes" typeId="tyhk.8785849198915124652" id="166346444446847600" nodeInfo="ng">
-          <property name="banknoteType" nameId="tyhk.8785849198915124723" value="100" />
-          <property name="quantity" nameId="tyhk.8785849198915124769" value="200" />
+          <property name="banknoteType" nameId="tyhk.8785849198915124723" value="500" />
+          <property name="quantity" nameId="tyhk.8785849198915124769" value="0" />
         </node>
         <node role="money_coins" roleId="tyhk.8785849198914793877" type="tyhk.stores_money_coins" typeId="tyhk.8785849198914793739" id="6119712891003197367" nodeInfo="ng">
           <property name="coinType" nameId="tyhk.8785849198914793952" value="10" />
@@ -28,15 +28,15 @@
         </node>
         <node role="money_coins" roleId="tyhk.8785849198914793877" type="tyhk.stores_money_coins" typeId="tyhk.8785849198914793739" id="6119712891003213741" nodeInfo="ng">
           <property name="coinType" nameId="tyhk.8785849198914793952" value="20" />
-          <property name="quantity" nameId="tyhk.8785849198914794167" value="200" />
+          <property name="quantity" nameId="tyhk.8785849198914794167" value="50" />
         </node>
         <node role="money_coins" roleId="tyhk.8785849198914793877" type="tyhk.stores_money_coins" typeId="tyhk.8785849198914793739" id="6119712891003213744" nodeInfo="ng">
           <property name="coinType" nameId="tyhk.8785849198914793952" value="50" />
-          <property name="quantity" nameId="tyhk.8785849198914794167" value="300" />
+          <property name="quantity" nameId="tyhk.8785849198914794167" value="10" />
         </node>
         <node role="money_coins" roleId="tyhk.8785849198914793877" type="tyhk.stores_money_coins" typeId="tyhk.8785849198914793739" id="6119712891007188116" nodeInfo="ng">
           <property name="coinType" nameId="tyhk.8785849198914793952" value="100" />
-          <property name="quantity" nameId="tyhk.8785849198914794167" value="400" />
+          <property name="quantity" nameId="tyhk.8785849198914794167" value="10" />
         </node>
       </node>
       <node role="items" roleId="tyhk.3092453947967876817" type="tyhk.stores_items" typeId="tyhk.4931417553779057712" id="6119712891006381157" nodeInfo="ng">

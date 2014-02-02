@@ -45,7 +45,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return name + "(" + quantity + ") " + price;
+		return name + " (" + quantity + ") " + price;
 
 	}
 
@@ -58,6 +58,8 @@ public class Item {
 	}
 
 	public void reduceQuantity() {
-		this.quantity--;
+		if (this.quantity > 0) {
+			this.quantity--;
+		}
 	}
 }

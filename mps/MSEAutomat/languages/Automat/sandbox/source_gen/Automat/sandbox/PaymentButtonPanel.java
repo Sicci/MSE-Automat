@@ -13,19 +13,24 @@ public class PaymentButtonPanel extends StylePanel {
   private static final long serialVersionUID = 1L;
   private ArrayList<PaymentButton> aPaymentButtons;
 
+
   public PaymentButtonPanel(List<String> aAcceptedPaymentTypes) {
     super();
     BufferedImage img;
     PaymentButton pb;
     ArrayList<String> alImgPaths;
+
     aPaymentButtons = new ArrayList<PaymentButton>();
     alImgPaths = new ArrayList<String>();
     for (String pt : aAcceptedPaymentTypes) {
       alImgPaths.add(AutomatView.RESPATH + "img/slot_" + pt + ".png");
     }
+
     for (int i = 0; i < alImgPaths.size(); i++) {
       final int y = i;
+
       gridStyle.setGrid(0.33, 1.0, y, 0);
+
       try {
         img = ImageIO.read(new File(alImgPaths.get(y)));
         pb = new PaymentButton(img, aAcceptedPaymentTypes.get(y));
@@ -38,6 +43,7 @@ public class PaymentButtonPanel extends StylePanel {
       aPaymentButtons.add(pb);
       add(pb, gridStyle);
     }
+
     // hackerton 
     for (int j = 0; j < 4 - aPaymentButtons.size(); j++) {
       pb = new PaymentButton();
@@ -45,6 +51,8 @@ public class PaymentButtonPanel extends StylePanel {
       add(pb, gridStyle);
     }
   }
+
+
 
   public ArrayList<PaymentButton> getPaymentButtons() {
     return aPaymentButtons;

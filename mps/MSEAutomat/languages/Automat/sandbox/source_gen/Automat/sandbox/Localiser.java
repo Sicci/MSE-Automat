@@ -10,16 +10,21 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class Localiser {
-  private static final String FILE_NAME = AutomatView.RESPATH + "locales/" + "en" + ".txt";
+  private static final String FILE_NAME = AutomatView.RESPATH + "locales/" + "de" + ".txt";
+
   private static final Map<String, String> VALUES = new HashMap<String, String>();
+
 
   private Localiser() {
   }
 
+
   static {
     BufferedReader reader = null;
+
     try {
       reader = new BufferedReader(new FileReader(FILE_NAME));
+
       try {
         String line = null;
         while ((line = reader.readLine()) != null) {

@@ -15,6 +15,7 @@ public class NumpadButton extends JButton {
   private static final long serialVersionUID = 1L;
   private String value;
 
+
   public NumpadButton(String text) {
     super(text);
     initStyle();
@@ -22,9 +23,13 @@ public class NumpadButton extends JButton {
     value = text;
   }
 
+
+
   public String getValue() {
     return value;
   }
+
+
 
   private void initStyle() {
     setForeground(Color.BLACK);

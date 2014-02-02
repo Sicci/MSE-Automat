@@ -21,17 +21,25 @@ public class Item {
     this.setNumCode(numCode);
   }
 
+
+
   public int getQuantity() {
     return quantity;
   }
+
+
 
   public void setQuantity(int quantity) {
     this.quantity = quantity;
   }
 
+
+
   public String getName() {
     return name;
   }
+
+
 
   public void setName(String name) {
     this.name = name;
@@ -45,21 +53,31 @@ public class Item {
     this.price = price;
   }
 
+
+
   @Override
   public String toString() {
-    return name + "(" + quantity + ") " + price;
+    return name + " (" + quantity + ") " + price;
   }
+
+
 
   public String getNumCode() {
     return numCode;
   }
 
+
+
   public void setNumCode(String numCode) {
     this.numCode = numCode;
   }
 
+
+
   public void reduceQuantity() {
-    this.quantity--;
+    if (this.quantity > 0) {
+      this.quantity--;
+    }
   }
 
 
