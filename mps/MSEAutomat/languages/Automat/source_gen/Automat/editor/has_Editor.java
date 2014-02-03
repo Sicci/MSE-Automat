@@ -300,7 +300,7 @@ public class has_Editor extends DefaultNodeEditor {
   private EditorCell createProperty_71p9wp_b5a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("localMemory");
-    provider.setNoTargetText("Please enter a currency");
+    provider.setNoTargetText("(true/false)");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_localMemory");

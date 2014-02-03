@@ -208,7 +208,7 @@
           </node>
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1021764318168926572" nodeInfo="ng">
-          <property name="noTargetText" nameId="tpc2.1139852716018" value="Please enter a currency" />
+          <property name="noTargetText" nameId="tpc2.1139852716018" value="(true/false)" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tyhk.889426786036432175" resolveInfo="localMemory" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1021764318168926573" nodeInfo="nn" />
