@@ -10,6 +10,7 @@ public class Automat extends Observable {
   private String name;
   private String language;
   private String currency;
+
   private String fileItems;
   private String fileMoney;
 
@@ -26,7 +27,7 @@ public class Automat extends Observable {
 
 
   public Automat() {
-    this.name = "Getr\u00e4nkeautomat";
+    this.name = "Mr.Coffee";
     setCurrency("$");
 
     setFileItems(AutomatView.RESPATH + "items.txt");

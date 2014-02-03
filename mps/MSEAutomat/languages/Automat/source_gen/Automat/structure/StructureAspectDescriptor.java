@@ -24,7 +24,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 4:
         return new ConceptDescriptorBuilder("Automat.structure.accepts_creditcard").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("cardtype").create();
       case 5:
-        return new ConceptDescriptorBuilder("Automat.structure.has").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("type", "language", "currency", "color_r", "color_g", "color_b").create();
+        return new ConceptDescriptorBuilder("Automat.structure.has").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("type", "language", "currency", "color_r", "color_g", "color_b", "localMemory").create();
       case 6:
         return new ConceptDescriptorBuilder("Automat.structure.stores").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"money", "items"}, new boolean[]{false, false}).create();
       case 7:

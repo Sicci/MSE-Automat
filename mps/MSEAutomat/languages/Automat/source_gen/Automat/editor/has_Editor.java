@@ -30,6 +30,7 @@ public class has_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createCollection_71p9wp_c0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_71p9wp_d0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_71p9wp_e0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_71p9wp_f0(editorContext, node));
     return editorCell;
   }
 
@@ -271,6 +272,46 @@ public class has_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createCollection_71p9wp_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_71p9wp_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_71p9wp_a5a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_71p9wp_b5a(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createConstant_71p9wp_a5a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "LOCAL MEMORY:");
+    editorCell.setCellId("Constant_71p9wp_a5a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_71p9wp_b5a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("localMemory");
+    provider.setNoTargetText("Please enter a currency");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_localMemory");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
 }

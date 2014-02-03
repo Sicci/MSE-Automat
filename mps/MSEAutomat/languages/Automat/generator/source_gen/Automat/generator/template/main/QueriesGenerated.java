@@ -7,6 +7,7 @@ import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
+import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
@@ -96,6 +97,66 @@ public class QueriesGenerated {
 
   public static Object propertyMacro_GetPropertyValue_8675345724950239329(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null);
+  }
+
+  public static boolean ifMacro_Condition_889426786038608931(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786038387425(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786041021574(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786040777498(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786040411501(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786040316970(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786036789385(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786036876156(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786036926353(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786036931884(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786039688091(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786039775670(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786039863249(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786039950824(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_889426786038114664(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
   }
 
   public static Iterable sourceNodesQuery_6119712891006637702(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

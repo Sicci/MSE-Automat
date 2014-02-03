@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="6vbvh1jhsep2bm75wdz79xkl37hb876">
+<dependencies version="2" modelHash="-lodr25l324h19o2sc0k5qlp3yetns8">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -9,7 +9,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
-  <dep model="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" hash="-4wu2fjd2ddppy5h3b5nlgejdvdm486s" />
+  <dep model="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)" hash="-cbo7dh0qy38pl04tc9w12fwe2bub0or" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
   <common hash="-cszawsah0bb8tfosupv5v19vx7xhane">
     <dep root="4285740819015686551" />
@@ -33,14 +33,14 @@
     <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <file name="QueriesGenerated.java" />
   </common>
-  <source id="8785849198913118198" name="main" hash="-beuixifo7lyeicmnahgwbx4aq370hhp" />
+  <source id="8785849198913118198" name="main" hash="88i5w7m8bvxxi5n0f8fbla1teiycm6x" />
   <source id="5879006238386565409" name="AutomatView" hash="-b8fvedpmilm5z2sw0tgxy8tbrbmo7n" />
   <source id="5879006238387016136" name="AutomatException" hash="-d898vcezfsff6py19rutk26jq0zunk4" />
   <source id="5879006238387159777" name="InvalidInputException" hash="-62oatcen2tfm6knoh0gat56ca66hi07" />
   <source id="5879006238387160686" name="ItemNotAvailableException" hash="-b11irl7gqbgcn3crx33id861weerh0j" />
   <source id="5879006238387160960" name="NotEnoughChangeException" hash="80jdj5cxx0qcd67giq7xwko0q0hm1kl" />
-  <source id="4737897301537558520" name="ItemStorage" hash="dwr76up8e4t4wp5j29rq4pz48iy1mvh" />
-  <source id="4737897301537598379" name="MoneyStorage" hash="-5l81sgux0mak6o0cvc1r6e91nj1o2w0" />
+  <source id="4737897301537558520" name="ItemStorage" hash="6bdbv15bni8zjqlu304l3d44mg0k1yd" />
+  <source id="4737897301537598379" name="MoneyStorage" hash="8rv077dulqkwbhsgcqewypp0d131em" />
   <source id="4737897301537598976" name="SelectItemCommand" hash="1ti02ejnzgqmjyqdq66p7a4ewjvdzzk" />
   <source id="4737897301537599406" name="Item" hash="-apn0f60ubhg8rjksa9zqzsvc4jgeyci" />
   <source id="4737897301537599417" name="Money" hash="8gr546htv3s8m5by6ro4kjm6hrajqx1" />
@@ -48,7 +48,7 @@
   <source id="4737897301537599853" name="NumpadButton" hash="-5kq7jrrkbwptnaeaqwo5435abbb3ohi" />
   <source id="4737897301538058845" name="ICommand" hash="e2qsebz61rapc1acflxv49tqzeqwnzw" />
   <source id="4737897301540662277" name="AutomatType" hash="-63y7p8v43z959dajsqyddy8p3qm1snu" />
-  <source id="4285740819015686551" name="Automat" hash="9cn1tuvpmkif46yh7r6dtqee1xqfztp" />
+  <source id="4285740819015686551" name="Automat" hash="-a2n0m6qyjmjnto27a7chlaezawx6a2e" />
   <source id="4285740819017508532" name="Localiser" hash="-boq35bc7wfqf30fbymyr4cae3db4huq" />
   <source id="4285740819017888901" name="ValueNotAcceptedException" hash="ddgj0s5ahirhetscqp5tcaefksg6h98" />
   <source id="4285740819017945814" name="InsertMoneyCommand" hash="-dxxzqp5tiete1j7w2cka1btt2gmyu7b" />
