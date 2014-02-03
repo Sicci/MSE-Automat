@@ -52,11 +52,6 @@ public class AutomatView extends StylePanel {
       aAcceptedPaymentTypes.add("banknote");
     }
 
-    String[] aAcceptedCreditCards = automat.getAcceptedCards();
-    if (aAcceptedCreditCards.length > 0) {
-      hmAcceptedMoney.put("creditcard", aAcceptedCreditCards);
-      aAcceptedPaymentTypes.add("creditcard");
-    }
 
     gridStyle.setGrid(1.0, 0.1, 0, 0);
     tavTopAreaView = new TopAreaView(sAutomatName);

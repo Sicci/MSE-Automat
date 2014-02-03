@@ -14,7 +14,6 @@ import java.io.FileNotFoundException;
 
 public class MoneyStorage {
   private List<Money> moneyList;
-  private List<String> cards;
 
 
   public MoneyStorage() {
@@ -28,9 +27,7 @@ public class MoneyStorage {
     moneyList.add(new Money(50, 10, MoneyType.COIN));
     moneyList.add(new Money(100, 10, MoneyType.COIN));
     moneyList.add(new Money(500, 0, MoneyType.NOTE));
-    cards = new ArrayList<String>();
-    cards.add("VISA");
-    cards.add("MasterCard");
+
   }
 
   public List<Money> getMoneyList() {
@@ -135,10 +132,4 @@ public class MoneyStorage {
   public String[] getAcceptedNotes() {
     return getAcceptedByType(MoneyType.NOTE);
   }
-
-  public String[] getAcceptedCards() {
-    return cards.toArray(new String[cards.size()]);
-  }
-
-
 }

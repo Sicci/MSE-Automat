@@ -55,14 +55,6 @@
         </node>
       </node>
     </node>
-    <node role="_accepts" roleId="tyhk.8785849198914049522" type="tyhk.accepts" typeId="tyhk.8785849198913843381" id="166346444446666967" nodeInfo="ng">
-      <node role="_accepts_creditcard" roleId="tyhk.8785849198914641038" type="tyhk.accepts_creditcard" typeId="tyhk.8785849198914640857" id="166346444446666968" nodeInfo="ng">
-        <property name="cardtype" nameId="tyhk.166346444445062816" value="VISA" />
-      </node>
-      <node role="_accepts_creditcard" roleId="tyhk.8785849198914641038" type="tyhk.accepts_creditcard" typeId="tyhk.8785849198914640857" id="166346444446666975" nodeInfo="ng">
-        <property name="cardtype" nameId="tyhk.166346444445062816" value="MasterCard" />
-      </node>
-    </node>
   </root>
 </model>
 

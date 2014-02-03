@@ -52,7 +52,7 @@ public class PaymentComp extends StylePanel {
     mbpCurrent = p;
     mbpDefault = p;
 
-    // bind dem mechanicz 
+    // bind events 
     for (final PaymentButton pb : pbpPaymentButtonPanel.getPaymentButtons()) {
       pb.addMouseListener(new MouseAdapter() {
         public void mouseClicked(MouseEvent me) {

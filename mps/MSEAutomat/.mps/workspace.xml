@@ -49,23 +49,30 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="155" />
+                    <property name="caretXRelative" value="24" />
+                    <property name="caretX" value="139" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_localMemory" cellNumber="0" isInList="false">
-                      <node node_reference="r:5facbd70-7c58-4793-8997-e2774e11000d(Automat.sandbox)/7827320562854880030" />
+                    <cellInfo cellId="property_quantity" cellNumber="0" isInList="false">
+                      <node node_reference="r:5facbd70-7c58-4793-8997-e2774e11000d(Automat.sandbox)/6119712891003197367" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
               </inspectorMemento>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Automat.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="previewAutomat.sandbox/Automat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
           </provider>
         </entry>
       </file>
@@ -88,7 +95,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
@@ -97,26 +104,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="has" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="has" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://node://Automat/Automat.structure/has">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="48" />
-                    <property name="caretX" value="267" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:5088492e-370c-4614-b57c-e39c1365a190(Automat.editor)/1021764318168926572" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
@@ -145,7 +142,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
@@ -154,21 +151,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Automat" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Automat" pinned="false" current="true" current-in-tab="true">
         <entry file="mps://node://Automat/Automat.structure/Automat">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="66" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819018033050" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819015686551" />
+              <node node_ref="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819018033046" />
             </state>
           </provider>
         </entry>
@@ -192,7 +199,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
@@ -210,18 +217,18 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="15" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="83" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_g6pxeq_h0" cellNumber="0" isInList="false">
-                      <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/8785849198913118198" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/1021764318170411327" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="180">
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <folded />
                 <enabledHints />
@@ -233,7 +240,7 @@
       <file leaf-file-name="QueriesGenerated.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/languages/Automat/generator/source_gen/Automat/generator/template/main/QueriesGenerated.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="31" selection-start="6457" selection-end="6457" vertical-scroll-proportion="0.0" />
+            <state line="153" column="31" selection-start="9327" selection-end="9327" vertical-scroll-proportion="0.0" />
           </provider>
         </entry>
       </file>
@@ -423,76 +430,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Automat.generator.template.main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat#8785849198913118197">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat.generator.template.main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controller">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Automat.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="8785849198913471264">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -704,7 +641,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34415585" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
@@ -719,18 +656,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25241995" sideWeight="0.6800643" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45016077" sideWeight="0.21221146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25241995" sideWeight="0.829582" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17041801" sideWeight="0.21221146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.49973643" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31993568" sideWeight="0.57632166" order="26" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17041801" sideWeight="0.7877885" order="26" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.49973643" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31993568" sideWeight="0.42367834" order="23" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2829582" sideWeight="0.42367834" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.086391434" sideWeight="0.6633663" order="3" side_tool="false" content_ui="tabs" />
@@ -939,61 +876,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Automat#8785849198913118197/Automat.generator.template.main@generator/main">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_g6pxeq_h0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/8785849198913118198" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/languages/Automat/generator/source_gen/Automat/generator/template/main/QueriesGenerated.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="31" selection-start="6457" selection-end="6457" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="mps://node://Automat/Automat.structure/AutomatType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="179" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)/8785849198914725703" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
+        <state line="153" column="31" selection-start="9327" selection-end="9327" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="mps://node://Automat#8785849198913118197/Automat.generator.template.main@generator/switch_useAutomatTypeFunction">
@@ -1049,7 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Automat/Automat.structure/Automat">
+    <entry file="mps://node://Automat/Automat.structure/has">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
@@ -1062,7 +947,59 @@
             <folded />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819015686551" />
+          <node node_ref="r:5088492e-370c-4614-b57c-e39c1365a190(Automat.editor)/8785849198913471508" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Automat/Automat.structure/AutomatType">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="179" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:5f1d2d0f-b054-43a7-9bb2-e26d154a0e1d(Automat.structure)/8785849198914725703" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Automat#8785849198913118197/Automat.generator.template.main@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="83" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/1021764318170411327" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -1073,11 +1010,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="155" />
+                <property name="caretXRelative" value="24" />
+                <property name="caretX" value="139" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_localMemory" cellNumber="0" isInList="false">
-                  <node node_reference="r:5facbd70-7c58-4793-8997-e2774e11000d(Automat.sandbox)/7827320562854880030" />
+                <cellInfo cellId="property_quantity" cellNumber="0" isInList="false">
+                  <node node_reference="r:5facbd70-7c58-4793-8997-e2774e11000d(Automat.sandbox)/6119712891003197367" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1092,30 +1029,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Automat/Automat.structure/has">
+    <entry file="mps://node://Automat/Automat.structure/Automat">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="48" />
-                <property name="caretX" value="267" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="66" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:5088492e-370c-4614-b57c-e39c1365a190(Automat.editor)/1021764318168926572" />
+                  <node node_reference="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819018033050" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="180">
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <folded />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:5088492e-370c-4614-b57c-e39c1365a190(Automat.editor)/8785849198913471508" />
+          <node node_ref="r:a45619f7-f9d9-4e62-a2d8-6d1273387f21(Automat.generator.template.main@generator)/4285740819018033046" />
         </state>
       </provider>
     </entry>

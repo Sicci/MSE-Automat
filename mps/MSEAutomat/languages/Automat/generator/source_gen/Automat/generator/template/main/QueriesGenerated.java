@@ -8,6 +8,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.generator.template.IfMacroContext;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
@@ -99,6 +102,14 @@ public class QueriesGenerated {
     return SPropertyOperations.getString_def(SLinkOperations.getTarget(_context.getNode(), "_has", true), "type", null);
   }
 
+  public static boolean ifMacro_Condition_1021764318170228534(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
   public static boolean ifMacro_Condition_889426786038608931(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
   }
@@ -107,12 +118,36 @@ public class QueriesGenerated {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
   }
 
+  public static boolean ifMacro_Condition_1021764318172547048(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318172386961(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
   public static boolean ifMacro_Condition_889426786041021574(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
   }
 
   public static boolean ifMacro_Condition_889426786040777498(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_1021764318172726007(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
   }
 
   public static boolean ifMacro_Condition_889426786040411501(final IOperationContext operationContext, final IfMacroContext _context) {
@@ -155,8 +190,64 @@ public class QueriesGenerated {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
   }
 
+  public static boolean ifMacro_Condition_1021764318170064499(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
   public static boolean ifMacro_Condition_889426786038114664(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getBoolean(SLinkOperations.getTarget(_context.getNode(), "_has", true), "localMemory");
+  }
+
+  public static boolean ifMacro_Condition_1021764318170854988(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318170684530(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318170509184(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318173194212(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318173250959(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it == null);
+      }
+    });
+  }
+
+  public static boolean ifMacro_Condition_1021764318170640063(final IOperationContext operationContext, final IfMacroContext _context) {
+    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "_accepts", true), "_accepts_creditcard", true)).any(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return (it != null);
+      }
+    });
   }
 
   public static Iterable sourceNodesQuery_6119712891006637702(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

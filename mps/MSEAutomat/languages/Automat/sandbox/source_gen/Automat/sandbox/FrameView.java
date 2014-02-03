@@ -101,13 +101,6 @@ public class FrameView extends JFrame implements Observer {
                 getPaymentDisplay().setText(exc.getMessage());
                 lvLogView.addToLog("\n" + exc.getMessage());
               }
-            } else {
-              try {
-                automat.handleCommand(new InsertCardCommand(mb.getText()));
-              } catch (AutomatException exc) {
-                getPaymentDisplay().setText(exc.getMessage());
-                lvLogView.addToLog("\n" + exc.getMessage());
-              }
             }
           }
         });
@@ -246,14 +239,7 @@ public class FrameView extends JFrame implements Observer {
         lvLogView.addToLog(Localiser.getString("OUTPUT_ITEM").replace("%s", automat.getOutputItem().getName()));
         avAutomatView.getBottomArea().changeToFull();
       }
-    } else
-    if (t.equals("paidWithCard")) {
-      if (automat.getOutputItem() != null) {
-        lvLogView.addToLog(Localiser.getString("PAID_WITH_CARD").replace("%s", formatCurrency(automat.getOutputItem().getPrice())));
-      }
-      logChangeMoney(automat.retrieveChange());
-    } else if (t.startsWith("log:")) {
-      lvLogView.addToLog(Localiser.getString("LOG") + Localiser.getString(t.substring(4)));
+    } else {
     }
   }
 

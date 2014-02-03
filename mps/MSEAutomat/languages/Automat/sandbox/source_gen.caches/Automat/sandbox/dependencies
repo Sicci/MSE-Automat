@@ -12,7 +12,6 @@
     <classNode dependClassName="Automat.sandbox.Money" />
     <classNode dependClassName="Automat.sandbox.MoneyStorage" />
     <classNode dependClassName="Automat.sandbox.NoItemSelectedException" />
-    <classNode dependClassName="Automat.sandbox.NoPartialCardPaymentException" />
     <classNode dependClassName="Automat.sandbox.NotEnoughChangeException" />
     <classNode dependClassName="Automat.sandbox.ValueNotAcceptedException" />
     <classNode dependClassName="java.lang.Integer" />
@@ -67,7 +66,6 @@
     <classNode dependClassName="Automat.sandbox.ChangeItemIdCommand" />
     <classNode dependClassName="Automat.sandbox.ClearItemIdCommand" />
     <classNode dependClassName="Automat.sandbox.ImageAreaComp" />
-    <classNode dependClassName="Automat.sandbox.InsertCardCommand" />
     <classNode dependClassName="Automat.sandbox.InsertMoneyCommand" />
     <classNode dependClassName="Automat.sandbox.Item" />
     <classNode dependClassName="Automat.sandbox.Localiser" />
@@ -119,15 +117,6 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.imageio.ImageIO" />
     <classNode extendsClassName="Automat.sandbox.StylePanel" />
-  </dependency>
-  <dependency className="Automat.sandbox.InsertCardCommand" file="InsertCardCommand.java">
-    <classNode dependClassName="Automat.sandbox.Automat" />
-    <classNode dependClassName="Automat.sandbox.NoItemSelectedException" />
-    <classNode dependClassName="Automat.sandbox.NoPartialCardPaymentException" />
-    <classNode dependClassName="Automat.sandbox.NotEnoughChangeException" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="Automat.sandbox.ICommand" />
   </dependency>
   <dependency className="Automat.sandbox.InsertMoneyCommand" file="InsertMoneyCommand.java">
     <classNode dependClassName="Automat.sandbox.Automat" />
@@ -241,10 +230,6 @@
   </dependency>
   <dependency className="Automat.sandbox.MoneyType" file="MoneyType.java" />
   <dependency className="Automat.sandbox.NoItemSelectedException" file="NoItemSelectedException.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="Automat.sandbox.AutomatException" />
-  </dependency>
-  <dependency className="Automat.sandbox.NoPartialCardPaymentException" file="NoPartialCardPaymentException.java">
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="Automat.sandbox.AutomatException" />
   </dependency>
